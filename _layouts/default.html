@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <script>
+      /* Set theme before paint to avoid a flash of the wrong colours */
+      (function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+    </script>
     {% include meta.html %}
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
-      <script type="text/javascript">window.baseurl = '{{ site.url }}';</script>
-      {% include css.html %}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    <script>window.baseurl = '{{ site.url }}';</script>
+    {% include css.html %}
   </head>
 
-  <body class="home overflow-hidden">
-    {% include header.html %}
-    {% include main.html %}
+  <body>
+    {% include icons.html %}
+
+    <header class="topbar">
+      <a class="topbar__brand" href="/">{{ site.title }}</a>
+      <button id="nav-toggle" class="iconbtn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="sidebar">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+      </button>
+    </header>
+
+    <div class="layout">
+      {% include sidebar.html %}
+
+      <main class="content" id="content">
+        {% include header.html %}
+        <div class="content-inner">
+          {{ content }}
+        </div>
+        {% include footer.html %}
+      </main>
+    </div>
+
     {% include js.html %}
     {% include analytics.html %}
   </body>

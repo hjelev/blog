@@ -1,0 +1,40 @@
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar__inner">
+
+    <a class="profile" href="/">
+      <img class="profile__avatar" src="{{ site.logo }}" alt="{{ site.author }}" width="64" height="64">
+      <div class="profile__id">
+        <div class="profile__name">{{ site.author }}</div>
+        <div class="prompt"><span class="prompt__user">visitor@masoko</span><span class="prompt__sep">:</span><span class="prompt__path">~</span><span class="prompt__caret">$</span></div>
+      </div>
+    </a>
+
+    {% if site.allowsearch == true %}
+    <div class="search" id="js-search">
+      <label class="search__label" for="js-search__input">
+        <span class="search__prompt">$</span>
+        <input class="search__input" type="text" id="js-search__input" placeholder="grep posts…" autocomplete="off" spellcheck="false">
+      </label>
+      <ul class="search__results is-hidden" id="js-search__results"></ul>
+    </div>
+    {% endif %}
+
+    <nav class="menu" aria-label="Primary">
+      {% include navigation.html %}
+    </nav>
+
+    {% include social_links.html %}
+
+    <div class="sidebar__foot">
+      <button id="theme-toggle" class="iconbtn theme-toggle" type="button" aria-label="Switch theme">
+        <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+        <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+        <span class="theme-toggle__label">theme</span>
+      </button>
+      <a class="iconbtn" href="/feed.xml" aria-label="RSS feed">
+        <svg class="icon" aria-hidden="true"><use href="#i-rss"></use></svg>
+      </a>
+    </div>
+
+  </div>
+</aside>

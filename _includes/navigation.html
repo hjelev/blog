@@ -1,18 +1,23 @@
-<ul class="list-separator nav navbar-nav well well-primary {{ page.layout }}">
+<ul class="menu__list">
 {% for i in site.data.urls %}
-	{% assign current = nil %}
-	{% assign pageurl = page.url | split:'/' | last %}
-	{% assign menuurl = i.url | split:'/' | last %}
-	{% assign linkurl = nil %}
-	{% if i.url contains '://' %}
-	{% assign linkurl = i.url %}
-	{% else %}
-	{% assign linkurl = i.url | prepend: site.baseurl %}
-	{% endif %}
-	{% assign target = i.target %}
-    {% unless target %} {% assign target = '_self' %} {% endunless %}
-	{% if pageurl == menuurl or page.layout == i.layout %} {% assign current = 'current-menu-item' %} {% endif %}
-	{% if i.text == "Categories" and page.layout == "posts_by_category" %} {% assign current = 'current-menu-item' %} {% endif %}
-	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 {{ current }} {{ pageurl }}"><a href="{{ linkurl }}" target="{{ target }}"><i class="fa {{ i.icon }}"></i> {{ i.text }}</a></li>
+  {% assign current = nil %}
+  {% assign pageurl = page.url | split:'/' | last %}
+  {% assign menuurl = i.url | split:'/' | last %}
+  {% if i.url contains '://' %}
+    {% assign linkurl = i.url %}
+  {% else %}
+    {% assign linkurl = i.url | prepend: site.baseurl %}
+  {% endif %}
+  {% assign target = i.target %}
+  {% unless target %}{% assign target = '_self' %}{% endunless %}
+  {% if pageurl == menuurl or page.layout == i.layout %}{% assign current = 'is-current' %}{% endif %}
+  {% if i.text == "Categories" and page.layout == "posts_by_category" %}{% assign current = 'is-current' %}{% endif %}
+  {% assign ic = i.icon | replace: 'fa-home','home' | replace: 'fa-desktop','grid' | replace: 'fa-comments','info' %}
+  <li class="menu__item {{ current }}">
+    <a class="menu__link" href="{{ linkurl }}" target="{{ target }}">
+      <svg class="icon" aria-hidden="true"><use href="#i-{{ ic }}"></use></svg>
+      <span class="menu__text">{{ i.text | downcase }}</span>
+    </a>
+  </li>
 {% endfor %}
 </ul>

@@ -1,11 +1,7 @@
 ---
 layout: default
 ---
-<div class="well">
-    {% if page.subtitle %}
-    <h4 class="home-subtitle">{{ page.subtitle }}</h4>
-    {% endif %}
-    <div>
-    	{{ content }}
-    </div>
-</div>
+{% if page.subtitle %}
+<h2 class="home-subtitle">{{ page.subtitle }}</h2>
+{% endif %}
+{{ content }}

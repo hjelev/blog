@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Up WireGuard VPN on MikroTik: The Ultimate Multi-Platform Remote Access Guide
+title: Setting Up WireGuard VPN on MikroTik (Multi-Platform Remote Access Guide)
 date: 2026-06-25
 categories: linux
 ---

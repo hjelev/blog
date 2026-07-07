@@ -5,15 +5,15 @@
       /* Set theme before paint to avoid a flash of the wrong colours */
       (function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
     </script>
-    {% include meta.html %}
+    {%- include meta.html -%}
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
     <script>window.baseurl = '{{ site.url }}';</script>
-    {% include css.html %}
+    {%- include css.html -%}
     <script defer src="https://m.masoko.net/core-util" data-website-id="0c5c615c-4644-4817-9c5c-d1d551bc941e"></script>
   </head>
 
   <body>
-    {% include icons.html %}
+    {%- include icons.html -%}
 
     <header class="topbar">
       <a class="topbar__brand" href="/">{{ site.title }}</a>
@@ -23,18 +23,18 @@
     </header>
 
     <div class="layout">
-      {% include sidebar.html %}
+      {%- include sidebar.html -%}
 
       <main class="content" id="content">
-        {% include header.html %}
+        {%- include header.html -%}
         <div class="content-inner">
           {{ content }}
         </div>
-        {% include footer.html %}
+        {%- include footer.html -%}
       </main>
     </div>
 
-    {% include js.html %}
-    {% include analytics.html %}
+    {%- include js.html -%}
+    {%- include analytics.html -%}
   </body>
 </html>

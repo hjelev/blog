@@ -34,12 +34,12 @@ layout: default
 {%- endif %}
 
 <nav class="post-nav">
-  {% if page.previous.url %}
+  {%- if page.previous.url %}
     <a class="prev" href="{{ site.url }}{{ page.previous.url }}"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"></use></svg> {{ page.previous.title }}</a>
-  {% endif %}
-  {% if page.next.url %}
+  {%- endif %}
+  {%- if page.next.url %}
     <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
-  {% endif %}
+  {%- endif %}
 </nav>
 
 <div class="disqus-comments">

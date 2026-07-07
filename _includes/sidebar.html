@@ -1,3 +1,4 @@
+
 <aside class="sidebar" id="sidebar">
   <div class="sidebar__inner">
 
@@ -9,7 +10,7 @@
       </div>
     </a>
 
-    {% if site.allowsearch == true %}
+    {%- if site.allowsearch == true %}
     <div class="search" id="js-search">
       <label class="search__label" for="js-search__input">
         <span class="search__prompt">$</span>
@@ -17,13 +18,13 @@
       </label>
       <ul class="search__results is-hidden" id="js-search__results"></ul>
     </div>
-    {% endif %}
+    {%- endif %}
 
     <nav class="menu" aria-label="Primary">
-      {% include navigation.html %}
+      {%- include navigation.html -%}
     </nav>
 
-    {% include social_links.html %}
+    {%- include social_links.html -%}
 
     <div class="sidebar__foot">
       <button id="theme-toggle" class="iconbtn theme-toggle" type="button" aria-label="Switch theme">

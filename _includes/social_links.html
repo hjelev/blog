@@ -1,13 +1,14 @@
+
 <div class="social">
-  {% if site.github %}
+  {%- if site.github %}
   <a class="social__link" target="_blank" rel="noopener" href="{{ site.github }}" aria-label="GitHub">
     <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
   </a>
-  {% endif %}
-  {% for link in site.data.social %}
-    {% assign sic = link.icon | replace: 'fa-github','github' %}
+  {%- endif %}
+  {%- for link in site.data.social %}
+    {%- assign sic = link.icon | replace: 'fa-github','github' %}
     <a class="social__link" target="_blank" rel="noopener" href="{{ link.link }}">
       <svg class="icon" aria-hidden="true"><use href="#i-{{ sic }}"></use></svg>
     </a>
-  {% endfor %}
+  {%- endfor %}
 </div>

@@ -3,48 +3,48 @@ layout: default
 title: Masoko's Blog and Notes
 ---
 <ul class="postlist">
-  {% for post in paginator.posts %}
+  {%- for post in paginator.posts %}
   <li class="postlist__item">
     <div class="postlist__date">{{ post.date | date: "%Y-%m-%d" }}</div>
     <h2 class="postlist__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
     <p class="postlist__excerpt">{{ post.content | strip_html | truncatewords: 28 }}</p>
-    {% if post.categories.size > 0 %}
+    {%- if post.categories.size > 0 %}
     <div class="postlist__cats">
-      {% for category in post.categories %}
+      {%- for category in post.categories %}
       <a class="tag" href="{{ site.baseurl }}/category/{{ category }}">{{ category }}</a>
-      {% endfor %}
+      {%- endfor %}
     </div>
-    {% endif %}
+    {%- endif %}
   </li>
-  {% endfor %}
+  {%- endfor %}
 </ul>
 
-{% if paginator.total_pages > 1 %}
+{%- if paginator.total_pages > 1 %}
 <nav class="pagination" aria-label="Pagination">
-  {% if paginator.previous_page %}
+  {%- if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous page">
       <svg class="icon" aria-hidden="true"><use href="#i-arrow-left"></use></svg>
     </a>
-  {% else %}
+  {%- else %}
     <span class="is-disabled"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"></use></svg></span>
-  {% endif %}
+  {%- endif %}
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
+  {%- for page in (1..paginator.total_pages) %}
+    {%- if page == paginator.page %}
       <span class="is-active">{{ page }}</span>
-    {% elsif page == 1 %}
+    {%- elsif page == 1 %}
       <a href="/">{{ page }}</a>
-    {% else %}
+    {%- else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
+    {%- endif %}
+  {%- endfor %}
 
-  {% if paginator.next_page %}
+  {%- if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next page">
       <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
     </a>
-  {% else %}
+  {%- else %}
     <span class="is-disabled"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></span>
-  {% endif %}
+  {%- endif %}
 </nav>
-{% endif %}
+{%- endif %}

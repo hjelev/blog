@@ -7,8 +7,9 @@ about: blog.masoko.net
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 baseurl: ""
-url: ""
+url: "https://blog.masoko.net"
 
 allowsearch: true
 

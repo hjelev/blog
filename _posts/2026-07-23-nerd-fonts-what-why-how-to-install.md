@@ -14,7 +14,6 @@ If you spend time in a terminal, you've probably seen screenshots where file lis
 
 The result is a regular monospace coding font that *also* happens to contain icons for programming languages, file types, operating systems, Git status, and more — all renderable as a single character, at any font size, in any app that supports the font.
 
-I'm not fully certain of the exact current glyph count in the latest release — the project has grown over time — so if that number matters to you, it's worth checking the count listed directly on the [Nerd Fonts website](https://www.nerdfonts.com/) or the project's GitHub releases page rather than trusting a fixed figure here.
 
 ## Why you need them
 
@@ -32,7 +31,8 @@ Without a patched font, none of this breaks functionally — the tools still wor
 A few CLI tools worth calling out from [previous posts on this blog](https://blog.masoko.net/ubuntu/Useful-cli-tools/) look noticeably better with a Nerd Font installed:
 
 - **[exa](https://github.com/ogham/exa)** — a modern replacement for `ls`. Its `--icons` flag prints a file-type icon next to each entry, but that flag only renders correctly with a Nerd Font active in your terminal.
-- **[btop](https://github.com/aristocratos/btop)** — the resource monitor covered in the [Useful CLI tools](https://blog.masoko.net/ubuntu/Useful-cli-tools/) post. I'm not fully certain every symbol in its default theme requires a patched font specifically (some are just Unicode box-drawing characters), but its bundled themes are commonly recommended to be paired with a Nerd Font — worth checking btop's own documentation if you want to confirm exactly which glyphs need it.
+- **[btop](https://github.com/aristocratos/btop)** — the resource monitor covered in the [Useful CLI tools](https://blog.masoko.net/ubuntu/Useful-cli-tools/) post. 
+
 - **[duf](https://github.com/muesli/duf)** — the disk usage utility from the same post; its table borders and bars render more consistently with a Nerd Font-based terminal font.
 
 If you're setting up any of these, installing a Nerd Font first will save you from wondering why the icons look wrong.
@@ -65,7 +65,7 @@ yay -S ttf-jetbrains-mono-nerd
 yay -S nerd-fonts-complete
 ```
 
-I don't have a confirmed, verified list of which font families are packaged for Fedora, openSUSE, or Debian/Ubuntu repos at this moment — package availability shifts, so it's worth checking your distro's package search before assuming a given family is packaged.
+
 
 ### macOS
 
@@ -105,6 +105,3 @@ The exact package name can vary between font families, so use `scoop search nerd
 
 Installing the font is only half the job. Open your terminal emulator's settings (Windows Terminal, iTerm2, GNOME Terminal, Alacritty, Kitty, etc.) and set the font explicitly to the Nerd Font variant — it will usually show up with "Nerd Font" appended to its name, e.g. "JetBrainsMono Nerd Font". Some terminals also need this set in a config file rather than a GUI setting; check your specific terminal's docs if the font picker doesn't show it.
 
-## A quick note on this post
-
-I pulled the install commands above from current documentation and package pages rather than from memory alone, since font package names and distribution methods change over time (the Homebrew cask-fonts tap deprecation being one recent example). Even so, it's worth double-checking `scoop search`, `brew search`, or your distro's package index at install time in case something has shifted since this was written.

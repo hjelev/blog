@@ -1,11 +1,12 @@
 ---
 title: "OpenCode vs Claude Code: Which AI Coding Agent Should You Use in 2026?"
+seo_title: "OpenCode vs Claude Code (2026): Which AI Coding Agent?"
 date: 2026-10-21
 categories: [linux, macos, cli, ai]
 description: "OpenCode vs Claude Code compared: open-source and model-agnostic vs Anthropic's tightly integrated agent. Features, pricing and which one to pick."
 ---
 
-![OpenCode vs Claude Code](/static/img/opencode-vs-claude-code-header.svg)
+![OpenCode vs Claude Code](/static/img/opencode-vs-claude-code-header.svg){: width="1000" height="360"}
 
 AI coding agents that live in the terminal have gone from a novelty to a normal part of a lot of people's workflow. You describe what you want, and the agent searches the codebase, edits files, runs commands, and checks its own work. Two of the most talked-about options right now are **OpenCode** and **Claude Code**. They look similar at first glance, but they come from very different philosophies, so here's how they compare.
 
@@ -16,7 +17,7 @@ AI coding agents that live in the terminal have gone from a novelty to a normal 
 
 ## OpenCode
 
-![OpenCode TUI](/static/img/opencode-screenshot.png)
+![OpenCode TUI](/static/img/opencode-screenshot.png){: width="1000" height="816"}
 *OpenCode's terminal UI (screenshot from the [OpenCode repository](https://github.com/anomalyco/opencode)).*
 
 [OpenCode](https://opencode.ai/) started as a project from the SST team and is now developed by Anomaly. It's MIT-licensed and has become one of the most-starred projects on GitHub (over 200k stars at the time of writing).
@@ -44,7 +45,7 @@ brew install anomalyco/tap/opencode-v2
 
 ## Claude Code
 
-![Claude Code session](/static/img/claude-code-session.svg)
+![Claude Code session](/static/img/claude-code-session.svg){: width="1000" height="560"}
 *Illustration of a typical Claude Code session in the terminal.*
 
 [Claude Code](https://code.claude.com/) is Anthropic's agentic coding tool. Where OpenCode tries to work with every model, Claude Code goes the other way: it only runs Claude models (Opus, Sonnet, Haiku), and the tool and the models are built by the same company. In practice, that shows up as very solid tool use, long autonomous runs, and new model capabilities landing in the tool on day one.
@@ -83,7 +84,7 @@ You'll need a Claude Pro ($20/month, or $17/month billed yearly) or Max (from $1
 
 This is the core difference between the two, and the one that should drive your decision:
 
-![How OpenCode and Claude Code connect to models](/static/img/opencode-vs-claude-code-models.svg)
+![How OpenCode and Claude Code connect to models](/static/img/opencode-vs-claude-code-models.svg){: width="1000" height="420"}
 
 OpenCode gives you **choice**: you can switch models per task, mix a cheap model for simple work with a frontier model for hard problems, or run fully offline. Claude Code gives you **integration**: one model family, with a tool designed around how those models work.
 
@@ -133,4 +134,4 @@ A useful detail: OpenCode can use Claude models too. But if you mostly use Claud
 
 There's also nothing stopping you from using both. A common setup is Claude Code as the daily driver, with OpenCode around for trying other models or running a local one. Since Claude Code can read `AGENTS.md`, one instructions file can serve both tools.
 
-Both run great in a modern terminal. If icons or status glyphs show up as boxes, install a [Nerd Font](/linux/macos/windows/cli/nerd-fonts-what-why-how-to-install/) first, and if you want a file manager to go with your agent, see [Best TUI File Managers in 2026](/linux/macos/cli/best-tui-file-managers-2026/).
+Both run great in a modern terminal. If icons or status glyphs show up as boxes, install a [Nerd Font]({% post_url 2026-07-23-nerd-fonts-what-why-how-to-install %}) first, and if you want a file manager to go with your agent, see [Best TUI File Managers in 2026]({% post_url 2026-07-23-best-tui-file-managers-2026 %}).

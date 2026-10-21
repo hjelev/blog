@@ -13,7 +13,7 @@
     {%- if page.categories.size > 0 %}
       <span class="page-meta__cats">
         {%- for category in page.categories %}
-          <a class="tag" href="{{ site.baseurl }}/category/{{ category }}">{{ category }}</a>
+          <a class="tag" href="{{ site.baseurl }}/category/{{ category }}/">{{ category }}</a>
         {%- endfor %}
       </span>
     {%- endif %}

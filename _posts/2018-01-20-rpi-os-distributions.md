@@ -1,6 +1,7 @@
 ---
 layout: post
-title: OS for Raspberry Pi
+title: "Raspberry Pi Operating Systems: Alternatives to Raspberry Pi OS"
+description: "Alternative operating systems for the Raspberry Pi: DietPi, RetroPie, Recalbox, Volumio, motionEyeOS, Ubuntu MATE and other purpose-built images."
 date: 2018-01-20
 categories: raspberry-pi
 ---

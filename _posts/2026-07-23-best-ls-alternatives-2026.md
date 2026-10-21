@@ -1,5 +1,6 @@
 ---
 title: "Best ls Alternatives in 2026"
+description: "The best modern ls replacements in 2026: eza, lsd and colorls compared, with icons, Git status and tree views, plus why exa is no longer maintained."
 date: 2026-07-23
 categories: [linux, macos, cli]
 ---
@@ -15,7 +16,7 @@ Notable features:
 - Drop-in `ls` replacement — most people just `alias ls=eza`.
 - Git integration (`eza --git`) shows tracked/modified/staged/untracked status per file.
 - Support for extended file attributes, SELinux contexts on Linux, and clickable terminal hyperlinks.
-- A `theme.yml` config file for customizing colors and per-file-type icons (icons render properly once you have a [Nerd Font](/linux/macos/windows/cli/nerd-fonts-what-why-how-to-install/) installed).
+- A `theme.yml` config file for customizing colors and per-file-type icons (icons render properly once you have a [Nerd Font]({% post_url 2026-07-23-nerd-fonts-what-why-how-to-install %}) installed).
 - Available for Linux, macOS, and Windows.
 
 Install:
@@ -96,4 +97,4 @@ gem install colorls
 - Already have a Ruby toolchain and don't want another Rust binary on the system? **colorls** is a reasonable, if slower, choice.
 - Found `exa` referenced somewhere? Substitute **eza** — same lineage, actively maintained.
 
-Whichever one you pick, install a [Nerd Font](/linux/macos/windows/cli/nerd-fonts-what-why-how-to-install/) first — all four of these rely on Nerd Font or Font Awesome glyphs for their icon output, and without one you'll just see broken-box placeholders instead of icons.
+Whichever one you pick, install a [Nerd Font]({% post_url 2026-07-23-nerd-fonts-what-why-how-to-install %}) first — all four of these rely on Nerd Font or Font Awesome glyphs for their icon output, and without one you'll just see broken-box placeholders instead of icons.

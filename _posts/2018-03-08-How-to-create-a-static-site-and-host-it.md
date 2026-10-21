@@ -1,6 +1,8 @@
 ---
 layout: post
-title: How to create a static site with python and host it for free
+title: "How to Create a Static Site with Python (Pelican) and Host It for Free"
+description: "Create a static website with Pelican, the Python static site generator, preview it locally and host it for free on GitHub Pages with a custom domain."
+seo_title: "Build a Static Site with Pelican and Host It Free on GitHub Pages"
 date:   2018-03-08
 categories: python
 ---
@@ -8,7 +10,7 @@ In this articel I'll show you how to create a static html site with Pelican and 
 -------------------------
 
 [Pelican](https://github.com/getpelican/pelican){:target="_blank"} is a static site generator, written in Python, that requires no database or server-side logic.
-![Pelican](/static/img/python_pelican.png)
+![Pelican](/static/img/python_pelican.png){: width="298" height="300"}
 
 ### Installing Pelican
 
@@ -129,7 +131,7 @@ Once you start the web server you can preview your site at `http://localhost:800
 
 One of the best free places to host your static site for free is [Github Pages](https://pages.github.com/){:target="_blank"}
 
-![Github Pages](/static/img/github_logo.png)
+![Github Pages](/static/img/github_logo.png){: width="573" height="248"}
 
 On github pages you'll find detailed instructions how to upload your site with git.
 If you don't have git installed you can install it with:

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Host Multiple Python Apps on the Same Host With Nginx
+description: "Use nginx as a reverse proxy to serve several Python apps from one server, each on its own domain, with a site config per app."
 date:   2018-01-21
 categories: linux
 ---

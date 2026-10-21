@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Python Modules I Use
+title: "Useful Python Modules I Use"
+description: "Python libraries I reach for in small projects: Markdown, BeautifulSoup, feedparser, paho-mqtt, tldextract, the Jira client, Fabric and more."
 date:   2018-01-20
 categories: python
 ---

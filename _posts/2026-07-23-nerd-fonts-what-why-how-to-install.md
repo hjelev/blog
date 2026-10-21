@@ -1,5 +1,7 @@
 ---
 title: "Nerd Fonts: What They Are, Why You Need Them, and How to Install Them"
+description: "What Nerd Fonts are, why terminal tools like eza, Starship and Yazi need them, and how to install one on Linux, macOS and Windows."
+seo_title: "Nerd Fonts: What They Are and How to Install Them"
 date: 2026-07-23
 categories: [linux, macos, windows, cli]
 ---
@@ -26,10 +28,10 @@ Without a patched font, none of this breaks functionally — the tools still wor
 
 ### Tools that specifically benefit from a Nerd Font
 
-A few CLI tools worth calling out from [previous posts on this blog](https://blog.masoko.net/ubuntu/Useful-cli-tools/) look noticeably better with a Nerd Font installed:
+A few CLI tools worth calling out from [previous posts on this blog]({% post_url 2021-12-01-Useful-cli-tools %}) look noticeably better with a Nerd Font installed:
 
 - **[exa](https://github.com/ogham/exa)** — a modern replacement for `ls`. Its `--icons` flag prints a file-type icon next to each entry, but that flag only renders correctly with a Nerd Font active in your terminal.
-- **[btop](https://github.com/aristocratos/btop)** — the resource monitor covered in the [Useful CLI tools](https://blog.masoko.net/ubuntu/Useful-cli-tools/) post. 
+- **[btop](https://github.com/aristocratos/btop)** — the resource monitor covered in the [Useful CLI tools]({% post_url 2021-12-01-Useful-cli-tools %}) post. 
 
 - **[duf](https://github.com/muesli/duf)** — the disk usage utility from the same post; its table borders and bars render more consistently with a Nerd Font-based terminal font.
 

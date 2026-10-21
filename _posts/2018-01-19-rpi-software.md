@@ -1,8 +1,11 @@
 ---
 layout: post
-title: Software for Raspberry Pi
+title: "Useful Software to Run on a Raspberry Pi"
+description: "Self-hosted software worth running on a Raspberry Pi: Pi-hole and AdGuard Home for ad blocking, PiVPN, Home Assistant and CUPS print server."
 date: 2018-01-19
 categories: raspberry-pi
+noindex: true
+sitemap: false
 ---
 
 Collection of software for raspberry pi

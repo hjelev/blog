@@ -5,7 +5,7 @@ categories: [linux, selfhosting]
 description: "Let's Encrypt is cutting certificate lifetimes from 90 to 64 days on February 10, 2027. What changes, who is affected, and a 5-minute check for certbot, acme.sh, Caddy and Traefik setups."
 ---
 
-![Let's Encrypt certificate lifetimes: 90 days today, 64 days from February 2027, 45 days in 2028](/static/img/le-64-day-header.svg)
+![Let's Encrypt certificate lifetimes: 90 days today, 64 days from February 2027, 45 days in 2028](/static/img/le-64-day-header.svg){: width="1000" height="360"}
 
 Let's Encrypt [announced on October 7](https://letsencrypt.org/2026/10/07/64-day-certs) that its default certificates will drop from **90 days to 64 days** on **February 10, 2027**. A further cut to 45 days is coming in 2028.
 
@@ -41,7 +41,7 @@ The validation reuse change also matters. Today, once you prove you control a do
 
 ## Who is actually affected?
 
-![When renewals fire: ARI and certbot defaults are fine; a fixed 60-day schedule is cutting it close on 64-day certs and fails on 45-day certs](/static/img/le-64-day-renewal.svg)
+![When renewals fire: ARI and certbot defaults are fine; a fixed 60-day schedule is cutting it close on 64-day certs and fails on 45-day certs](/static/img/le-64-day-renewal.svg){: width="1000" height="420"}
 *Renewal timing on a 64-day certificate. Fixed schedules are the risk.*
 
 **You're fine if** your client checks expiry (or asks Let's Encrypt via ARI) at least once a day and renews when it's told to or when about 30 days are left. That describes most modern clients with their default settings.
@@ -69,7 +69,7 @@ If your client supports ARI, the 64-day change is a non-event.
 
 ## The 5-minute readiness check
 
-![64-day readiness checklist](/static/img/le-64-day-checklist.svg)
+![64-day readiness checklist](/static/img/le-64-day-checklist.svg){: width="1000" height="400"}
 
 ### 1. Check your client version
 

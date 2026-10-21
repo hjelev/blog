@@ -8,11 +8,17 @@ layout: default
       {%- if c_slug == page.categories %}
         <span class="btn is-active">{{ c_slug }}</span>
       {%- else %}
-        <a href="{{ site.baseurl }}/category/{{ c_slug }}" class="btn">{{ c_slug }}</a>
+        <a href="{{ site.baseurl }}/category/{{ c_slug }}/" class="btn">{{ c_slug }}</a>
       {%- endif %}
     {%- endfor %}
   {%- endfor %}
 </div>
+
+{%- if content != "" %}
+<div class="prose category-intro">
+  {{ content }}
+</div>
+{%- endif %}
 
 {%- if site.categories[page.categories] %}
 <ul class="postlist">
@@ -30,7 +36,7 @@ layout: default
     <li class="postlist__item">
       <div class="postlist__date">{{ post.date | date: "%Y-%m-%d" }}</div>
       <h2 class="postlist__title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="postlist__excerpt">{{ post.content | strip_html | truncatewords: 24 }}</p>
+      <p class="postlist__excerpt">{{ post.description | default: post.content | strip_html | truncatewords: 24 }}</p>
     </li>
   {%- endfor %}
 </ul>

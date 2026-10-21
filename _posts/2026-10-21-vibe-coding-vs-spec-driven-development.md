@@ -5,7 +5,7 @@ categories: [ai, cli]
 description: "Vibe coding vs spec-driven development: two ways of working with AI coding agents, what each is good at, and when to switch between them."
 ---
 
-![Vibe coding vs spec-driven development](/static/img/vibe-vs-spec-header.svg)
+![Vibe coding vs spec-driven development](/static/img/vibe-vs-spec-header.svg){: width="1000" height="360"}
 
 AI coding agents have made writing code cheap. Knowing *what* code to write, and whether the result is right, hasn't gotten any cheaper. Two very different ways of working with AI have grown out of that: **vibe coding**, where you chat with the agent and react to what it builds, and **spec-driven development (SDD)**, where you write down what you want first and let the agent build from that document.
 
@@ -40,7 +40,7 @@ The key idea is that when requirements change, you **update the spec** and regen
 
 ## The two workflows side by side
 
-![Vibe coding loop vs spec-driven pipeline](/static/img/vibe-vs-spec-workflow.svg)
+![Vibe coding loop vs spec-driven pipeline](/static/img/vibe-vs-spec-workflow.svg){: width="1000" height="560"}
 
 Vibe coding is one tight loop with a single checkpoint at the end: "does it look right?". Spec-driven development is a pipeline with a review gate between each step. You catch a wrong assumption in a one-page spec instead of in 2,000 lines of generated code.
 
@@ -63,7 +63,7 @@ Vibe coding is one tight loop with a single checkpoint at the end: "does it look
 
 ## When to use which
 
-![When each approach fits](/static/img/vibe-vs-spec-when.svg)
+![When each approach fits](/static/img/vibe-vs-spec-when.svg){: width="1000" height="600"}
 
 A simple way to decide is to ask two questions: **how long will this code live**, and **how bad is it if it breaks**?
 
@@ -85,7 +85,7 @@ You can do SDD with nothing more than a markdown file and an agent, but some too
   ```
 
 - **[Kiro](https://kiro.dev/)**: an IDE from AWS built around specs. It generates `requirements.md`, `design.md`, and `tasks.md` for each feature, and has hooks that run agents when files change.
-- **Claude Code / OpenCode plan modes**: both agents have a read-only planning mode (`Shift+Tab` in Claude Code, `Tab` in OpenCode) that's a lightweight way to agree on a plan before any code changes. Combine that with a `CLAUDE.md` or `AGENTS.md` file for project rules. See my [OpenCode vs Claude Code comparison](/linux/macos/cli/ai/opencode-vs-claude-code/) for more on both.
+- **Claude Code / OpenCode plan modes**: both agents have a read-only planning mode (`Shift+Tab` in Claude Code, `Tab` in OpenCode) that's a lightweight way to agree on a plan before any code changes. Combine that with a `CLAUDE.md` or `AGENTS.md` file for project rules. See my [OpenCode vs Claude Code comparison]({% post_url 2026-10-21-opencode-vs-claude-code %}) for more on both.
 
 ## A minimal spec template
 

@@ -1,8 +1,11 @@
 ---
 layout: post
-title: Ubuntu Customizations CLI
+title: "Ubuntu Customizations from the Command Line (gsettings)"
+description: "Tweak Ubuntu from the terminal with gsettings: minimize on click in the dock, dock transparency, full path in Files, and a wallpaper slideshow script."
 date: 2021-10-04
-categories: ubuntu
+categories: linux
+redirect_from:
+  - /ubuntu/Ubuntu-Customizations-CLI/
 ---
 
 ## How do I enable 'minimize on click' on Ubuntu dock

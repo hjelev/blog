@@ -1,8 +1,15 @@
 title: blog.masoko.net
-description: My Blog and Notes
+description: Notes on Linux, CLI tools, Raspberry Pi and home-lab DIY, written down so I can redo them when they break.
 author: Hristo Jelev
 logo: /static/img/avatar2.jpg
 github: https://github.com/hjelev
+social:
+  name: Hristo Jelev
+  links:
+    - https://github.com/hjelev
+# Paste the content value of Google Search Console's HTML-tag verification here
+# webmaster_verifications:
+#   google: XXXXXXXXXXXXXXXX
 about: blog.masoko.net
 plugins:
   - jekyll-feed

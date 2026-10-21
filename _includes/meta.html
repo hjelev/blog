@@ -3,9 +3,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="/static/img/favicon.ico" />
-        <title>{{ page.title }} - {{ site.title }}</title>
+        {%- if page.url == "/" %}
+        <title>Masoko's Blog: Linux, CLI Tools, Raspberry Pi and Homelab Notes</title>
+        {%- else %}
+        <title>{{ page.seo_title | default: page.title }} | Masoko</title>
+        {%- endif %}
         <meta name="author" content="{{ site.author }}" />
-        <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
+        {%- if page.noindex %}
+        <meta name="robots" content="noindex, follow">
+        {%- endif %}
 
         {%- comment -%}
           Canonical, description, Open Graph, Twitter card and JSON-LD all come from

@@ -1,12 +1,15 @@
 ---
 layout: post
-title: Live Webcam Feeds
+title: "Live Webcam Feeds: Sites With Free Public Webcams"
+description: "Websites that stream free live webcam feeds from around the world, including EarthCam, Lookr and weather webcams across Europe."
 date: 2018-01-19
 categories: webcams
+noindex: true
+sitemap: false
 ---
 
 ## Collection of sites offering free live webcamera feeds from around the world
-![Public Ip Cameras](/static/img/ip-camera.png)
+![Public Ip Cameras](/static/img/ip-camera.png){: width="399" height="326"}
 
 - [webcamhopper.com](http://www.webcamhopper.com/){:target="_blank"} - Live Webcams from Around the World
 

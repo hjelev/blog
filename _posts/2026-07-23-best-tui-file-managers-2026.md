@@ -1,5 +1,6 @@
 ---
 title: "Best TUI File Managers in 2026"
+description: "The best terminal file managers in 2026 compared: Shell Buddy, Yazi, ranger, nnn, lf, superfile, Walk and Midnight Commander, and which to pick."
 date: 2026-07-23
 categories: [linux, macos, cli]
 ---
@@ -23,7 +24,7 @@ A few things that stand out from its feature list:
 - **CLI list/tree modes** — `sb -l`, `sb -t`, and `sb -l2` give consistent column output outside the interactive TUI, and `sb <file>` opens a file directly with the best available viewer.
 - **Themeable** — ten-plus built-in themes (Nord, Dracula, Gruvbox, Rosé Pine, Everforest, and others), with Nerd Fonts and file-name colors toggled live from a themes menu.
 
-Since it uses Nerd Font glyphs for its icons and theme indicators, it's worth installing one before you try it — see [our Nerd Fonts install guide](/linux/macos/windows/cli/nerd-fonts-what-why-how-to-install/) if you haven't set one up yet.
+Since it uses Nerd Font glyphs for its icons and theme indicators, it's worth installing one before you try it — see [our Nerd Fonts install guide]({% post_url 2026-07-23-nerd-fonts-what-why-how-to-install %}) if you haven't set one up yet.
 
 Install it with Cargo:
 
@@ -88,4 +89,4 @@ If you're not sure where to start:
 - Just want a faster `cd`/`ls` with fuzzy search rather than a full file manager? Try **Walk** (`lk`).
 - Want the tool that's been stable since before most of the others existed? Try **Midnight Commander**.
 
-Whichever you pick, installing a [Nerd Font](/linux/macos/windows/cli/nerd-fonts-what-why-how-to-install/) first will make sure icons and status glyphs render correctly instead of showing as boxes.
+Whichever you pick, installing a [Nerd Font]({% post_url 2026-07-23-nerd-fonts-what-why-how-to-install %}) first will make sure icons and status glyphs render correctly instead of showing as boxes.

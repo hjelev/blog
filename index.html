@@ -13,11 +13,11 @@ title: Masoko's Blog and Notes
   <li class="postlist__item">
     <div class="postlist__date">{{ post.date | date: "%Y-%m-%d" }}</div>
     <h2 class="postlist__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    <p class="postlist__excerpt">{{ post.content | strip_html | truncatewords: 40 }}</p>
+    <p class="postlist__excerpt">{{ post.description | default: post.content | strip_html | truncatewords: 40 }}</p>
     {%- if post.categories.size > 0 %}
     <div class="postlist__cats">
       {%- for category in post.categories %}
-      <a class="tag" href="{{ site.baseurl }}/category/{{ category }}">{{ category }}</a>
+      <a class="tag" href="{{ site.baseurl }}/category/{{ category }}/">{{ category }}</a>
       {%- endfor %}
     </div>
     {%- endif %}

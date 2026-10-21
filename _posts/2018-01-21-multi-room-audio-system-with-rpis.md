@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Build a Cheap Multi-Room Audio System
+title: "Build a Cheap Multi-Room Audio System with Raspberry Pi"
+description: "Build a synchronized multi-room audio system with Raspberry Pi Zero W players, cheap USB sound cards, Squeezelite and Logitech Media Server."
+seo_title: "Cheap Multi-Room Audio with Raspberry Pi and Squeezelite"
 date: 2018-01-21
 categories: raspberry-pi
 ---
@@ -20,7 +22,7 @@ The parts we need:
 I have started my multi-room audio system with Logitech Multimedia 2.1 Speakers Z213 as they are very cheap and offer decent sound for their price - around $25. Later I have picked Logitech Z333.
 7. **USB hub** and **USB network card** - wi-fi or wired depending on your need - (You'll need this if you don't use pi zero w)
 
-![Raspberry pi 0 w](/static/img/RaspberryPi-Zero-W-Top_128x.png)
+![Raspberry pi 0 w](/static/img/RaspberryPi-Zero-W-Top_128x.png){: width="128" height="128"}
 
 These are the parts we need to build one of ours network music players.
 
@@ -33,7 +35,7 @@ Go to <a href="https://www.mysqueezebox.com/download" target="_blank">Logitech M
 
 <a href="http://wiki.slimdevices.com/index.php/Logitech_Media_Server#Installing_to_a_Computer_or_Laptop" target="_blank">Here you can find instructions for installing LMS on different operation systems</a>
 
-![Logitec Media Server](/static/img/logitech-logo.png)
+![Logitec Media Server](/static/img/logitech-logo.png){: width="66" height="60"}
 
 Preparing the raspberry pi SD card:
 ----------
@@ -167,6 +169,6 @@ How can we Control the system?
 
 The easiest way is to use the web interface located at http://lms_server_ip:9000 (you can change that port to 80 from LMS configuration)
 
- ![Logitec Media Server web interface](/static/img/Logitech-Media-Server-500x366.png)
+ ![Logitec Media Server web interface](/static/img/Logitech-Media-Server-500x366.png){: width="500" height="366"}
 
 You can also use a phone application to play your music. The best I found for android phones is [squeezer](https://play.google.com/store/apps/details?id=uk.org.ngo.squeezer){:target="_blank"}. It automatically discovers my LSM when on the same network and allows me to control most of the functions of the server.

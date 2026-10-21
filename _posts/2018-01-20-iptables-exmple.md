@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Basic IPTables Tutorial
+title: "Basic iptables Tutorial: Lock Down a Linux Server"
+description: "Step-by-step iptables setup: default-deny rules, allowing SSH, HTTP/HTTPS, DNS and NTP, restricting DNS to trusted IPs, and loading the rules on boot."
 date: 2018-01-20
 categories: linux
 ---

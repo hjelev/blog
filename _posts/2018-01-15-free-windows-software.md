@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Collection of free software for Windows"
+title: "Free Software for Windows: Tools I Install on Every PC"
+description: "A list of free Windows tools I keep coming back to: WinSCP, KiTTY, 7-Zip, Everything, Rufus, Notepad++, NSSM and more, with what each one is for."
 categories: windows 
 ---
 

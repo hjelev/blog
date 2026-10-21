@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Setting Up WireGuard VPN on MikroTik (Multi-Platform Remote Access Guide)
+description: "Set up a WireGuard VPN server on a MikroTik router (RouterOS 7) and connect Android and Windows 11 clients, plus a fix for the 0 B received problem."
+seo_title: "WireGuard VPN on MikroTik: Remote Access Setup Guide"
 date: 2026-06-25
 categories: linux
 ---

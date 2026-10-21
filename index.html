@@ -2,12 +2,18 @@
 layout: default
 title: Masoko's Blog and Notes
 ---
+<div class="home-intro">
+  <p class="home-intro__cmd"><span class="home-intro__prompt">$</span> cat about.txt</p>
+  <p class="home-intro__text">Notes on Linux, CLI tools, Raspberry Pi and home-lab DIY, written down so I can redo them when they break.</p>
+  <p class="home-intro__stats">{{ site.posts.size }} posts · {{ site.categories.size }} categories · <a href="/categories/">browse all</a></p>
+</div>
+
 <ul class="postlist">
   {%- for post in paginator.posts %}
   <li class="postlist__item">
     <div class="postlist__date">{{ post.date | date: "%Y-%m-%d" }}</div>
     <h2 class="postlist__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    <p class="postlist__excerpt">{{ post.content | strip_html | truncatewords: 28 }}</p>
+    <p class="postlist__excerpt">{{ post.content | strip_html | truncatewords: 40 }}</p>
     {%- if post.categories.size > 0 %}
     <div class="postlist__cats">
       {%- for category in post.categories %}

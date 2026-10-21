@@ -17,7 +17,6 @@ url: "https://blog.masoko.net"
 allowsearch: true
 
 disqus_shortname: my-blog-notes
-google_analytics: UA-131668455-1
 
 
 enableTags: true
@@ -28,3 +27,15 @@ per_page: 20
 paginate_path: "/page:num/"
 markdown: kramdown
 permalink: /:categories/:title/
+
+# Default social-preview card (used by jekyll-seo-tag for og:image / twitter:image)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /static/img/og-card.png
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

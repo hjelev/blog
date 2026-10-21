@@ -5,8 +5,6 @@ date: 2018-01-21
 categories: raspberry-pi
 ---
 
-# How to build cheap Multi-Room Audio System
-
 This build will use raspberry pis for network players and logitec media server that can be run on windows or linux.
 ---------------
 Logitec Media Server <a href="https://www.mysqueezebox.com/download" target="_blank">LMS</a> is a media server made for the logitec squeezebox Network music players. We will use this software for our project and will build squeezebox players using a raspberry pi, USB sound card and some multimedia speakers.

@@ -4,8 +4,6 @@ date: 2026-07-23
 categories: [linux, macos, cli]
 ---
 
-# Best TUI File Managers in 2026
-
 Terminal file managers hit a sweet spot for a lot of people: faster than clicking through a GUI file browser, but with a real interface instead of typing `cd` and `ls` over and over. Below are some of the more actively-discussed options going into 2026, including a newer entry worth knowing about — **Shell Buddy**.
 
 

@@ -5,7 +5,7 @@ date: 2021-12-01
 categories: ubuntu
 
 ---
-# Github repos for some usefull CLI tools
+## Github repos for some usefull CLI tools
 ## fd
 [https://github.com/sharkdp/fd/](https://github.com/sharkdp/fd/){:target="_blank"}
 ![fd screenshot](/static/img/fd-screenshot.png)  

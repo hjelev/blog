@@ -24,14 +24,13 @@
       {%- include navigation.html -%}
     </nav>
 
-    {%- include social_links.html -%}
-
     <div class="sidebar__foot">
       <button id="theme-toggle" class="iconbtn theme-toggle" type="button" aria-label="Switch theme">
         <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"></use></svg>
         <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"></use></svg>
         <span class="theme-toggle__label">theme</span>
       </button>
+      {%- include social_links.html -%}
       <a class="iconbtn" href="/feed.xml" aria-label="RSS feed">
         <svg class="icon" aria-hidden="true"><use href="#i-rss"></use></svg>
       </a>

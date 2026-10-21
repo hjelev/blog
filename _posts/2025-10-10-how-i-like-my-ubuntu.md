@@ -5,7 +5,7 @@ date: 2025-10-10
 categories: linux
 ---
 
-<h1>Widgets and Apps I install immediately after Ubuntu</h1>
+<h2>Widgets and Apps I install immediately after Ubuntu</h2>
 
 <h2>Extentions:</h2>
 

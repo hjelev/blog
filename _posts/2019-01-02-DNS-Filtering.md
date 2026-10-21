@@ -4,7 +4,7 @@ title: DNS Filtering
 date:   2019-01-02
 categories: windows
 ---
-# Block ads and protect your network from malware by changing your DNS provider.
+## Block ads and protect your network from malware by changing your DNS provider.
 
 It is very easy to block more than 90% of the ads you see when you browse the web or use applications on your phone. All you have to do is use filtered dns service.
 There are coule of them lately and they all offer slightly different services. Some of them block advertisement and malware-serving domains other also offer "Family protection". 

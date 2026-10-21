@@ -25,7 +25,16 @@
       root.setAttribute('data-theme', next);
       try { localStorage.setItem('theme', next); } catch (e) {}
       sync();
+      reloadComments();
     });
+  }
+
+  // Disqus picks light/dark from the page's text colour when it loads,
+  // so reload it after a theme change to keep the comments readable.
+  function reloadComments() {
+    if (window.DISQUS && document.getElementById('disqus_thread')) {
+      window.DISQUS.reset({ reload: true });
+    }
   }
 
   // Follow system changes when the user hasn't made an explicit choice.
@@ -33,7 +42,7 @@
   (mq.addEventListener ? mq.addEventListener.bind(mq, 'change') : mq.addListener.bind(mq))(function () {
     var stored;
     try { stored = localStorage.getItem('theme'); } catch (e) {}
-    if (stored !== 'dark' && stored !== 'light') sync();
+    if (stored !== 'dark' && stored !== 'light') { sync(); reloadComments(); }
   });
 
   // Mobile navigation drawer

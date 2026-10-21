@@ -4,7 +4,7 @@ title: How to Host Multiple Python Apps on the Same Host With Nginx
 date:   2018-01-21
 categories: linux
 ---
-# Configure NGINX as a reverse proxy
+## Configure NGINX as a reverse proxy
 
 ![NGINX](/static/img/nginx-logo.svg)
 

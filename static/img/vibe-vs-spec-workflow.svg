@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="15">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6b7180"/>
+    </marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e0603d"/>
+    </marker>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#3b7be0"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="560" rx="12" fill="#ffffff" stroke="#e3e5ea"/>
+
+  <!-- Vibe coding loop -->
+  <text x="40" y="44" font-size="20" font-weight="700" fill="#1b1d22">Vibe coding</text>
+  <text x="40" y="66" fill="#6b7180" font-size="14">one tight loop: prompt, look, react</text>
+
+  <g text-anchor="middle">
+    <rect x="40" y="100" width="170" height="60" rx="30" fill="#fdece6" stroke="#f0b4a1"/>
+    <text x="125" y="135" fill="#1b1d22">Idea / prompt</text>
+    <rect x="290" y="100" width="170" height="60" rx="8" fill="#fdece6" stroke="#f0b4a1"/>
+    <text x="375" y="135" fill="#1b1d22">AI writes code</text>
+    <rect x="540" y="100" width="170" height="60" rx="8" fill="#fdece6" stroke="#f0b4a1"/>
+    <text x="625" y="125" fill="#1b1d22">Run it,</text>
+    <text x="625" y="145" fill="#1b1d22">see what happens</text>
+    <rect x="790" y="100" width="170" height="60" rx="30" fill="#fff6dd" stroke="#e8cf86"/>
+    <text x="875" y="125" fill="#1b1d22">"Looks good"</text>
+    <text x="875" y="145" fill="#1b1d22">→ ship</text>
+  </g>
+  <g stroke="#e0603d" stroke-width="2" fill="none" marker-end="url(#o)">
+    <path d="M210 130 L286 130"/>
+    <path d="M460 130 L536 130"/>
+    <path d="M710 130 L786 130"/>
+    <path d="M625 160 C625 230, 125 230, 125 164"/>
+  </g>
+  <text x="375" y="242" fill="#e0603d" font-size="14" text-anchor="middle">"still broken, try again" / "now add…"</text>
+
+  <line x1="40" y1="262" x2="960" y2="262" stroke="#e3e5ea" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Spec-driven pipeline -->
+  <text x="40" y="304" font-size="20" font-weight="700" fill="#1b1d22">Spec-driven development</text>
+  <text x="40" y="326" fill="#6b7180" font-size="14">intent is written down first; the spec is the source of truth</text>
+
+  <g text-anchor="middle" font-size="14">
+    <rect x="40" y="356" width="140" height="64" rx="8" fill="#e8f0fd" stroke="#a9c4f0"/>
+    <text x="110" y="382" fill="#1b1d22" font-weight="600">Specify</text>
+    <text x="110" y="402" fill="#4a4f5a" font-size="12">what &amp; why</text>
+    <rect x="225" y="356" width="140" height="64" rx="8" fill="#e8f0fd" stroke="#a9c4f0"/>
+    <text x="295" y="382" fill="#1b1d22" font-weight="600">Plan</text>
+    <text x="295" y="402" fill="#4a4f5a" font-size="12">stack, design</text>
+    <rect x="410" y="356" width="140" height="64" rx="8" fill="#e8f0fd" stroke="#a9c4f0"/>
+    <text x="480" y="382" fill="#1b1d22" font-weight="600">Tasks</text>
+    <text x="480" y="402" fill="#4a4f5a" font-size="12">small, testable</text>
+    <rect x="595" y="356" width="140" height="64" rx="8" fill="#e8f0fd" stroke="#a9c4f0"/>
+    <text x="665" y="382" fill="#1b1d22" font-weight="600">Implement</text>
+    <text x="665" y="402" fill="#4a4f5a" font-size="12">AI writes code</text>
+    <rect x="780" y="356" width="180" height="64" rx="8" fill="#e6f6ec" stroke="#9ed3b0"/>
+    <text x="870" y="382" fill="#1b1d22" font-weight="600">Verify vs spec</text>
+    <text x="870" y="402" fill="#4a4f5a" font-size="12">tests, acceptance criteria</text>
+  </g>
+  <g stroke="#3b7be0" stroke-width="2" fill="none" marker-end="url(#b)">
+    <path d="M180 388 L221 388"/>
+    <path d="M365 388 L406 388"/>
+    <path d="M550 388 L591 388"/>
+    <path d="M735 388 L776 388"/>
+  </g>
+  <g stroke="#6b7180" stroke-width="1.6" fill="none" marker-end="url(#a)" stroke-dasharray="5 4">
+    <path d="M870 420 C870 480, 110 480, 110 424"/>
+  </g>
+  <text x="490" y="514" fill="#4a4f5a" font-size="14" text-anchor="middle">requirements change? update the spec, then regenerate the plan and tasks</text>
+  <text x="40" y="546" fill="#6b7180" font-size="13">Human review gates sit between every step on the bottom row, not just at the end.</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="vibe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#c13584"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <!-- Vibe side: loose, chat-like -->
+  <rect x="40" y="40" width="420" height="280" rx="12" fill="url(#vibe)" opacity="0.14"/>
+  <text x="250" y="88" fill="#ff9a7a" font-size="30" font-weight="700" text-anchor="middle">vibe coding</text>
+  <rect x="80" y="118" width="250" height="38" rx="18" fill="#2a2d36"/>
+  <text x="98" y="143" fill="#e8e8e8" font-size="15">make it look cooler ✨</text>
+  <rect x="170" y="168" width="250" height="38" rx="18" fill="#3a2530"/>
+  <text x="188" y="193" fill="#ffb59c" font-size="15">done! changed 14 files</text>
+  <rect x="80" y="218" width="250" height="38" rx="18" fill="#2a2d36"/>
+  <text x="98" y="243" fill="#e8e8e8" font-size="15">now it's broken, fix</text>
+  <rect x="170" y="268" width="250" height="38" rx="18" fill="#3a2530"/>
+  <text x="188" y="293" fill="#ffb59c" font-size="15">fixed! changed 9 files</text>
+
+  <circle cx="500" cy="180" r="36" fill="#262a33" stroke="#3a3f4b"/>
+  <text x="500" y="189" fill="#ffffff" font-size="24" font-weight="700" text-anchor="middle">vs</text>
+
+  <!-- Spec side: structured documents -->
+  <rect x="540" y="40" width="420" height="280" rx="12" fill="#5c9cf5" opacity="0.12"/>
+  <text x="750" y="88" fill="#8bb8ff" font-size="30" font-weight="700" text-anchor="middle">spec-driven</text>
+  <g font-size="14">
+    <rect x="590" y="116" width="320" height="40" rx="6" fill="#1c2230" stroke="#34507a"/>
+    <text x="608" y="141" fill="#8bb8ff">1</text><text x="632" y="141" fill="#e8e8e8">spec.md</text><text x="890" y="141" fill="#4ec27a" text-anchor="end">✓</text>
+    <rect x="590" y="164" width="320" height="40" rx="6" fill="#1c2230" stroke="#34507a"/>
+    <text x="608" y="189" fill="#8bb8ff">2</text><text x="632" y="189" fill="#e8e8e8">plan.md</text><text x="890" y="189" fill="#4ec27a" text-anchor="end">✓</text>
+    <rect x="590" y="212" width="320" height="40" rx="6" fill="#1c2230" stroke="#34507a"/>
+    <text x="608" y="237" fill="#8bb8ff">3</text><text x="632" y="237" fill="#e8e8e8">tasks.md</text><text x="890" y="237" fill="#4ec27a" text-anchor="end">✓</text>
+    <rect x="590" y="260" width="320" height="40" rx="6" fill="#1c2230" stroke="#34507a"/>
+    <text x="608" y="285" fill="#8bb8ff">4</text><text x="632" y="285" fill="#e8e8e8">implement</text><text x="890" y="285" fill="#febc2e" text-anchor="end">…</text>
+  </g>
+</svg>

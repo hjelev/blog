@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#4a4f5a"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="600" rx="12" fill="#ffffff" stroke="#e3e5ea"/>
+  <text x="500" y="40" font-size="20" font-weight="700" fill="#1b1d22" text-anchor="middle">When does each approach fit?</text>
+
+  <!-- quadrants -->
+  <rect x="140" y="70" width="400" height="230" fill="#fdece6"/>
+  <rect x="540" y="70" width="400" height="230" fill="#e8f0fd"/>
+  <rect x="140" y="300" width="400" height="230" fill="#fdece6" opacity="0.55"/>
+  <rect x="540" y="300" width="400" height="230" fill="#f3f4f7"/>
+
+  <text x="340" y="104" fill="#c0492a" font-weight="700" text-anchor="middle">Vibe it, but keep a safety net</text>
+  <text x="740" y="104" fill="#2a63c4" font-weight="700" text-anchor="middle">Spec-driven sweet spot</text>
+  <text x="340" y="334" fill="#c0492a" font-weight="700" text-anchor="middle">Vibe coding sweet spot</text>
+  <text x="740" y="334" fill="#3a3f4b" font-weight="700" text-anchor="middle">Light spec (a few bullet points)</text>
+
+  <g fill="#1b1d22" font-size="13">
+    <circle cx="210" cy="160" r="6" fill="#e0603d"/><text x="222" y="165">Hackathon demo for a client</text>
+    <circle cx="250" cy="210" r="6" fill="#e0603d"/><text x="262" y="215">Internal admin page</text>
+
+    <circle cx="620" cy="150" r="6" fill="#3b7be0"/><text x="632" y="155">Payment / auth / billing</text>
+    <circle cx="700" cy="200" r="6" fill="#3b7be0"/><text x="712" y="205">Team project, many contributors</text>
+    <circle cx="640" cy="250" r="6" fill="#3b7be0"/><text x="652" y="255">Long-lived service or API</text>
+
+    <circle cx="200" cy="390" r="6" fill="#e0603d"/><text x="212" y="395">Weekend side project</text>
+    <circle cx="260" cy="440" r="6" fill="#e0603d"/><text x="272" y="445">Throwaway script / one-off tool</text>
+    <circle cx="190" cy="490" r="6" fill="#e0603d"/><text x="202" y="495">UI prototype to test an idea</text>
+
+    <circle cx="610" cy="400" r="6" fill="#6b7180"/><text x="622" y="405">Personal tool you'll keep for years</text>
+    <circle cx="700" cy="460" r="6" fill="#6b7180"/><text x="712" y="465">Home-lab automation</text>
+  </g>
+
+  <!-- axes -->
+  <g stroke="#4a4f5a" stroke-width="2" fill="none" marker-end="url(#a)">
+    <path d="M140 530 L948 530"/>
+    <path d="M140 530 L140 62"/>
+  </g>
+  <text x="540" y="566" fill="#1b1d22" font-weight="600" text-anchor="middle">Lifespan &amp; complexity of the code  →</text>
+  <text x="96" y="300" fill="#1b1d22" font-weight="600" text-anchor="middle" transform="rotate(-90 96 300)">Visibility to others / cost of a bug  →</text>
+</svg>

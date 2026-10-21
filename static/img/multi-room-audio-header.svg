@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Multi-room audio on a budget</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">Raspberry Pi players kept in sync by one media server</text>
+  <rect x="60" y="190" width="200" height="90" rx="8" fill="#2a2d36" stroke="#ff7a59" stroke-width="2"/>
+  <text x="160.0" y="233.0" fill="#ffffff" font-size="20" text-anchor="middle" font-weight="700">LMS</text>
+  <text x="160.0" y="255.0" fill="#9aa3b2" font-size="13" text-anchor="middle">Logitech Media Server</text>
+  <line x1="264" y1="235" x2="446" y2="170" stroke="#4ec27a" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <path d="M446.0 170.0 L439.0 177.1 L436.1 168.9 Z" fill="#4ec27a"/>
+  <g transform="translate(456 148) scale(0.3)">
+  <rect width="150" height="100" rx="8" fill="#2f8a57"/>
+  <rect x="56" y="30" width="40" height="40" rx="3" fill="#1d2027"/>
+  <circle cx="12.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="18.6" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="25.2" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="31.799999999999997" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="38.4" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="45.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="51.599999999999994" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="58.199999999999996" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="64.8" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="71.4" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="78.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="84.6" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="91.19999999999999" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="97.8" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="104.39999999999999" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="111.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="117.6" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="124.19999999999999" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="130.8" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="137.39999999999998" cy="10" r="2" fill="#febc2e"/>
+  <rect x="112" y="60" width="38" height="30" rx="2" fill="#c0c6d0"/>
+  <rect x="10" y="64" width="34" height="26" rx="2" fill="#c0c6d0"/>
+  </g>
+  <rect x="520" y="142" width="220" height="56" rx="8" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
+  <text x="630.0" y="166.25" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">squeezelite</text>
+  <text x="630.0" y="188.25" fill="#9aa3b2" font-size="13" text-anchor="middle">Pi Zero W + USB DAC</text>
+  <line x1="744" y1="170" x2="790" y2="170" stroke="#4ec27a" stroke-width="2.5"/>
+  <path d="M790.0 170.0 L781.0 174.3 L781.0 165.7 Z" fill="#4ec27a"/>
+  <rect x="800" y="145" width="34" height="50" rx="5" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
+  <circle cx="817" cy="177" r="10" fill="none" stroke="#4ec27a" stroke-width="2.5"/>
+  <circle cx="817" cy="157" r="4" fill="#4ec27a"/>
+  <text x="850" y="175" fill="#ffffff" font-size="14" text-anchor="start">living room</text>
+  <line x1="264" y1="235" x2="446" y2="236" stroke="#5c9cf5" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <path d="M446.0 236.0 L437.0 240.3 L437.0 231.6 Z" fill="#5c9cf5"/>
+  <g transform="translate(456 214) scale(0.3)">
+  <rect width="150" height="100" rx="8" fill="#2f8a57"/>
+  <rect x="56" y="30" width="40" height="40" rx="3" fill="#1d2027"/>
+  <circle cx="12.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="18.6" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="25.2" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="31.799999999999997" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="38.4" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="45.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="51.599999999999994" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="58.199999999999996" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="64.8" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="71.4" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="78.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="84.6" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="91.19999999999999" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="97.8" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="104.39999999999999" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="111.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="117.6" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="124.19999999999999" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="130.8" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="137.39999999999998" cy="10" r="2" fill="#febc2e"/>
+  <rect x="112" y="60" width="38" height="30" rx="2" fill="#c0c6d0"/>
+  <rect x="10" y="64" width="34" height="26" rx="2" fill="#c0c6d0"/>
+  </g>
+  <rect x="520" y="208" width="220" height="56" rx="8" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
+  <text x="630.0" y="232.25" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">squeezelite</text>
+  <text x="630.0" y="254.25" fill="#9aa3b2" font-size="13" text-anchor="middle">Pi Zero W + USB DAC</text>
+  <line x1="744" y1="236" x2="790" y2="236" stroke="#5c9cf5" stroke-width="2.5"/>
+  <path d="M790.0 236.0 L781.0 240.3 L781.0 231.7 Z" fill="#5c9cf5"/>
+  <rect x="800" y="211" width="34" height="50" rx="5" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
+  <circle cx="817" cy="243" r="10" fill="none" stroke="#5c9cf5" stroke-width="2.5"/>
+  <circle cx="817" cy="223" r="4" fill="#5c9cf5"/>
+  <text x="850" y="241" fill="#ffffff" font-size="14" text-anchor="start">kitchen</text>
+  <line x1="264" y1="235" x2="446" y2="302" stroke="#b48ead" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <path d="M446.0 302.0 L436.0 303.0 L439.1 294.8 Z" fill="#b48ead"/>
+  <g transform="translate(456 280) scale(0.3)">
+  <rect width="150" height="100" rx="8" fill="#2f8a57"/>
+  <rect x="56" y="30" width="40" height="40" rx="3" fill="#1d2027"/>
+  <circle cx="12.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="18.6" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="25.2" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="31.799999999999997" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="38.4" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="45.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="51.599999999999994" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="58.199999999999996" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="64.8" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="71.4" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="78.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="84.6" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="91.19999999999999" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="97.8" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="104.39999999999999" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="111.0" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="117.6" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="124.19999999999999" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="130.8" cy="10" r="2" fill="#febc2e"/>
+  <circle cx="137.39999999999998" cy="10" r="2" fill="#febc2e"/>
+  <rect x="112" y="60" width="38" height="30" rx="2" fill="#c0c6d0"/>
+  <rect x="10" y="64" width="34" height="26" rx="2" fill="#c0c6d0"/>
+  </g>
+  <rect x="520" y="274" width="220" height="56" rx="8" fill="#2a2d36" stroke="#b48ead" stroke-width="2"/>
+  <text x="630.0" y="298.25" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">squeezelite</text>
+  <text x="630.0" y="320.25" fill="#9aa3b2" font-size="13" text-anchor="middle">Pi Zero W + USB DAC</text>
+  <line x1="744" y1="302" x2="790" y2="302" stroke="#b48ead" stroke-width="2.5"/>
+  <path d="M790.0 302.0 L781.0 306.3 L781.0 297.7 Z" fill="#b48ead"/>
+  <rect x="800" y="277" width="34" height="50" rx="5" fill="#2a2d36" stroke="#b48ead" stroke-width="2"/>
+  <circle cx="817" cy="309" r="10" fill="none" stroke="#b48ead" stroke-width="2.5"/>
+  <circle cx="817" cy="289" r="4" fill="#b48ead"/>
+  <text x="850" y="307" fill="#ffffff" font-size="14" text-anchor="start">bedroom</text>
+  <text x="355" y="330" fill="#9aa3b2" font-size="13" text-anchor="middle">in sync, over Wi-Fi</text>
+
+</svg>

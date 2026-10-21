@@ -7,6 +7,8 @@ date: 2018-01-21
 categories: raspberry-pi
 ---
 
+![Logitech Media Server streaming in sync to Raspberry Pi Zero W Squeezelite players and speakers in three rooms](/static/img/multi-room-audio-header.svg){: width="1000" height="360"}
+
 This build will use raspberry pis for network players and logitec media server that can be run on windows or linux.
 ---------------
 Logitec Media Server <a href="https://www.mysqueezebox.com/download" target="_blank">LMS</a> is a media server made for the logitec squeezebox Network music players. We will use this software for our project and will build squeezebox players using a raspberry pi, USB sound card and some multimedia speakers.

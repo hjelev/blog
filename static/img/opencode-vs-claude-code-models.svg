@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="15">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b919e"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="420" rx="12" fill="#ffffff" stroke="#e3e5ea"/>
+
+  <!-- left: OpenCode -->
+  <text x="250" y="42" font-size="20" font-weight="700" fill="#1b1d22" text-anchor="middle">OpenCode</text>
+  <rect x="150" y="66" width="200" height="56" rx="8" fill="#1b1d22"/>
+  <text x="250" y="92" fill="#ffffff" text-anchor="middle" font-weight="600">TUI · Desktop · IDE</text>
+  <text x="250" y="111" fill="#a7adb9" text-anchor="middle" font-size="13">client / server</text>
+
+  <g stroke="#8b919e" stroke-width="1.6" fill="none" marker-end="url(#a)">
+    <path d="M250 122 L70 230"/><path d="M250 122 L190 230"/><path d="M250 122 L310 230"/><path d="M250 122 L430 230"/>
+  </g>
+  <g font-size="13" text-anchor="middle">
+    <rect x="20" y="234" width="100" height="44" rx="6" fill="#f3f4f7" stroke="#d5d8df"/><text x="70" y="261" fill="#1b1d22">Anthropic</text>
+    <rect x="140" y="234" width="100" height="44" rx="6" fill="#f3f4f7" stroke="#d5d8df"/><text x="190" y="261" fill="#1b1d22">OpenAI</text>
+    <rect x="260" y="234" width="100" height="44" rx="6" fill="#f3f4f7" stroke="#d5d8df"/><text x="310" y="261" fill="#1b1d22">Google · others</text>
+    <rect x="380" y="234" width="100" height="44" rx="6" fill="#f3f4f7" stroke="#d5d8df"/><text x="430" y="261" fill="#1b1d22">Ollama (local)</text>
+  </g>
+  <text x="250" y="320" fill="#4a4f5a" text-anchor="middle">Bring your own key, or use OpenCode's</text>
+  <text x="250" y="342" fill="#4a4f5a" text-anchor="middle">pay-as-you-go model gateway</text>
+
+  <line x1="500" y1="30" x2="500" y2="390" stroke="#e3e5ea" stroke-width="2"/>
+
+  <!-- right: Claude Code -->
+  <text x="750" y="42" font-size="20" font-weight="700" fill="#1b1d22" text-anchor="middle">Claude Code</text>
+  <rect x="610" y="66" width="280" height="56" rx="8" fill="#d97757"/>
+  <text x="750" y="92" fill="#ffffff" text-anchor="middle" font-weight="600">CLI · IDE · Desktop · Web · Mobile</text>
+  <text x="750" y="111" fill="#fbe3da" text-anchor="middle" font-size="13">one engine, many surfaces</text>
+
+  <g stroke="#8b919e" stroke-width="1.6" fill="none" marker-end="url(#a)">
+    <path d="M750 122 L650 230"/><path d="M750 122 L850 230"/>
+  </g>
+  <g font-size="13" text-anchor="middle">
+    <rect x="570" y="234" width="160" height="44" rx="6" fill="#fbeee9" stroke="#efc6b6"/><text x="650" y="261" fill="#1b1d22">Claude subscription</text>
+    <rect x="770" y="234" width="160" height="44" rx="6" fill="#fbeee9" stroke="#efc6b6"/><text x="850" y="261" fill="#1b1d22">API · Bedrock · Vertex</text>
+  </g>
+  <text x="750" y="320" fill="#4a4f5a" text-anchor="middle">Claude models only (Opus, Sonnet, Haiku),</text>
+  <text x="750" y="342" fill="#4a4f5a" text-anchor="middle">tuned end to end for them</text>
+</svg>

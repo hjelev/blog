@@ -7,6 +7,9 @@ date:   2019-01-02
 categories: windows
 last_modified_at: 2026-10-21
 ---
+
+![A filtering DNS server answers normal domains and returns 0.0.0.0 for ad and malware domains](/static/img/dns-filtering-header.svg){: width="1000" height="360"}
+
 ## Block ads and protect your network from malware by changing your DNS provider.
 
 It is very easy to block more than 90% of the ads you see when you browse the web or use applications on your phone. All you have to do is use filtered dns service.
@@ -17,6 +20,8 @@ If you create an account at opendns.com you'll be able to choose from more than 
 The easiest way to change the DNS provider for your home network is to change your router network settings by pointing it to some of the DNS providers listed below.
 
 If you have a phone running Android 9 or newer you can set a custom "Private DNS" server that will be used no matter what network you are connected to so you can block ads even when you are outside of your home network. 
+
+![Comparison of AdGuard DNS, Epsilon Eight, CleanBrowsing, OpenDNS FamilyShield, Quad9, Cloudflare for Families and Pi-hole by ads, malware and adult content blocking](/static/img/dns-filtering-compare.svg){: width="1000" height="520"}
 
 ## Ad Guard
 <https://adguard-dns.io/en/public-dns.html>{:target="_blank"}
@@ -37,8 +42,7 @@ The old 176.103.130.x addresses were retired, so update your router if you still
 
 For Android Private DNS use `dns.adguard-dns.com` (or `family.adguard-dns.com` for the family filter).
 
-{:.text-center}
-![adguard dns](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/AdGuard.svg/220px-AdGuard.svg.png)
+![Android Private DNS settings with the hostname set to dns.adguard-dns.com](/static/img/dns-filtering-android.svg){: width="1000" height="360"}
 
 ## PrivateDNS - EPSILON EIGHT 
 

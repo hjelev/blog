@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">DNS filtering</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">block ads and malware before they load, on every device</text>
+  <rect x="60" y="185" width="170" height="90" rx="8" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
+  <text x="145.0" y="226.95" fill="#ffffff" font-size="17" text-anchor="middle" font-weight="700">your device</text>
+  <text x="145.0" y="248.95" fill="#9aa3b2" font-size="13" text-anchor="middle">phone / PC</text>
+  <line x1="234" y1="230" x2="366" y2="230" stroke="#9aa3b2" stroke-width="2.5"/>
+  <path d="M366.0 230.0 L357.0 234.3 L357.0 225.7 Z" fill="#9aa3b2"/>
+  <text x="300" y="218" fill="#9aa3b2" font-size="13" text-anchor="middle">query</text>
+  <rect x="370" y="175" width="220" height="110" rx="8" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
+  <text x="480.0" y="227.3" fill="#ffffff" font-size="18" text-anchor="middle" font-weight="700">filtering DNS</text>
+  <text x="480.0" y="249.3" fill="#9aa3b2" font-size="13" text-anchor="middle">94.140.14.14</text>
+  <line x1="594" y1="230" x2="646" y2="182" stroke="#4ec27a" stroke-width="2.5"/>
+  <path d="M646.0 182.0 L642.3 191.3 L636.4 184.9 Z" fill="#4ec27a"/>
+  <rect x="650" y="160" width="290" height="44" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="160" width="5" height="44" rx="2" fill="#4ec27a"/>
+  <text x="670" y="180" fill="#ffffff" font-size="15" text-anchor="start" font-weight="700">example.com</text>
+  <text x="670" y="197" fill="#9aa3b2" font-size="13" text-anchor="start">93.184.215.14</text>
+  <path d="M910 182 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="594" y1="230" x2="646" y2="238" stroke="#ff5f57" stroke-width="2.5"/>
+  <path d="M646.0 238.0 L636.4 240.9 L637.8 232.3 Z" fill="#ff5f57"/>
+  <rect x="650" y="216" width="290" height="44" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="216" width="5" height="44" rx="2" fill="#ff5f57"/>
+  <text x="670" y="236" fill="#ffffff" font-size="15" text-anchor="start" font-weight="700">ads.doubleclick.net</text>
+  <text x="670" y="253" fill="#9aa3b2" font-size="13" text-anchor="start">0.0.0.0</text>
+  <path d="M910 231 l13 13 M923 231 l-13 13" stroke="#ff5f57" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="594" y1="230" x2="646" y2="294" stroke="#ff5f57" stroke-width="2.5"/>
+  <path d="M646.0 294.0 L636.9 289.8 L643.7 284.3 Z" fill="#ff5f57"/>
+  <rect x="650" y="272" width="290" height="44" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="272" width="5" height="44" rx="2" fill="#ff5f57"/>
+  <text x="670" y="292" fill="#ffffff" font-size="15" text-anchor="start" font-weight="700">malware-site.xyz</text>
+  <text x="670" y="309" fill="#9aa3b2" font-size="13" text-anchor="start">0.0.0.0</text>
+  <path d="M910 287 l13 13 M923 287 l-13 13" stroke="#ff5f57" stroke-width="3.5" stroke-linecap="round"/>
+
+</svg>

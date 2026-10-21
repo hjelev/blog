@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="520" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">What each service blocks</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">ads, malware and adult content filtering at a glance</text>
+  <text x="640" y="160" fill="#9aa3b2" font-size="15" text-anchor="middle" font-weight="700">ads</text>
+  <text x="750" y="160" fill="#9aa3b2" font-size="15" text-anchor="middle" font-weight="700">malware</text>
+  <text x="860" y="160" fill="#9aa3b2" font-size="15" text-anchor="middle" font-weight="700">adult</text>
+  <rect x="50" y="178" width="900" height="36" rx="6" fill="#1d2027"/>
+  <text x="70" y="202" fill="#ffffff" font-size="16" text-anchor="start" font-weight="700">AdGuard DNS</text>
+  <text x="330" y="202" fill="#9aa3b2" font-size="14" text-anchor="start">94.140.14.14</text>
+  <path d="M631 197 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M741 197 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M851 197 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="242" fill="#ffffff" font-size="16" text-anchor="start" font-weight="700">Epsilon Eight</text>
+  <text x="330" y="242" fill="#9aa3b2" font-size="14" text-anchor="start">138.68.250.168</text>
+  <path d="M631 237 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M741 237 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="853" y1="236" x2="867" y2="236" stroke="#9aa3b2" stroke-width="2.5" opacity="0.5"/>
+  <rect x="50" y="258" width="900" height="36" rx="6" fill="#1d2027"/>
+  <text x="70" y="282" fill="#ffffff" font-size="16" text-anchor="start" font-weight="700">CleanBrowsing</text>
+  <text x="330" y="282" fill="#9aa3b2" font-size="14" text-anchor="start">185.228.168.x</text>
+  <line x1="633" y1="276" x2="647" y2="276" stroke="#9aa3b2" stroke-width="2.5" opacity="0.5"/>
+  <path d="M741 277 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M851 277 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="322" fill="#ffffff" font-size="16" text-anchor="start" font-weight="700">OpenDNS FamilyShield</text>
+  <text x="330" y="322" fill="#9aa3b2" font-size="14" text-anchor="start">208.67.222.123</text>
+  <line x1="633" y1="316" x2="647" y2="316" stroke="#9aa3b2" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="750" cy="316" r="6" fill="none" stroke="#febc2e" stroke-width="2.5"/>
+  <path d="M851 317 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="338" width="900" height="36" rx="6" fill="#1d2027"/>
+  <text x="70" y="362" fill="#ffffff" font-size="16" text-anchor="start" font-weight="700">Quad9</text>
+  <text x="330" y="362" fill="#9aa3b2" font-size="14" text-anchor="start">9.9.9.9</text>
+  <line x1="633" y1="356" x2="647" y2="356" stroke="#9aa3b2" stroke-width="2.5" opacity="0.5"/>
+  <path d="M741 357 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="853" y1="356" x2="867" y2="356" stroke="#9aa3b2" stroke-width="2.5" opacity="0.5"/>
+  <text x="70" y="402" fill="#ffffff" font-size="16" text-anchor="start" font-weight="700">Cloudflare Families</text>
+  <text x="330" y="402" fill="#9aa3b2" font-size="14" text-anchor="start">1.1.1.2 / .3</text>
+  <line x1="633" y1="396" x2="647" y2="396" stroke="#9aa3b2" stroke-width="2.5" opacity="0.5"/>
+  <path d="M741 397 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M851 397 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="418" width="900" height="36" rx="6" fill="#1d2027"/>
+  <text x="70" y="442" fill="#ffffff" font-size="16" text-anchor="start" font-weight="700">Pi-hole (self-hosted)</text>
+  <text x="330" y="442" fill="#9aa3b2" font-size="14" text-anchor="start">your lists</text>
+  <path d="M631 437 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="750" cy="436" r="6" fill="none" stroke="#febc2e" stroke-width="2.5"/>
+  <circle cx="860" cy="436" r="6" fill="none" stroke="#febc2e" stroke-width="2.5"/>
+  <path d="M60 483 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="88" y="488" fill="#9aa3b2" font-size="13" text-anchor="start">blocks</text>
+  <circle cx="184" cy="483" r="6" fill="none" stroke="#febc2e" stroke-width="2.5"/>
+  <text x="198" y="488" fill="#9aa3b2" font-size="13" text-anchor="start">partial / depends on lists</text>
+  <text x="940" y="488" fill="#9aa3b2" font-size="13" text-anchor="end">AdGuard, CleanBrowsing, Cloudflare: filter depends on IP</text>
+
+</svg>

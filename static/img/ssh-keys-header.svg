@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">SSH without a password</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">one key pair, copied once, no more typing</text>
+  <rect x="60" y="140" width="520" height="196" rx="10" fill="#1d2027"/>
+  <rect x="60" y="140" width="520" height="26" rx="10" fill="#2a2d36"/>
+  <rect x="60" y="156" width="520" height="10" rx="0" fill="#2a2d36"/>
+  <circle cx="78" cy="153" r="5" fill="#ff5f57"/>
+  <circle cx="96" cy="153" r="5" fill="#febc2e"/>
+  <circle cx="114" cy="153" r="5" fill="#28c840"/>
+  <text x="78" y="191" font-size="15" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">ssh-keygen -t ed25519</tspan></text>
+  <text x="78" y="216" font-size="15" xml:space="preserve"><tspan fill="#9aa3b2">  ~/.ssh/id_ed25519{,.pub}</tspan></text>
+  <text x="78" y="241" font-size="15" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">ssh-copy-id user@pi</tspan></text>
+  <text x="78" y="266" font-size="15" xml:space="preserve"><tspan fill="#9aa3b2">  Number of key(s) added: 1</tspan></text>
+  <text x="78" y="291" font-size="15" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">ssh user@pi</tspan></text>
+  <text x="78" y="316" font-size="15" xml:space="preserve"><tspan fill="#4ec27a">pi:~$ </tspan><tspan fill="#9aa3b2"># no password asked</tspan></text>
+  <rect x="620" y="150" width="140" height="56" rx="8" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
+  <text x="690.0" y="174.25" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">laptop</text>
+  <text x="690.0" y="196.25" fill="#9aa3b2" font-size="13" text-anchor="middle">private key</text>
+  <rect x="800" y="260" width="140" height="56" rx="8" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
+  <text x="870.0" y="284.25" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">pi / server</text>
+  <text x="870.0" y="306.25" fill="#9aa3b2" font-size="13" text-anchor="middle">authorized_keys</text>
+  <line x1="700" y1="210" x2="840" y2="255" stroke="#febc2e" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <path d="M840.0 255.0 L830.1 256.4 L832.8 248.1 Z" fill="#febc2e"/>
+  <text x="790" y="220" fill="#febc2e" font-size="13" text-anchor="start">id_ed25519.pub</text>
+  <g transform="translate(830 160)"><circle cx="14" cy="14" r="12" fill="none" stroke="#febc2e" stroke-width="5"/><path d="M26 14 h40 m-12 0 v12 m-12 -12 v9" stroke="#febc2e" stroke-width="5" fill="none"/></g>
+
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Ubuntu tweaks with gsettings</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">dock, Files and wallpaper settings from the terminal</text>
+  <rect x="60" y="140" width="720" height="196" rx="10" fill="#1d2027"/>
+  <rect x="60" y="140" width="720" height="26" rx="10" fill="#2a2d36"/>
+  <rect x="60" y="156" width="720" height="10" rx="0" fill="#2a2d36"/>
+  <circle cx="78" cy="153" r="5" fill="#ff5f57"/>
+  <circle cx="96" cy="153" r="5" fill="#febc2e"/>
+  <circle cx="114" cy="153" r="5" fill="#28c840"/>
+  <text x="78" y="191" font-size="14" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">gsettings set </tspan><tspan fill="#5c9cf5">org.gnome.shell.extensions.dash-to-dock</tspan></text>
+  <text x="78" y="216" font-size="14" xml:space="preserve"><tspan fill="#ffffff">    click-action </tspan><tspan fill="#febc2e">'minimize'</tspan></text>
+  <text x="78" y="241" font-size="14" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">gsettings set </tspan><tspan fill="#5c9cf5">… dash-to-dock</tspan><tspan fill="#ffffff"> background-opacity </tspan><tspan fill="#febc2e">0.4</tspan></text>
+  <text x="78" y="266" font-size="14" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">gsettings set </tspan><tspan fill="#5c9cf5">org.gnome.nautilus.preferences</tspan></text>
+  <text x="78" y="291" font-size="14" xml:space="preserve"><tspan fill="#ffffff">    always-use-location-entry </tspan><tspan fill="#febc2e">true</tspan></text>
+  <text x="78" y="316" font-size="14" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">gsettings set </tspan><tspan fill="#ffffff">… background picture-uri </tspan><tspan fill="#febc2e">…</tspan></text>
+  <rect x="820" y="140" width="120" height="196" rx="12" fill="#2a2d36" opacity="0.7"/>
+  <rect x="852" y="156" width="56" height="34" rx="8" fill="#ff7a59"/>
+  <rect x="852" y="200" width="56" height="34" rx="8" fill="#5c9cf5"/>
+  <rect x="852" y="244" width="56" height="34" rx="8" fill="#4ec27a"/>
+  <rect x="852" y="288" width="56" height="34" rx="8" fill="#b48ead"/>
+  <circle cx="838" cy="173" r="3" fill="#ffffff"/>
+
+</svg>

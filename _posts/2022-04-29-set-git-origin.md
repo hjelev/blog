@@ -7,6 +7,8 @@ categories: linux
 last_modified_at: 2026-10-21
 ---
 
+![A git push asking for a username and password, and three ways to store the token](/static/img/git-credentials-header.svg){: width="1000" height="360"}
+
 GitHub no longer accepts your account password for Git over HTTPS. You need a personal access token, and typing it on every `git push` gets old quickly. Here are three ways to make Git remember it.
 
 ## Option 1: put the token in the remote URL

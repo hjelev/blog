@@ -5,6 +5,9 @@ description: "Translate a Flask website with Flask-Babel: configure locales, tag
 date:   2018-02-24
 categories: python
 ---
+
+![Flask-Babel workflow: tag strings, pybabel extract, init, translate, compile](/static/img/flask-babel-header.svg){: width="1000" height="360"}
+
 This article will show you how to translate your Fask site using the python module Babel on a Debian based system running python 3.
 
 ## Install Flask-Babel

@@ -7,6 +7,8 @@ categories: linux
 last_modified_at: 2026-10-21
 ---
 
+![An /etc/fstab line mounting //server/share on /mnt/share using a credentials file](/static/img/samba-fstab-header.svg){: width="1000" height="360"}
+
 To mount a Samba share every time Ubuntu boots, you add a line to `/etc/fstab`. Here's the quick version and a slightly safer one that keeps your password out of fstab.
 
 ## Install cifs-utils

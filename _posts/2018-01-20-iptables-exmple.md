@@ -6,6 +6,8 @@ date: 2018-01-20
 categories: linux
 ---
 
+![iptables default-deny firewall allowing only SSH, HTTP/HTTPS, DNS and NTP through to the server](/static/img/iptables-header.svg){: width="1000" height="360"}
+
 This is the iptables configuration I have used to secure my pihole instance before exposing it publicly.  
 
 This configuration will close all ports, then allow connections on port 80, 443, 123 and allow ping to IP 192.168.0.103 which is hosting my pihole.

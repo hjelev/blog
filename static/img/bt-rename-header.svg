@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Rename a Bluetooth device</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">give a paired device a friendlier name on Ubuntu</text>
+  <g transform="translate(110 238)">
+  <path d="M-14 -16 L22 18 L0 40 V-40 L22 -18 L-14 16" fill="none" stroke="#5c9cf5" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <rect x="170" y="180" width="250" height="76" rx="8" fill="#2a2d36" stroke="#9aa3b2" stroke-width="2"/>
+  <text x="295.0" y="215.3" fill="#ffffff" font-size="18" text-anchor="middle" font-weight="700">S530</text>
+  <text x="295.0" y="237.3" fill="#9aa3b2" font-size="13" text-anchor="middle">00:1A:7D:DA:71:13</text>
+  <line x1="430" y1="218" x2="520" y2="218" stroke="#4ec27a" stroke-width="2.5"/>
+  <path d="M520.0 218.0 L511.0 222.3 L511.0 213.7 Z" fill="#4ec27a"/>
+  <rect x="530" y="180" width="250" height="76" rx="8" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
+  <text x="655.0" y="215.3" fill="#ffffff" font-size="18" text-anchor="middle" font-weight="700">S530 Blue</text>
+  <text x="655.0" y="237.3" fill="#9aa3b2" font-size="13" text-anchor="middle">same device, new alias</text>
+  <text x="60" y="310" font-size="16" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">bt-device --set S530 Alias </tspan><tspan fill="#febc2e">"S530 Blue"</tspan></text>
+
+</svg>

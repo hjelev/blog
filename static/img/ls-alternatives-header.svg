@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Best ls alternatives</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">eza, lsd, colorls and the end of exa</text>
+  <rect x="60" y="140" width="560" height="196" rx="10" fill="#1d2027"/>
+  <rect x="60" y="140" width="560" height="26" rx="10" fill="#2a2d36"/>
+  <rect x="60" y="156" width="560" height="10" rx="0" fill="#2a2d36"/>
+  <circle cx="78" cy="153" r="5" fill="#ff5f57"/>
+  <circle cx="96" cy="153" r="5" fill="#febc2e"/>
+  <circle cx="114" cy="153" r="5" fill="#28c840"/>
+  <text x="78" y="192" font-size="15" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">eza -l --icons --git</tspan></text>
+  <text x="78" y="218" font-size="15" xml:space="preserve"><tspan fill="#9aa3b2">drwxr-xr-x </tspan><tspan fill="#4ec27a">    - </tspan><tspan fill="#9aa3b2">- </tspan><tspan fill="#5c9cf5">▸ </tspan><tspan fill="#5c9cf5">src/</tspan></text>
+  <text x="78" y="244" font-size="15" xml:space="preserve"><tspan fill="#9aa3b2">.rw-r--r-- </tspan><tspan fill="#4ec27a"> 2.1k </tspan><tspan fill="#febc2e">M </tspan><tspan fill="#ffffff">▪ </tspan><tspan fill="#ffffff">README.md</tspan></text>
+  <text x="78" y="270" font-size="15" xml:space="preserve"><tspan fill="#9aa3b2">.rw-r--r-- </tspan><tspan fill="#4ec27a">  844 </tspan><tspan fill="#9aa3b2">- </tspan><tspan fill="#febc2e">▪ </tspan><tspan fill="#febc2e">Cargo.toml</tspan></text>
+  <text x="78" y="296" font-size="15" xml:space="preserve"><tspan fill="#9aa3b2">.rwxr-xr-x </tspan><tspan fill="#4ec27a">  12k </tspan><tspan fill="#febc2e">N </tspan><tspan fill="#4ec27a">▪ </tspan><tspan fill="#4ec27a">build.sh</tspan></text>
+  <rect x="650" y="140" width="290" height="42" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="140" width="5" height="42" rx="2" fill="#4ec27a"/>
+  <text x="670" y="167" fill="#ffffff" font-size="17" text-anchor="start" font-weight="700">eza</text>
+  <text x="925" y="167" fill="#9aa3b2" font-size="13" text-anchor="end">maintained, Git-aware</text>
+  <rect x="650" y="190" width="290" height="42" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="190" width="5" height="42" rx="2" fill="#5c9cf5"/>
+  <text x="670" y="217" fill="#ffffff" font-size="17" text-anchor="start" font-weight="700">lsd</text>
+  <text x="925" y="217" fill="#9aa3b2" font-size="13" text-anchor="end">icons + tree</text>
+  <rect x="650" y="240" width="290" height="42" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="240" width="5" height="42" rx="2" fill="#b48ead"/>
+  <text x="670" y="267" fill="#ffffff" font-size="17" text-anchor="start" font-weight="700">colorls</text>
+  <text x="925" y="267" fill="#9aa3b2" font-size="13" text-anchor="end">Ruby gem</text>
+  <rect x="650" y="290" width="290" height="42" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="290" width="5" height="42" rx="2" fill="#9aa3b2"/>
+  <text x="670" y="317" fill="#ffffff" font-size="17" text-anchor="start" font-weight="700">exa</text>
+  <text x="925" y="317" fill="#9aa3b2" font-size="13" text-anchor="end">unmaintained</text>
+
+</svg>

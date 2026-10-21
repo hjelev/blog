@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">WireGuard on MikroTik</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">remote access to your home network from phone and laptop</text>
+  <rect x="60" y="150" width="180" height="64" rx="8" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
+  <text x="150.0" y="178.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">Android</text>
+  <text x="150.0" y="200.6" fill="#9aa3b2" font-size="13" text-anchor="middle">10.0.0.2</text>
+  <rect x="60" y="250" width="180" height="64" rx="8" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
+  <text x="150.0" y="278.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">Windows 11</text>
+  <text x="150.0" y="300.6" fill="#9aa3b2" font-size="13" text-anchor="middle">10.0.0.3</text>
+  <path d="M244 182 C320 182, 330 232, 410 232" fill="none" stroke="#b48ead" stroke-width="7" opacity="0.35"/>
+  <path d="M244 182 C320 182, 330 232, 410 232" fill="none" stroke="#b48ead" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <path d="M244 282 C320 282, 330 232, 410 232" fill="none" stroke="#b48ead" stroke-width="7" opacity="0.35"/>
+  <path d="M244 282 C320 282, 330 232, 410 232" fill="none" stroke="#b48ead" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <text x="300" y="238" fill="#b48ead" font-size="13" text-anchor="middle">UDP 13231</text>
+  <rect x="414" y="192" width="200" height="80" rx="8" fill="#2a2d36" stroke="#ff7a59" stroke-width="2"/>
+  <text x="514.0" y="229.3" fill="#ffffff" font-size="18" text-anchor="middle" font-weight="700">MikroTik</text>
+  <text x="514.0" y="251.3" fill="#9aa3b2" font-size="13" text-anchor="middle">wireguard1 10.0.0.1</text>
+  <line x1="618" y1="232" x2="696" y2="232" stroke="#9aa3b2" stroke-width="2.5"/>
+  <path d="M696.0 232.0 L687.0 236.3 L687.0 227.7 Z" fill="#9aa3b2"/>
+  <rect x="700" y="192" width="240" height="80" rx="8" fill="#2a2d36" stroke="#2a8f8f" stroke-width="2"/>
+  <text x="820.0" y="229.3" fill="#ffffff" font-size="18" text-anchor="middle" font-weight="700">home LAN</text>
+  <text x="820.0" y="251.3" fill="#9aa3b2" font-size="13" text-anchor="middle">192.168.88.0/24</text>
+  <text x="940" y="320" fill="#9aa3b2" font-size="13" text-anchor="end">RouterOS 7</text>
+
+</svg>

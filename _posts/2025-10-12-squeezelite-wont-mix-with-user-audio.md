@@ -9,6 +9,8 @@ redirect_from:
   - /linux/sqeezelite-wont-mix-with-user-audio-copy/
 ---
 
+![Squeezelite as a system service locks the sound card; as a user app PipeWire mixes it with the browser](/static/img/squeezelite-header.svg){: width="1000" height="360"}
+
 The Squeezelite audio player is a wonderful headless solution, but getting it to run as a reliable, shareable background service on modern Linux distributions (like Ubuntu, Debian, or Fedora, especially those using PipeWire) can be a nightmare.
 
 This post documents a common, frustrating error and the simple fix that allows Squeezelite to play music alongside other applications, like your browser (YouTube, Spotify Web, etc.).

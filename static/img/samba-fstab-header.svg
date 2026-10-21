@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Mount a Samba share at boot</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">one fstab line and a credentials file</text>
+  <rect x="60" y="150" width="200" height="70" rx="8" fill="#2a2d36" stroke="#ff7a59" stroke-width="2"/>
+  <text x="160.0" y="181.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">//server/share</text>
+  <text x="160.0" y="203.6" fill="#9aa3b2" font-size="13" text-anchor="middle">Samba / NAS</text>
+  <line x1="264" y1="185" x2="386" y2="185" stroke="#9aa3b2" stroke-width="2.5"/>
+  <path d="M386.0 185.0 L377.0 189.3 L377.0 180.7 Z" fill="#9aa3b2"/>
+  <text x="325" y="172" fill="#9aa3b2" font-size="13" text-anchor="middle">cifs</text>
+  <rect x="400" y="150" width="200" height="70" rx="8" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
+  <text x="500.0" y="181.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">/mnt/share</text>
+  <text x="500.0" y="203.6" fill="#9aa3b2" font-size="13" text-anchor="middle">mounted on boot</text>
+  <rect x="740" y="150" width="200" height="70" rx="8" fill="#2a2d36" stroke="#febc2e" stroke-width="2"/>
+  <text x="840.0" y="181.25" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">.smbcredentials</text>
+  <text x="840.0" y="203.25" fill="#9aa3b2" font-size="13" text-anchor="middle">chmod 600</text>
+  <line x1="736" y1="185" x2="604" y2="185" stroke="#febc2e" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <path d="M604.0 185.0 L613.0 180.7 L613.0 189.3 Z" fill="#febc2e"/>
+  <rect x="60" y="250" width="880" height="80" rx="10" fill="#1d2027"/>
+  <text x="80" y="280" fill="#9aa3b2" font-size="15" text-anchor="start"># /etc/fstab</text>
+  <text x="80" y="310" font-size="15" fill="#9aa3b2" xml:space="preserve"><tspan fill="#ff7a59">//server/share</tspan> <tspan fill="#4ec27a">/mnt/share</tspan> <tspan fill="#ffffff">cifs</tspan> <tspan fill="#febc2e">credentials=/root/.smbcredentials</tspan><tspan fill="#ffffff">,_netdev,nofail</tspan> 0 0</text>
+
+</svg>

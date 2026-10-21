@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Free Windows tools</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">the small apps I install on every PC</text>
+  <rect x="860" y="40" width="32" height="32" rx="3" fill="#5c9cf5"/>
+  <rect x="896" y="40" width="32" height="32" rx="3" fill="#4ec27a"/>
+  <rect x="860" y="76" width="32" height="32" rx="3" fill="#febc2e"/>
+  <rect x="896" y="76" width="32" height="32" rx="3" fill="#ff7a59"/>
+  <rect x="60" y="160" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="60" y="160" width="5" height="40" rx="2" fill="#5c9cf5"/>
+  <text x="78" y="185.5" fill="#ffffff" font-size="16" text-anchor="start">WinSCP</text>
+  <rect x="280" y="160" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="280" y="160" width="5" height="40" rx="2" fill="#4ec27a"/>
+  <text x="298" y="185.5" fill="#ffffff" font-size="16" text-anchor="start">KiTTY</text>
+  <rect x="500" y="160" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="500" y="160" width="5" height="40" rx="2" fill="#febc2e"/>
+  <text x="518" y="185.5" fill="#ffffff" font-size="16" text-anchor="start">7-Zip</text>
+  <rect x="720" y="160" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="720" y="160" width="5" height="40" rx="2" fill="#ff7a59"/>
+  <text x="738" y="185.5" fill="#ffffff" font-size="16" text-anchor="start">Everything</text>
+  <rect x="60" y="214" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="60" y="214" width="5" height="40" rx="2" fill="#b48ead"/>
+  <text x="78" y="239.5" fill="#ffffff" font-size="16" text-anchor="start">Rufus</text>
+  <rect x="280" y="214" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="280" y="214" width="5" height="40" rx="2" fill="#2a8f8f"/>
+  <text x="298" y="239.5" fill="#ffffff" font-size="16" text-anchor="start">Notepad++</text>
+  <rect x="500" y="214" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="500" y="214" width="5" height="40" rx="2" fill="#5c9cf5"/>
+  <text x="518" y="239.5" fill="#ffffff" font-size="16" text-anchor="start">NSSM</text>
+  <rect x="720" y="214" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="720" y="214" width="5" height="40" rx="2" fill="#4ec27a"/>
+  <text x="738" y="239.5" fill="#ffffff" font-size="16" text-anchor="start">FileZilla</text>
+  <rect x="60" y="268" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="60" y="268" width="5" height="40" rx="2" fill="#febc2e"/>
+  <text x="78" y="293.5" fill="#ffffff" font-size="16" text-anchor="start">Inkscape</text>
+  <rect x="280" y="268" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="280" y="268" width="5" height="40" rx="2" fill="#ff7a59"/>
+  <text x="298" y="293.5" fill="#ffffff" font-size="16" text-anchor="start">Calibre</text>
+  <rect x="500" y="268" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="500" y="268" width="5" height="40" rx="2" fill="#b48ead"/>
+  <text x="518" y="293.5" fill="#ffffff" font-size="16" text-anchor="start">Win32 Disk Imager</text>
+  <rect x="720" y="268" width="206" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="720" y="268" width="5" height="40" rx="2" fill="#2a8f8f"/>
+  <text x="738" y="293.5" fill="#ffffff" font-size="16" text-anchor="start">Open HW Monitor</text>
+
+</svg>

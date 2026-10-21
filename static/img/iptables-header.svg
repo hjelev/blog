@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">iptables: default deny</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">drop everything, then allow only what the server needs</text>
+  <rect x="60" y="190" width="170" height="90" rx="8" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
+  <text x="145.0" y="231.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">internet</text>
+  <text x="145.0" y="253.6" fill="#9aa3b2" font-size="13" text-anchor="middle">any port</text>
+  <rect x="470" y="150" width="26" height="190" rx="4" fill="#ff7a59"/>
+  <line x1="470" y1="165" x2="496" y2="165" stroke="#14161b" stroke-width="3"/>
+  <line x1="470" y1="195" x2="496" y2="195" stroke="#14161b" stroke-width="3"/>
+  <line x1="470" y1="225" x2="496" y2="225" stroke="#14161b" stroke-width="3"/>
+  <line x1="470" y1="255" x2="496" y2="255" stroke="#14161b" stroke-width="3"/>
+  <line x1="470" y1="285" x2="496" y2="285" stroke="#14161b" stroke-width="3"/>
+  <line x1="470" y1="315" x2="496" y2="315" stroke="#14161b" stroke-width="3"/>
+  <text x="483" y="143" fill="#ff7a59" font-size="13" text-anchor="middle" font-weight="700">INPUT DROP</text>
+  <text x="260" y="172" fill="#ffffff" font-size="15" text-anchor="start">22/tcp  ssh</text>
+  <path d="M430 167 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="260" y="206" fill="#ffffff" font-size="15" text-anchor="start">80,443  web</text>
+  <path d="M430 201 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="260" y="240" fill="#ffffff" font-size="15" text-anchor="start">53/udp  dns*</text>
+  <path d="M430 235 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="260" y="274" fill="#ffffff" font-size="15" text-anchor="start">123/udp ntp</text>
+  <path d="M430 269 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="260" y="308" fill="#9aa3b2" font-size="15" text-anchor="start">*       other</text>
+  <path d="M430 296 l13 13 M443 296 l-13 13" stroke="#ff5f57" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="510" y1="240" x2="690" y2="240" stroke="#4ec27a" stroke-width="2.5"/>
+  <path d="M690.0 240.0 L681.0 244.3 L681.0 235.7 Z" fill="#4ec27a"/>
+  <rect x="700" y="190" width="240" height="90" rx="8" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
+  <text x="820.0" y="231.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">pi-hole server</text>
+  <text x="820.0" y="253.6" fill="#9aa3b2" font-size="13" text-anchor="middle">192.168.0.103</text>
+  <text x="700" y="312" fill="#9aa3b2" font-size="13" text-anchor="start">* dns from trusted IPs only</text>
+
+</svg>

@@ -7,6 +7,8 @@ categories: linux
 last_modified_at: 2026-10-21
 ---
 
+![Ubuntu desktop with Dash to Panel taskbar, ArcMenu and a Desktop Clock widget](/static/img/my-ubuntu-header.svg){: width="1000" height="360"}
+
 These are the GNOME extensions and apps I install right after a fresh Ubuntu install. They make the desktop feel closer to a classic taskbar layout.
 
 For the command-line tweaks I apply (dock behaviour, transparency, a wallpaper slideshow), see [Ubuntu customizations from the command line]({% post_url 2021-10-4-Ubuntu-Customizations-CLI %}).

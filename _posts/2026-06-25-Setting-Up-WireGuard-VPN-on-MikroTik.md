@@ -7,6 +7,8 @@ date: 2026-06-25
 categories: linux
 ---
 
+![Android and Windows 11 clients connect over a WireGuard tunnel on UDP 13231 to a MikroTik router and the home LAN](/static/img/wireguard-header.svg){: width="1000" height="360"}
+
 Remote access is a cornerstone of any robust home lab or small business network. While there are many VPN flavors out there, WireGuard has quickly become the gold standard due to its incredible speed, lightweight footprint, and cryptographic security.
 
 If you run a MikroTik router (RouterOS v7+), you have a powerful enterprise-grade WireGuard server sitting right in your living room. In this article, we’ll walk through setting up WireGuard on your MikroTik router and configuring clients for both Android and Windows 11.

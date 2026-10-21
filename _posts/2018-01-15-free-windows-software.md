@@ -5,6 +5,8 @@ description: "A list of free Windows tools I keep coming back to: WinSCP, KiTTY,
 categories: windows 
 ---
 
+![Free Windows tools: WinSCP, KiTTY, 7-Zip, Everything, Rufus, Notepad++, NSSM and more](/static/img/free-windows-software-header.svg){: width="1000" height="360"}
+
 - [Yawcam](http://www.yawcam.com/){:target="_blank"} - is a webcam software for Windows written in Java.
 
 - [iSpy](http://www.ispyconnect.com/){:target="_blank"} -  is our free, open source video surveillance platform. 

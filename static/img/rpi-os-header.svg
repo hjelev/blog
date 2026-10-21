@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Raspberry Pi operating systems</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">purpose-built images for media, games, cameras and more</text>
+  <path d="M60 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
+  <rect x="74" y="178" width="10" height="22" rx="2" fill="#4ec27a" opacity="0.8"/>
+  <rect x="92" y="178" width="10" height="22" rx="2" fill="#4ec27a" opacity="0.8"/>
+  <rect x="110" y="178" width="10" height="22" rx="2" fill="#4ec27a" opacity="0.8"/>
+  <rect x="128" y="178" width="10" height="22" rx="2" fill="#4ec27a" opacity="0.8"/>
+  <text x="105" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">DietPi</text>
+  <path d="M188 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#ff5f57" stroke-width="2"/>
+  <rect x="202" y="178" width="10" height="22" rx="2" fill="#ff5f57" opacity="0.8"/>
+  <rect x="220" y="178" width="10" height="22" rx="2" fill="#ff5f57" opacity="0.8"/>
+  <rect x="238" y="178" width="10" height="22" rx="2" fill="#ff5f57" opacity="0.8"/>
+  <rect x="256" y="178" width="10" height="22" rx="2" fill="#ff5f57" opacity="0.8"/>
+  <text x="233" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">RetroPie</text>
+  <path d="M316 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#febc2e" stroke-width="2"/>
+  <rect x="330" y="178" width="10" height="22" rx="2" fill="#febc2e" opacity="0.8"/>
+  <rect x="348" y="178" width="10" height="22" rx="2" fill="#febc2e" opacity="0.8"/>
+  <rect x="366" y="178" width="10" height="22" rx="2" fill="#febc2e" opacity="0.8"/>
+  <rect x="384" y="178" width="10" height="22" rx="2" fill="#febc2e" opacity="0.8"/>
+  <text x="361" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">Recalbox</text>
+  <path d="M444 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#b48ead" stroke-width="2"/>
+  <rect x="458" y="178" width="10" height="22" rx="2" fill="#b48ead" opacity="0.8"/>
+  <rect x="476" y="178" width="10" height="22" rx="2" fill="#b48ead" opacity="0.8"/>
+  <rect x="494" y="178" width="10" height="22" rx="2" fill="#b48ead" opacity="0.8"/>
+  <rect x="512" y="178" width="10" height="22" rx="2" fill="#b48ead" opacity="0.8"/>
+  <text x="489" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">Volumio</text>
+  <path d="M572 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
+  <rect x="586" y="178" width="10" height="22" rx="2" fill="#5c9cf5" opacity="0.8"/>
+  <rect x="604" y="178" width="10" height="22" rx="2" fill="#5c9cf5" opacity="0.8"/>
+  <rect x="622" y="178" width="10" height="22" rx="2" fill="#5c9cf5" opacity="0.8"/>
+  <rect x="640" y="178" width="10" height="22" rx="2" fill="#5c9cf5" opacity="0.8"/>
+  <text x="617" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">motionEyeOS</text>
+  <path d="M700 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#ff7a59" stroke-width="2"/>
+  <rect x="714" y="178" width="10" height="22" rx="2" fill="#ff7a59" opacity="0.8"/>
+  <rect x="732" y="178" width="10" height="22" rx="2" fill="#ff7a59" opacity="0.8"/>
+  <rect x="750" y="178" width="10" height="22" rx="2" fill="#ff7a59" opacity="0.8"/>
+  <rect x="768" y="178" width="10" height="22" rx="2" fill="#ff7a59" opacity="0.8"/>
+  <text x="745" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">Ubuntu</text>
+  <text x="745" y="284" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">MATE</text>
+  <path d="M828 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#2a8f8f" stroke-width="2"/>
+  <rect x="842" y="178" width="10" height="22" rx="2" fill="#2a8f8f" opacity="0.8"/>
+  <rect x="860" y="178" width="10" height="22" rx="2" fill="#2a8f8f" opacity="0.8"/>
+  <rect x="878" y="178" width="10" height="22" rx="2" fill="#2a8f8f" opacity="0.8"/>
+  <rect x="896" y="178" width="10" height="22" rx="2" fill="#2a8f8f" opacity="0.8"/>
+  <text x="873" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">OpenELEC</text>
+
+</svg>

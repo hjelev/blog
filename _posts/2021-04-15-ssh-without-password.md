@@ -7,6 +7,8 @@ categories: linux
 last_modified_at: 2026-10-21
 ---
 
+![ssh-keygen, ssh-copy-id and a passwordless ssh login, with the public key copied to the server](/static/img/ssh-keys-header.svg){: width="1000" height="360"}
+
 Typing a password every time you SSH into a Raspberry Pi or a server gets old fast. SSH keys fix that: you create a key pair once, put the public half on the remote machine, and from then on you log in without a password. Keys are also a lot harder to brute-force than a password.
 
 ## 1. Generate a key pair

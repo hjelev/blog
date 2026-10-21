@@ -10,6 +10,8 @@ redirect_from:
 last_modified_at: 2026-10-21
 ---
 
+![Renaming a paired Bluetooth device from S530 to S530 Blue with bt-device](/static/img/bt-rename-header.svg){: width="1000" height="360"}
+
 Some Bluetooth devices show up in Ubuntu with unhelpful names like `S530` or a bare MAC address. You can give them an alias that's used in the Settings panel and the sound menu.
 
 ## Option 1: bt-device

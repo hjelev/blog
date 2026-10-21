@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Best TUI file managers</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">browse files without leaving the terminal</text>
+  <rect x="60" y="140" width="560" height="196" rx="10" fill="#1d2027"/>
+  <rect x="68" y="156" width="172" height="26" rx="4" fill="#2a2d36"/>
+  <text x="78" y="174" fill="#5c9cf5" font-size="14" text-anchor="start">home/</text>
+  <text x="78" y="204" fill="#5c9cf5" font-size="14" text-anchor="start">etc/</text>
+  <text x="78" y="234" fill="#5c9cf5" font-size="14" text-anchor="start">usr/</text>
+  <text x="78" y="264" fill="#5c9cf5" font-size="14" text-anchor="start">var/</text>
+  <text x="260" y="174" fill="#5c9cf5" font-size="14" text-anchor="start">Documents/</text>
+  <text x="260" y="204" fill="#5c9cf5" font-size="14" text-anchor="start">Downloads/</text>
+  <rect x="250" y="216" width="172" height="26" rx="4" fill="#2a2d36"/>
+  <text x="260" y="234" fill="#5c9cf5" font-size="14" text-anchor="start">git/</text>
+  <text x="260" y="264" fill="#5c9cf5" font-size="14" text-anchor="start">Music/</text>
+  <line x1="244" y1="152" x2="244" y2="300" stroke="#2a2d36" stroke-width="2"/>
+  <rect x="432" y="156" width="172" height="26" rx="4" fill="#5c9cf5"/>
+  <text x="442" y="174" fill="#ffffff" font-size="14" text-anchor="start">blog/</text>
+  <text x="442" y="204" fill="#5c9cf5" font-size="14" text-anchor="start">cli/</text>
+  <text x="442" y="234" fill="#5c9cf5" font-size="14" text-anchor="start">dotfiles/</text>
+  <text x="442" y="264" fill="#ffffff" font-size="14" text-anchor="start">notes.md</text>
+  <line x1="426" y1="152" x2="426" y2="300" stroke="#2a2d36" stroke-width="2"/>
+  <rect x="60" y="308" width="560" height="28" rx="0" fill="#2a2d36"/>
+  <rect x="60" y="326" width="560" height="10" rx="10" fill="#2a2d36"/>
+  <text x="74" y="327" fill="#9aa3b2" font-size="13" text-anchor="start">~/git/blog   4 items   q quit  / search</text>
+  <rect x="650" y="140" width="138" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="140" width="5" height="40" rx="2" fill="#febc2e"/>
+  <text x="668" y="165.5" fill="#ffffff" font-size="16" text-anchor="start">Yazi</text>
+  <rect x="800" y="140" width="138" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="800" y="140" width="5" height="40" rx="2" fill="#4ec27a"/>
+  <text x="818" y="165.5" fill="#ffffff" font-size="16" text-anchor="start">ranger</text>
+  <rect x="650" y="192" width="138" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="192" width="5" height="40" rx="2" fill="#5c9cf5"/>
+  <text x="668" y="217.5" fill="#ffffff" font-size="16" text-anchor="start">nnn</text>
+  <rect x="800" y="192" width="138" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="800" y="192" width="5" height="40" rx="2" fill="#b48ead"/>
+  <text x="818" y="217.5" fill="#ffffff" font-size="16" text-anchor="start">lf</text>
+  <rect x="650" y="244" width="138" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="244" width="5" height="40" rx="2" fill="#ff7a59"/>
+  <text x="668" y="269.5" fill="#ffffff" font-size="16" text-anchor="start">superfile</text>
+  <rect x="800" y="244" width="138" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="800" y="244" width="5" height="40" rx="2" fill="#2a8f8f"/>
+  <text x="818" y="269.5" fill="#ffffff" font-size="16" text-anchor="start">Walk</text>
+  <rect x="650" y="296" width="138" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="650" y="296" width="5" height="40" rx="2" fill="#ff5f57"/>
+  <text x="668" y="321.5" fill="#ffffff" font-size="16" text-anchor="start">mc</text>
+  <rect x="800" y="296" width="138" height="40" rx="8" fill="#2a2d36"/>
+  <rect x="800" y="296" width="5" height="40" rx="2" fill="#4ec27a"/>
+  <text x="818" y="321.5" fill="#ffffff" font-size="16" text-anchor="start">Shell Buddy</text>
+
+</svg>

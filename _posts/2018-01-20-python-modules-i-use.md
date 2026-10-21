@@ -6,6 +6,8 @@ date:   2018-01-20
 categories: python
 ---
 
+![Python imports for markdown, feedparser, BeautifulSoup, paho-mqtt, jira, fabric and pickle](/static/img/python-modules-header.svg){: width="1000" height="360"}
+
 - [Markdown](https://pypi.python.org/pypi/Markdown) - Python implementation of Markdown.
 
 - [Pickle](https://wiki.python.org/moin/UsingPickle) - Pickling is a way to convert a python object (list, dict, etc.) into a character stream. The idea is that this character stream contains all the information necessary to reconstruct the object in another python script.

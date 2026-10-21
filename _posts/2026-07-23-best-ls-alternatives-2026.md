@@ -5,6 +5,8 @@ date: 2026-07-23
 categories: [linux, macos, cli]
 ---
 
+![eza -l output with Git status and icons, next to lsd, colorls and the unmaintained exa](/static/img/ls-alternatives-header.svg){: width="1000" height="360"}
+
 `ls` has been listing files the same basic way for decades, and for plain output it's still fine. But a handful of modern replacements add colored, icon-annotated, Git-aware output while staying just as fast (or close to it) — and they're common enough now that you'll see them in a lot of dotfiles repos. Here's a rundown of the main options.
 
 ## eza

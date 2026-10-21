@@ -7,6 +7,8 @@ categories: windows
 last_modified_at: 2026-10-21
 ---
 
+![Unticking 'Users must enter a user name and password' in netplwiz to sign in automatically](/static/img/win-autologin-header.svg){: width="1000" height="360"}
+
 If you are like me and don't like to enter passwords each time you use your home computer, you'll like this.
 
 This is the easiest way to automatically log in to Windows 10 without entering a password. It works on Windows 11 too.

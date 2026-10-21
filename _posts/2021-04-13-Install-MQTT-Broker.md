@@ -7,6 +7,8 @@ categories: raspberry-pi
 last_modified_at: 2026-10-21
 ---
 
+![Sensors publish to a Mosquitto broker on a Raspberry Pi, and Home Assistant subscribes](/static/img/mqtt-header.svg){: width="1000" height="360"}
+
 Mosquitto is a small, fast MQTT broker that runs happily on any Raspberry Pi. I use it as the message bus between my sensors and Home Assistant. These are the steps to install it and lock it down with a username and password.
 
 ## 1. Install Mosquitto

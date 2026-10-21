@@ -6,6 +6,8 @@ date: 2018-01-20
 categories: raspberry-pi
 ---
 
+![SD cards labelled DietPi, RetroPie, Recalbox, Volumio, motionEyeOS, Ubuntu MATE and OpenELEC](/static/img/rpi-os-header.svg){: width="1000" height="360"}
+
 Collection of different OS Distributions for the SBC Raspberry Pi
 ------------
 - [motionEyeOS](https://github.com/ccrisan/motioneyeos){:target="_blank"} - a Linux distribution that turns your single board computer into a video surveillance system.

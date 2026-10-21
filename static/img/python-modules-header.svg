@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Python modules I use</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">libraries I reach for in small projects</text>
+  <rect x="60" y="140" width="880" height="196" rx="10" fill="#1d2027"/>
+  <rect x="60" y="140" width="880" height="26" rx="10" fill="#2a2d36"/>
+  <rect x="60" y="156" width="880" height="10" rx="0" fill="#2a2d36"/>
+  <circle cx="78" cy="153" r="5" fill="#ff5f57"/>
+  <circle cx="96" cy="153" r="5" fill="#febc2e"/>
+  <circle cx="114" cy="153" r="5" fill="#28c840"/>
+  <text x="78" y="193" font-size="17" xml:space="preserve"><tspan fill="#febc2e">&gt;&gt;&gt; </tspan><tspan fill="#b48ead">import </tspan><tspan fill="#ffffff">markdown, feedparser, tldextract</tspan></text>
+  <text x="78" y="220" font-size="17" xml:space="preserve"><tspan fill="#febc2e">&gt;&gt;&gt; </tspan><tspan fill="#b48ead">from </tspan><tspan fill="#ffffff">bs4 </tspan><tspan fill="#b48ead">import </tspan><tspan fill="#ffffff">BeautifulSoup</tspan></text>
+  <text x="78" y="247" font-size="17" xml:space="preserve"><tspan fill="#febc2e">&gt;&gt;&gt; </tspan><tspan fill="#b48ead">import </tspan><tspan fill="#ffffff">paho.mqtt.client </tspan><tspan fill="#b48ead">as </tspan><tspan fill="#ffffff">mqtt</tspan></text>
+  <text x="78" y="274" font-size="17" xml:space="preserve"><tspan fill="#febc2e">&gt;&gt;&gt; </tspan><tspan fill="#b48ead">from </tspan><tspan fill="#ffffff">jira </tspan><tspan fill="#b48ead">import </tspan><tspan fill="#ffffff">JIRA</tspan></text>
+  <text x="78" y="301" font-size="17" xml:space="preserve"><tspan fill="#febc2e">&gt;&gt;&gt; </tspan><tspan fill="#b48ead">from </tspan><tspan fill="#ffffff">fabric </tspan><tspan fill="#b48ead">import </tspan><tspan fill="#ffffff">Connection</tspan></text>
+  <text x="78" y="328" font-size="17" xml:space="preserve"><tspan fill="#febc2e">&gt;&gt;&gt; </tspan><tspan fill="#b48ead">import </tspan><tspan fill="#ffffff">pickle, easywebdav, web</tspan></text>
+
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Nerd Fonts</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">the icons in your terminal come from the font</text>
+  <rect x="60" y="145" width="420" height="180" rx="10" fill="#1d2027"/>
+  <text x="80" y="175" fill="#ff5f57" font-size="15" text-anchor="start" font-weight="700">regular font</text>
+  <rect x="82" y="185" width="14" height="18" rx="1" fill="none" stroke="#9aa3b2" stroke-width="2"/>
+  <text x="108" y="200" fill="#ffffff" font-size="16" text-anchor="start">src</text>
+  <rect x="82" y="223" width="14" height="18" rx="1" fill="none" stroke="#9aa3b2" stroke-width="2"/>
+  <text x="108" y="238" fill="#ffffff" font-size="16" text-anchor="start">docs</text>
+  <rect x="82" y="261" width="14" height="18" rx="1" fill="none" stroke="#9aa3b2" stroke-width="2"/>
+  <text x="108" y="276" fill="#ffffff" font-size="16" text-anchor="start">on  main</text>
+  <rect x="520" y="145" width="420" height="180" rx="10" fill="#1d2027"/>
+  <text x="540" y="175" fill="#4ec27a" font-size="15" text-anchor="start" font-weight="700">Nerd Font</text>
+  <path d="M541 186 h8 l3 3 h9 v12 h-20 z" fill="#5c9cf5"/>
+  <text x="570" y="200" fill="#ffffff" font-size="16" text-anchor="start">src</text>
+  <path d="M541 224 h8 l3 3 h9 v12 h-20 z" fill="#2a8f8f"/>
+  <text x="570" y="238" fill="#ffffff" font-size="16" text-anchor="start">docs</text>
+  <g stroke="#b48ead" stroke-width="2.4" fill="none"><circle cx="544" cy="262" r="3"/><circle cx="544" cy="276" r="3"/><circle cx="555" cy="266" r="3"/><path d="M544 265 v8 M555 269 q0 4 -9 6"/></g>
+  <text x="570" y="276" fill="#ffffff" font-size="16" text-anchor="start">on  main</text>
+  <text x="920" y="310" fill="#9aa3b2" font-size="13" text-anchor="end">+ 10,000 glyphs</text>
+  <line x1="484" y1="235" x2="516" y2="235" stroke="#4ec27a" stroke-width="2.5"/>
+  <path d="M516.0 235.0 L507.0 239.3 L507.0 230.7 Z" fill="#4ec27a"/>
+
+</svg>

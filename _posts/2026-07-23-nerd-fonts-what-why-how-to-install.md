@@ -6,6 +6,8 @@ date: 2026-07-23
 categories: [linux, macos, windows, cli]
 ---
 
+![Without a Nerd Font icons render as empty boxes; with one you get folder and Git branch glyphs](/static/img/nerd-fonts-header.svg){: width="1000" height="360"}
+
 If you spend time in a terminal, you've probably seen screenshots where file listings, prompts, and status bars are full of clean little icons — a folder glyph next to directories, a language logo next to source files, a Git branch symbol in the prompt. Most of the time, that's not a special app doing custom rendering. It's just a **Nerd Font**.
 
 ## What is a Nerd Font?

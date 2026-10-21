@@ -8,6 +8,8 @@ redirect_from:
   - /ubuntu/Ubuntu-Customizations-CLI/
 ---
 
+![gsettings commands for dock minimize-on-click, dock opacity, full path in Files and wallpaper](/static/img/ubuntu-gsettings-header.svg){: width="1000" height="360"}
+
 ## How do I enable 'minimize on click' on Ubuntu dock
 
 Open Terminal and run

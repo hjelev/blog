@@ -8,6 +8,8 @@ noindex: true
 sitemap: false
 ---
 
+![A Raspberry Pi running Pi-hole, AdGuard Home, PiVPN, Home Assistant and CUPS](/static/img/rpi-software-header.svg){: width="1000" height="360"}
+
 Collection of software for raspberry pi
 ---------
 - [PiVPN](http://www.pivpn.io/){:target="_blank"} - Simplest OpenVPN setup and configuration, designed for Raspberry Pi.

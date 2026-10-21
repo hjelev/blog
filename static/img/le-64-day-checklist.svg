@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="400" rx="14" fill="#14161b"/>
+
+  <!-- terminal title bar -->
+  <rect x="40" y="36" width="920" height="328" rx="10" fill="#1b1e25" stroke="#2c313c"/>
+  <circle cx="66" cy="60" r="7" fill="#ff5f57"/>
+  <circle cx="88" cy="60" r="7" fill="#febc2e"/>
+  <circle cx="110" cy="60" r="7" fill="#28c840"/>
+  <text x="500" y="65" fill="#9aa3b2" font-size="15" text-anchor="middle">64-day readiness check</text>
+  <line x1="40" y1="82" x2="960" y2="82" stroke="#2c313c"/>
+
+  <g font-size="18">
+    <text x="72" y="128" fill="#4ec27a">[✓]</text>
+    <text x="130" y="128" fill="#e8e8e8">client supports ARI</text>
+    <text x="930" y="128" fill="#6b7280" text-anchor="end">certbot ≥ 4.1 · acme.sh ≥ 3.1.4</text>
+
+    <text x="72" y="172" fill="#4ec27a">[✓]</text>
+    <text x="130" y="172" fill="#e8e8e8">renewal runs at least daily</text>
+    <text x="930" y="172" fill="#6b7280" text-anchor="end">systemctl list-timers</text>
+
+    <text x="72" y="216" fill="#4ec27a">[✓]</text>
+    <text x="130" y="216" fill="#e8e8e8">no hard-coded 60 / 80 / 83 days</text>
+    <text x="930" y="216" fill="#6b7280" text-anchor="end">grep your scripts</text>
+
+    <text x="72" y="260" fill="#4ec27a">[✓]</text>
+    <text x="130" y="260" fill="#e8e8e8">services reload after renewal</text>
+    <text x="930" y="260" fill="#6b7280" text-anchor="end">deploy hooks</text>
+
+    <text x="72" y="304" fill="#4ec27a">[✓]</text>
+    <text x="130" y="304" fill="#e8e8e8">tested against staging</text>
+    <text x="930" y="304" fill="#6b7280" text-anchor="end">--dry-run</text>
+
+    <text x="72" y="348" fill="#febc2e">[ ]</text>
+    <text x="130" y="348" fill="#e8e8e8">alert before it expires</text>
+    <text x="930" y="348" fill="#6b7280" text-anchor="end">openssl -checkend</text>
+  </g>
+</svg>

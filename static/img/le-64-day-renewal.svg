@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="420" rx="14" fill="#14161b"/>
+  <text x="50" y="58" fill="#ffffff" font-size="26" font-weight="700">When does your renewal actually fire?</text>
+  <text x="50" y="88" fill="#9aa3b2" font-size="15">● renewal attempt · ▏ certificate expiry</text>
+
+  <!-- axis -->
+  <g font-size="13" fill="#6b7280">
+    <line x1="230" y1="372" x2="950" y2="372" stroke="#3a3f4b"/>
+    <text x="230" y="394" text-anchor="middle">0</text>
+    <text x="470" y="394" text-anchor="middle">30</text>
+    <text x="710" y="394" text-anchor="middle">60</text>
+    <text x="950" y="394" text-anchor="middle">90 days</text>
+  </g>
+
+  <g font-size="15">
+    <!-- row 1: ARI on a 64-day cert -->
+    <text x="50" y="140" fill="#e8e8e8">ARI, 64-day</text>
+    <rect x="230" y="122" width="512" height="26" rx="5" fill="#4ec27a" opacity="0.25"/>
+    <rect x="740" y="116" width="4" height="38" fill="#e8e8e8"/>
+    <circle cx="574" cy="135" r="9" fill="#4ec27a"/>
+    <text x="760" y="140" fill="#4ec27a">✓ renews ~day 43</text>
+
+    <!-- row 2: certbot 30 days before expiry -->
+    <text x="50" y="200" fill="#e8e8e8">certbot default</text>
+    <rect x="230" y="182" width="512" height="26" rx="5" fill="#4ec27a" opacity="0.25"/>
+    <rect x="740" y="176" width="4" height="38" fill="#e8e8e8"/>
+    <circle cx="502" cy="195" r="9" fill="#4ec27a"/>
+    <text x="760" y="200" fill="#4ec27a">✓ 30 days left</text>
+
+    <!-- row 3: fixed 60-day cron on a 64-day cert -->
+    <text x="50" y="260" fill="#e8e8e8">fixed "every 60d"</text>
+    <rect x="230" y="242" width="512" height="26" rx="5" fill="#febc2e" opacity="0.25"/>
+    <rect x="740" y="236" width="4" height="38" fill="#e8e8e8"/>
+    <circle cx="710" cy="255" r="9" fill="#febc2e"/>
+    <text x="760" y="260" fill="#febc2e">⚠ 4 days of margin</text>
+
+    <!-- row 4: fixed 60-day cron on a 45-day cert -->
+    <text x="50" y="320" fill="#e8e8e8">same, 45-day</text>
+    <rect x="230" y="302" width="360" height="26" rx="5" fill="#ff5f57" opacity="0.25"/>
+    <rect x="588" y="296" width="4" height="38" fill="#e8e8e8"/>
+    <rect x="590" y="302" width="120" height="26" fill="#ff5f57" opacity="0.18"/>
+    <circle cx="710" cy="315" r="9" fill="#ff5f57"/>
+    <text x="760" y="320" fill="#ff5f57">✗ expired 15 days</text>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Brotli2Shell · CVE-2026-111497</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">one bad block switch, eight bytes of buffer, a lot of overflow</text>
+
+  <!-- the 8-byte buffer -->
+  <g font-size="15">
+    <text x="60" y="176" fill="#9aa3b2">decoder buffer</text>
+    <g fill="#4ec27a">
+      <rect x="230" y="156" width="40" height="30" rx="4"/>
+      <rect x="274" y="156" width="40" height="30" rx="4"/>
+      <rect x="318" y="156" width="40" height="30" rx="4"/>
+      <rect x="362" y="156" width="40" height="30" rx="4"/>
+      <rect x="406" y="156" width="40" height="30" rx="4"/>
+      <rect x="450" y="156" width="40" height="30" rx="4"/>
+      <rect x="494" y="156" width="40" height="30" rx="4"/>
+      <rect x="538" y="156" width="40" height="30" rx="4"/>
+    </g>
+    <g fill="#ff7a59">
+      <rect x="582" y="156" width="40" height="30" rx="4"/>
+      <rect x="626" y="156" width="40" height="30" rx="4" opacity="0.85"/>
+      <rect x="670" y="156" width="40" height="30" rx="4" opacity="0.7"/>
+      <rect x="714" y="156" width="40" height="30" rx="4" opacity="0.55"/>
+      <rect x="758" y="156" width="40" height="30" rx="4" opacity="0.4"/>
+      <rect x="802" y="156" width="40" height="30" rx="4" opacity="0.25"/>
+    </g>
+    <text x="404" y="212" fill="#4ec27a" text-anchor="middle">8 bytes</text>
+    <text x="712" y="212" fill="#ff7a59" text-anchor="middle">out-of-bounds write</text>
+  </g>
+
+  <!-- who decodes -->
+  <g font-size="16">
+    <text x="60" y="270" fill="#9aa3b2">reached via</text>
+    <text x="230" y="270" fill="#ffffff">Content-Encoding: br</text>
+    <text x="60" y="304" fill="#9aa3b2">fixed in</text>
+    <text x="230" y="304" fill="#febc2e">brotli 1.0.10 / 1.1.1 / 1.2.1</text>
+  </g>
+
+  <!-- warning icon -->
+  <g transform="translate(870 46)">
+    <path d="M30 4 L58 56 H2 Z" fill="#ff7a59" stroke="#ff7a59" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="27" y="20" width="6" height="20" rx="2" fill="#14161b"/>
+    <circle cx="30" cy="47" r="3.5" fill="#14161b"/>
+  </g>
+</svg>

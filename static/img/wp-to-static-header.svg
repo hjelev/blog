@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">WordPress → static site</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">generate the HTML once, stop running code for every visitor</text>
+
+  <!-- before: dynamic stack -->
+  <g font-size="16">
+    <text x="60" y="160" fill="#9aa3b2">before</text>
+    <rect x="60" y="174" width="300" height="34" rx="6" fill="#21759b"/>
+    <text x="210" y="197" fill="#ffffff" text-anchor="middle">WordPress + plugins</text>
+    <rect x="60" y="214" width="300" height="34" rx="6" fill="#777bb3"/>
+    <text x="210" y="237" fill="#14161b" text-anchor="middle">PHP-FPM</text>
+    <rect x="60" y="254" width="300" height="34" rx="6" fill="#c07a3a"/>
+    <text x="210" y="277" fill="#14161b" text-anchor="middle">MySQL</text>
+    <text x="210" y="316" fill="#ff7a59" text-anchor="middle">runs on every request</text>
+  </g>
+
+  <!-- arrow -->
+  <g stroke="#febc2e" stroke-width="3" fill="none">
+    <path d="M400 231 H560"/>
+    <path d="M548 221 L562 231 L548 241"/>
+  </g>
+  <text x="480" y="215" fill="#febc2e" font-size="15" text-anchor="middle">export / build</text>
+  <text x="480" y="258" fill="#9aa3b2" font-size="13" text-anchor="middle">Simply Static · Jekyll · Hugo</text>
+
+  <!-- after: static files -->
+  <g font-size="16">
+    <text x="600" y="160" fill="#9aa3b2">after</text>
+    <g fill="#4ec27a">
+      <rect x="600" y="174" width="96" height="74" rx="6"/>
+      <rect x="704" y="174" width="96" height="74" rx="6"/>
+      <rect x="808" y="174" width="96" height="74" rx="6"/>
+    </g>
+    <g fill="#14161b" text-anchor="middle" font-size="15">
+      <text x="648" y="216">.html</text>
+      <text x="752" y="216">.css</text>
+      <text x="856" y="216">.jpg</text>
+    </g>
+    <rect x="600" y="254" width="304" height="34" rx="6" fill="none" stroke="#4ec27a" stroke-width="2"/>
+    <text x="752" y="277" fill="#4ec27a" text-anchor="middle">nginx / CDN</text>
+    <text x="752" y="316" fill="#4ec27a" text-anchor="middle">nothing to exploit, nothing to patch</text>
+  </g>
+</svg>

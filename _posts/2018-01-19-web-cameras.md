@@ -6,6 +6,9 @@ date: 2018-01-19
 categories: webcams
 noindex: true
 sitemap: false
+thumbnail: /static/img/ip-camera.png
+redirect_from:
+  - /webcams/web-cameras/
 ---
 
 ## Collection of sites offering free live webcamera feeds from around the world

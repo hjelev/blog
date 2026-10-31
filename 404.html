@@ -2,9 +2,34 @@
 layout: default
 title: 404
 permalink: /404.html
+noindex: true
+sitemap: false
 ---
 <div class="prose">
 <p class="postlist__date">exit status 404</p>
 <p>The page you asked for could not be found. It may have moved, or never existed.</p>
-<p><a href="/">cd ~ — back to the homepage</a></p>
+<p>Try searching: press <kbd>/</kbd> or <button type="button" class="linkbtn" id="nf-search">open the search box</button>. Or pick one of the latest posts below.</p>
 </div>
+
+<h2 class="nf-recent">latest posts</h2>
+<ul class="postlist">
+  {%- for post in site.posts limit: 6 %}
+  <li class="postlist__item{% if post.thumbnail %} has-thumb{% endif %}">
+    {%- include post_thumb.html post=post %}
+    <div class="postlist__date">{{ post.date | date: "%Y-%m-%d" }}</div>
+    <h3 class="postlist__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+  </li>
+  {%- endfor %}
+</ul>
+
+<p class="nf-more"><a href="/">cd ~</a> · <a href="/categories/">browse all categories</a></p>
+
+<script>
+  document.getElementById('nf-search').addEventListener('click', function () {
+    var input = document.getElementById('js-search__input');
+    var toggle = document.getElementById('nav-toggle');
+    // On small screens the sidebar is collapsed; open it first
+    if (toggle && toggle.getAttribute('aria-expanded') === 'false' && getComputedStyle(toggle).display !== 'none') toggle.click();
+    if (input) input.focus();
+  });
+</script>

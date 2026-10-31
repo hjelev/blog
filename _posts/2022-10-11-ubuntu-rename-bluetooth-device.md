@@ -4,10 +4,12 @@ title: Rename bluetooth device in Ubuntu
 description: "Rename a paired Bluetooth device in Ubuntu from the terminal with bt-device from bluez-tools, or with bluetoothctl."
 date: 2022-10-18
 categories: linux
-permalink: /linux/ubuntu-rename-bluetooth-device/
 redirect_from:
   - /linux/ubuntu-rename-bluetooth-device-copy/
+  - /linux/ubuntu-rename-bluetooth-device/
 last_modified_at: 2026-10-21
+image: /static/img/og/bt-rename-header.png
+thumbnail: /static/img/bt-rename-header.svg
 ---
 
 ![Renaming a paired Bluetooth device from S530 to S530 Blue with bt-device](/static/img/bt-rename-header.svg){: width="1000" height="360"}

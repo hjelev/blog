@@ -3,6 +3,10 @@ title: "Best TUI File Managers in 2026"
 description: "The best terminal file managers in 2026 compared: Shell Buddy, Yazi, ranger, nnn, lf, superfile, Walk and Midnight Commander, and which to pick."
 date: 2026-07-23
 categories: [linux, macos, cli]
+image: /static/img/og/tui-file-managers-header.png
+thumbnail: /static/img/tui-file-managers-header.svg
+redirect_from:
+  - /linux/macos/cli/best-tui-file-managers-2026/
 ---
 
 ![A three-column terminal file manager next to Yazi, ranger, nnn, lf, superfile, Walk, mc and Shell Buddy](/static/img/tui-file-managers-header.svg){: width="1000" height="360"}

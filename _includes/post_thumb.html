@@ -1,0 +1,7 @@
+{%- comment -%} Thumbnail beside a post in a list. Pass post=; header SVGs and screenshots fill the box, logos are fitted on white. {%- endcomment -%}
+{%- if include.post.thumbnail %}
+  {%- if include.post.thumbnail contains '-header.svg' or include.post.thumbnail contains 'screenshot' %}{% assign thumb_mod = 'cover' %}{% else %}{% assign thumb_mod = 'fit' %}{% endif %}
+  <a class="postlist__thumb postlist__thumb--{{ thumb_mod }}" href="{{ include.post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+    <img src="{{ include.post.thumbnail | relative_url }}" alt="" width="200" height="72" {% if include.eager != true %}loading="lazy" {% endif %}decoding="async">
+  </a>
+{%- endif %}

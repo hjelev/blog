@@ -2,11 +2,15 @@
 layout: post
 title: Squeezelite Service Not Mixing with Browser Audio (PipeWire/PulseAudio Fix)
 description: "Fix Squeezelite blocking other audio on PipeWire or PulseAudio: why the system service grabs the sound card, and how running it as a user app fixes it."
-seo_title: "Squeezelite Not Mixing with Browser Audio: PipeWire Fix"
+seo_title: "Squeezelite Not Mixing with Browser Audio (PipeWire)"
 date: 2025-10-12
 categories: linux
 redirect_from:
   - /linux/sqeezelite-wont-mix-with-user-audio-copy/
+  - /linux/squeezelite-wont-mix-with-user-audio/
+last_modified_at: 2026-07-23
+image: /static/img/og/squeezelite-header.png
+thumbnail: /static/img/squeezelite-header.svg
 ---
 
 ![Squeezelite as a system service locks the sound card; as a user app PipeWire mixes it with the browser](/static/img/squeezelite-header.svg){: width="1000" height="360"}

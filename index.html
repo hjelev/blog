@@ -10,7 +10,9 @@ title: Masoko's Blog and Notes
 
 <ul class="postlist">
   {%- for post in paginator.posts %}
-  <li class="postlist__item">
+  <li class="postlist__item{% if post.thumbnail %} has-thumb{% endif %}">
+    {%- if forloop.index <= 2 %}{% assign eager = true %}{% else %}{% assign eager = false %}{% endif %}
+    {%- include post_thumb.html post=post eager=eager %}
     <div class="postlist__date">{{ post.date | date: "%Y-%m-%d" }}</div>
     <h2 class="postlist__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
     <p class="postlist__excerpt">{{ post.description | default: post.content | strip_html | truncatewords: 40 }}</p>

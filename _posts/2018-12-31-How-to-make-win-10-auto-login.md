@@ -5,6 +5,10 @@ description: "Make Windows 10 sign in automatically without typing a password, u
 date:   2018-12-31
 categories: windows
 last_modified_at: 2026-10-21
+image: /static/img/og/win-autologin-header.png
+thumbnail: /static/img/win-autologin-header.svg
+redirect_from:
+  - /windows/How-to-make-win-10-auto-login/
 ---
 
 ![Unticking 'Users must enter a user name and password' in netplwiz to sign in automatically](/static/img/win-autologin-header.svg){: width="1000" height="360"}

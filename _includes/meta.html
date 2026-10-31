@@ -5,11 +5,13 @@
         <link rel="shortcut icon" href="/static/img/favicon.ico" />
         {%- if page.url == "/" %}
         <title>Masoko's Blog: Linux, CLI Tools, Raspberry Pi and Homelab Notes</title>
+        {%- elsif paginator and paginator.page > 1 %}
+        <title>Masoko's Blog – Page {{ paginator.page }} of {{ paginator.total_pages }}</title>
         {%- else %}
         <title>{{ page.seo_title | default: page.title }} | Masoko</title>
         {%- endif %}
         <meta name="author" content="{{ site.author }}" />
-        {%- if page.noindex %}
+        {%- if page.noindex or paginator.page > 1 %}
         <meta name="robots" content="noindex, follow">
         {%- endif %}
 

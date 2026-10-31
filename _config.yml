@@ -33,7 +33,7 @@ paginate: 20
 per_page: 20
 paginate_path: "/page:num/"
 markdown: kramdown
-permalink: /:categories/:title/
+permalink: /:slug/
 
 # Default social-preview card (used by jekyll-seo-tag for og:image / twitter:image)
 defaults:

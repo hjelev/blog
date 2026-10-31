@@ -2,9 +2,14 @@
 layout: post
 title: "Build a Cheap Multi-Room Audio System with Raspberry Pi"
 description: "Build a synchronized multi-room audio system with Raspberry Pi Zero W players, cheap USB sound cards, Squeezelite and Logitech Media Server."
-seo_title: "Cheap Multi-Room Audio with Raspberry Pi and Squeezelite"
+seo_title: "Multi-Room Audio with Raspberry Pi and Squeezelite"
 date: 2018-01-21
 categories: raspberry-pi
+last_modified_at: 2021-11-17
+image: /static/img/og/multi-room-audio-header.png
+thumbnail: /static/img/multi-room-audio-header.svg
+redirect_from:
+  - /raspberry-pi/multi-room-audio-system-with-rpis/
 ---
 
 ![Logitech Media Server streaming in sync to Raspberry Pi Zero W Squeezelite players and speakers in three rooms](/static/img/multi-room-audio-header.svg){: width="1000" height="360"}

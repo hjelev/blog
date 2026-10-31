@@ -2,7 +2,12 @@
 title: "PHP2Shell (CVE-2026-109618, CVE-2026-109619) and CVE-2026-115560: What Changed in PHP This Month and How to Patch"
 date: 2026-10-31
 categories: [security, linux, selfhosting]
-description: "PHP2Shell is a pair of critical, unauthenticated remote code execution bugs in the PHP interpreter itself, already exploited in the wild. What the bugs do, which versions are affected, how to patch on Debian and Ubuntu, the php.ini stopgaps, and the follow-up CVE-2026-115560."
+description: "PHP2Shell: two exploited, unauthenticated RCE bugs in PHP itself. Affected versions, patching on Debian and Ubuntu, php.ini stopgaps, and CVE-2026-115560."
+seo_title: "PHP2Shell and CVE-2026-115560: How to Patch PHP"
+image: /static/img/og/php2shell-header.png
+thumbnail: /static/img/php2shell-header.svg
+redirect_from:
+  - /security/linux/selfhosting/php2shell-php-vulnerabilities-october-2026/
 ---
 
 ![PHP2Shell: a request that runs out of memory leaves a broken hash bucket that PHP later calls as a destructor. Fixed in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35](/static/img/php2shell-header.svg){: width="1000" height="360"}

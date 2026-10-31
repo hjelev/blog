@@ -2,7 +2,12 @@
 title: "How to Convert Your WordPress Site to a Static Site (and Stop Patching PHP)"
 date: 2026-10-31
 categories: [linux, selfhosting]
-description: "Two practical ways to turn a WordPress site into static HTML: keep WordPress private and export with Simply Static, or migrate fully to Jekyll or Hugo. Covers URLs and redirects, comments, forms, search, and free hosting."
+description: "Turn WordPress into static HTML: export with Simply Static or migrate to Jekyll or Hugo. Covers redirects, comments, forms, search and free hosting."
+seo_title: "WordPress to Static Site: Stop Patching PHP"
+image: /static/img/og/wp-to-static-header.png
+thumbnail: /static/img/wp-to-static-header.svg
+redirect_from:
+  - /linux/selfhosting/convert-wordpress-to-static-site/
 ---
 
 ![Converting WordPress to a static site: WordPress, PHP and MySQL on the left become plain HTML files served from a CDN on the right](/static/img/wp-to-static-header.svg){: width="1000" height="360"}

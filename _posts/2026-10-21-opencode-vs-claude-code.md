@@ -1,9 +1,13 @@
 ---
 title: "OpenCode vs Claude Code: Which AI Coding Agent Should You Use in 2026?"
-seo_title: "OpenCode vs Claude Code (2026): Which AI Coding Agent?"
+seo_title: "OpenCode vs Claude Code (2026): Which AI Agent?"
 date: 2026-10-21
 categories: [linux, macos, cli, ai]
 description: "OpenCode vs Claude Code compared: open-source and model-agnostic vs Anthropic's tightly integrated agent. Features, pricing and which one to pick."
+image: /static/img/og/opencode-vs-claude-code-header.png
+thumbnail: /static/img/opencode-vs-claude-code-header.svg
+redirect_from:
+  - /linux/macos/cli/ai/opencode-vs-claude-code/
 ---
 
 ![OpenCode vs Claude Code](/static/img/opencode-vs-claude-code-header.svg){: width="1000" height="360"}

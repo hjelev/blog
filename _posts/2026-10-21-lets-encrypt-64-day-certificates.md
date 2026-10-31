@@ -2,7 +2,12 @@
 title: "Let's Encrypt 64-Day Certificates: Is Your Homelab Ready?"
 date: 2026-10-21
 categories: [linux, selfhosting]
-description: "Let's Encrypt is cutting certificate lifetimes from 90 to 64 days on February 10, 2027. What changes, who is affected, and a 5-minute check for certbot, acme.sh, Caddy and Traefik setups."
+description: "Let's Encrypt cuts certificate lifetimes to 64 days on Feb 10, 2027. What changes and a 5-minute check for certbot, acme.sh, Caddy and Traefik."
+seo_title: "Let's Encrypt 64-Day Certs: Is Your Homelab Ready?"
+image: /static/img/og/le-64-day-header.png
+thumbnail: /static/img/le-64-day-header.svg
+redirect_from:
+  - /linux/selfhosting/lets-encrypt-64-day-certificates/
 ---
 
 ![Let's Encrypt certificate lifetimes: 90 days today, 64 days from February 2027, 45 days in 2028](/static/img/le-64-day-header.svg){: width="1000" height="360"}

@@ -5,6 +5,10 @@ description: "The GNOME extensions and apps I install right after a fresh Ubuntu
 date: 2025-10-10
 categories: linux
 last_modified_at: 2026-10-21
+image: /static/img/og/my-ubuntu-header.png
+thumbnail: /static/img/my-ubuntu-header.svg
+redirect_from:
+  - /linux/how-i-like-my-ubuntu/
 ---
 
 ![Ubuntu desktop with Dash to Panel taskbar, ArcMenu and a Desktop Clock widget](/static/img/my-ubuntu-header.svg){: width="1000" height="360"}

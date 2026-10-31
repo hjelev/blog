@@ -3,6 +3,10 @@ title: "Best ls Alternatives in 2026"
 description: "The best modern ls replacements in 2026: eza, lsd and colorls compared, with icons, Git status and tree views, plus why exa is no longer maintained."
 date: 2026-07-23
 categories: [linux, macos, cli]
+image: /static/img/og/ls-alternatives-header.png
+thumbnail: /static/img/ls-alternatives-header.svg
+redirect_from:
+  - /linux/macos/cli/best-ls-alternatives-2026/
 ---
 
 ![eza -l output with Git status and icons, next to lsd, colorls and the unmaintained exa](/static/img/ls-alternatives-header.svg){: width="1000" height="360"}

@@ -5,6 +5,10 @@ description: "Install the Mosquitto MQTT broker on a Raspberry Pi, require a use
 date: 2021-04-12
 categories: raspberry-pi
 last_modified_at: 2026-10-21
+image: /static/img/og/mqtt-header.png
+thumbnail: /static/img/mqtt-header.svg
+redirect_from:
+  - /raspberry-pi/Install-MQTT-Broker/
 ---
 
 ![Sensors publish to a Mosquitto broker on a Raspberry Pi, and Home Assistant subscribes](/static/img/mqtt-header.svg){: width="1000" height="360"}

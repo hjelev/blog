@@ -4,6 +4,10 @@ title: "Install Let's Encrypt Certificates with Certbot and Nginx"
 date: 2019-01-15
 categories: linux
 description: How I installed a Let's Encrypt certificate with certbot for a Home Assistant instance behind an nginx reverse proxy.
+seo_title: "Let's Encrypt Certificates with Certbot and Nginx"
+thumbnail: /static/img/letsencrypt.png
+redirect_from:
+  - /linux/LetsEncrypt-Certificates/
 ---
 ![LetsEncrypt](/static/img/letsencrypt.png){: width="334" height="79"}
 

@@ -4,6 +4,10 @@ title: How to translate a Flask site with Babel
 description: "Translate a Flask website with Flask-Babel: configure locales, tag strings in Python and Jinja2 templates, then extract, translate and compile catalogs."
 date:   2018-02-24
 categories: python
+image: /static/img/og/flask-babel-header.png
+thumbnail: /static/img/flask-babel-header.svg
+redirect_from:
+  - /python/How-to-translate-your-flask-site/
 ---
 
 ![Flask-Babel workflow: tag strings, pybabel extract, init, translate, compile](/static/img/flask-babel-header.svg){: width="1000" height="360"}

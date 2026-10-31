@@ -5,6 +5,10 @@ description: "Set up a WireGuard VPN server on a MikroTik router (RouterOS 7) an
 seo_title: "WireGuard VPN on MikroTik: Remote Access Setup Guide"
 date: 2026-06-25
 categories: linux
+image: /static/img/og/wireguard-header.png
+thumbnail: /static/img/wireguard-header.svg
+redirect_from:
+  - /linux/Setting-Up-WireGuard-VPN-on-MikroTik/
 ---
 
 ![Android and Windows 11 clients connect over a WireGuard tunnel on UDP 13231 to a MikroTik router and the home LAN](/static/img/wireguard-header.svg){: width="1000" height="360"}

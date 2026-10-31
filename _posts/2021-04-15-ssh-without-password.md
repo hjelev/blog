@@ -5,6 +5,10 @@ description: "Log in over SSH without a password: generate an Ed25519 key with s
 date: 2021-04-15
 categories: linux
 last_modified_at: 2026-10-21
+image: /static/img/og/ssh-keys-header.png
+thumbnail: /static/img/ssh-keys-header.svg
+redirect_from:
+  - /linux/ssh-without-password/
 ---
 
 ![ssh-keygen, ssh-copy-id and a passwordless ssh login, with the public key copied to the server](/static/img/ssh-keys-header.svg){: width="1000" height="360"}

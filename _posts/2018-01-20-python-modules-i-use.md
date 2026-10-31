@@ -4,6 +4,10 @@ title: "Useful Python Modules I Use"
 description: "Python libraries I reach for in small projects: Markdown, BeautifulSoup, feedparser, paho-mqtt, tldextract, the Jira client, Fabric and more."
 date:   2018-01-20
 categories: python
+image: /static/img/og/python-modules-header.png
+thumbnail: /static/img/python-modules-header.svg
+redirect_from:
+  - /python/python-modules-i-use/
 ---
 
 ![Python imports for markdown, feedparser, BeautifulSoup, paho-mqtt, jira, fabric and pickle](/static/img/python-modules-header.svg){: width="1000" height="360"}

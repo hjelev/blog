@@ -3,6 +3,11 @@ layout: post
 title: "Free Software for Windows: Tools I Install on Every PC"
 description: "A list of free Windows tools I keep coming back to: WinSCP, KiTTY, 7-Zip, Everything, Rufus, Notepad++, NSSM and more, with what each one is for."
 categories: windows 
+seo_title: "Free Windows Software I Install on Every PC"
+image: /static/img/og/free-windows-software-header.png
+thumbnail: /static/img/free-windows-software-header.svg
+redirect_from:
+  - /windows/free-windows-software/
 ---
 
 ![Free Windows tools: WinSCP, KiTTY, 7-Zip, Everything, Rufus, Notepad++, NSSM and more](/static/img/free-windows-software-header.svg){: width="1000" height="360"}

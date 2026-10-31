@@ -6,6 +6,10 @@ date: 2018-01-19
 categories: raspberry-pi
 noindex: true
 sitemap: false
+image: /static/img/og/rpi-software-header.png
+thumbnail: /static/img/rpi-software-header.svg
+redirect_from:
+  - /raspberry-pi/rpi-software/
 ---
 
 ![A Raspberry Pi running Pi-hole, AdGuard Home, PiVPN, Home Assistant and CUPS](/static/img/rpi-software-header.svg){: width="1000" height="360"}

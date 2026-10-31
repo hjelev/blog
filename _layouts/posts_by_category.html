@@ -33,7 +33,8 @@ layout: default
         <li class="postlist__year">{{ post_year }}</li>
       {%- endif %}
     {%- endif %}
-    <li class="postlist__item">
+    <li class="postlist__item{% if post.thumbnail %} has-thumb{% endif %}">
+      {%- include post_thumb.html post=post %}
       <div class="postlist__date">{{ post.date | date: "%Y-%m-%d" }}</div>
       <h2 class="postlist__title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
       <p class="postlist__excerpt">{{ post.description | default: post.content | strip_html | truncatewords: 24 }}</p>

@@ -3,6 +3,10 @@ title: "Vibe Coding vs Spec-Driven Development"
 date: 2026-10-21
 categories: [ai, cli]
 description: "Vibe coding vs spec-driven development: two ways of working with AI coding agents, what each is good at, and when to switch between them."
+image: /static/img/og/vibe-vs-spec-header.png
+thumbnail: /static/img/vibe-vs-spec-header.svg
+redirect_from:
+  - /ai/cli/vibe-coding-vs-spec-driven-development/
 ---
 
 ![Vibe coding vs spec-driven development](/static/img/vibe-vs-spec-header.svg){: width="1000" height="360"}

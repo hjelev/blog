@@ -2,6 +2,7 @@
 layout: page
 permalink: /categories/
 title: Categories
+description: "Every post on blog.masoko.net grouped by topic: Linux, CLI tools, Raspberry Pi, self-hosting, security, AI coding agents, Windows and Python."
 ---
 
 <div id="archives">
@@ -10,11 +11,11 @@ title: Categories
     {%- capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
     <p></p>
-    <h3 class="category-head"><a href="{{ site.baseurl }}/category/{{ category_name }}/" >{{ category_name }}</a></h3>
+    <h2 class="category-head"><a href="{{ site.baseurl }}/category/{{ category_name }}/" >{{ category_name }}</a></h2>
     <a name="{{ category_name | slugize }}"></a>
     {%- for post in site.categories[category_name] %}
     <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
     </article>
     {%- endfor %}
   </div>

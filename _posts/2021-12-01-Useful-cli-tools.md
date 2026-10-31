@@ -6,7 +6,10 @@ date: 2021-12-01
 categories: linux
 redirect_from:
   - /ubuntu/Useful-cli-tools/
+  - /linux/Useful-cli-tools/
 last_modified_at: 2026-10-21
+seo_title: "Useful Linux CLI Tools: fd, jq, bat, eza, btop"
+thumbnail: /static/img/btop-screenshot.png
 ---
 These are the command-line tools I install on every new Linux machine, with links to their GitHub repos and the install commands for Ubuntu.
 

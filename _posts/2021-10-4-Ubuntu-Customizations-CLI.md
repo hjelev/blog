@@ -6,6 +6,10 @@ date: 2021-10-04
 categories: linux
 redirect_from:
   - /ubuntu/Ubuntu-Customizations-CLI/
+  - /linux/Ubuntu-Customizations-CLI/
+seo_title: "Ubuntu Customizations from the CLI with gsettings"
+image: /static/img/og/ubuntu-gsettings-header.png
+thumbnail: /static/img/ubuntu-gsettings-header.svg
 ---
 
 ![gsettings commands for dock minimize-on-click, dock opacity, full path in Files and wallpaper](/static/img/ubuntu-gsettings-header.svg){: width="1000" height="360"}
@@ -20,7 +24,7 @@ To revert to the default option, simply run
 
 `gsettings reset org.gnome.shell.extensions.dash-to-dock click-action`
 
-# How to make dock background 80% transparent in Ubuntu
+## How to make dock background 80% transparent in Ubuntu
 
 First enable custom colors:
 
@@ -36,10 +40,10 @@ To reset to the default setting:
 
 `gsettings reset org.gnome.shell.extensions.dash-to-dock background-opacity`
 
-# Make file manager always show full path (not only with ctrl + l)
+## Make file manager always show full path (not only with ctrl + l)
 `gsettings set org.gnome.nautilus.preferences always-use-location-entry true`
 
-# Create a wallpaper slideshow using bash script and cron
+## Create a wallpaper slideshow using bash script and cron
 Save this script as a bash file, update the `DIR` variable to point to your photo collection and schedule it with a cronjob.
 ```
 #!/usr/bin/env bash

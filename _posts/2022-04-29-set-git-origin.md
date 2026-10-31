@@ -5,6 +5,10 @@ description: "Stop typing your GitHub token on every push: store it with a Git c
 date: 2022-02-08
 categories: linux
 last_modified_at: 2026-10-21
+image: /static/img/og/git-credentials-header.png
+thumbnail: /static/img/git-credentials-header.svg
+redirect_from:
+  - /linux/set-git-origin/
 ---
 
 ![A git push asking for a username and password, and three ways to store the token](/static/img/git-credentials-header.svg){: width="1000" height="360"}

@@ -16,7 +16,7 @@ layout: default
             {%- if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag -%}
                 {%- if hasSimilar.size == 0 -%}
                 <div class="related">
-                <h4>Related Posts</h4>
+                <h2 class="related__title">Related Posts</h2>
                 <ul>
                 {%- endif %}
                 <li class="relatedPost">
@@ -47,19 +47,30 @@ layout: default
 
 <div class="disqus-comments">
     <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* <![CDATA[ */
-
-        var disqus_shortname = "{{ site.disqus_shortname }}";
-        var disqus_identifier = "{{ site.url }}_{{ page.title }}";
-        var disqus_title = "{{ page.title }}";
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    <noscript>Enable JavaScript to see the comments.</noscript>
+    <script>
+        /* Threads are matched by canonical URL only, so title changes don't orphan comments.
+           Disqus is loaded when the comments come into view, not on page load. */
+        var disqus_config = function () {
+            this.page.url = "{{ page.url | absolute_url }}";
+        };
+        (function () {
+            var thread = document.getElementById('disqus_thread');
+            var loaded = false;
+            function load() {
+                if (loaded) return;
+                loaded = true;
+                var d = document.createElement('script');
+                d.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
+                d.setAttribute('data-timestamp', +new Date());
+                d.async = true;
+                document.body.appendChild(d);
+            }
+            if (!('IntersectionObserver' in window)) { load(); return; }
+            var io = new IntersectionObserver(function (entries) {
+                if (entries[0].isIntersecting) { io.disconnect(); load(); }
+            }, { rootMargin: '600px 0px' });
+            io.observe(thread);
         })();
-    /* ]]> */
     </script>
 </div>

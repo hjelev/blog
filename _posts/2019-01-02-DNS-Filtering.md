@@ -6,6 +6,10 @@ seo_title: "Block Ads and Malware with Free Filtering DNS Servers"
 date:   2019-01-02
 categories: windows
 last_modified_at: 2026-10-21
+image: /static/img/og/dns-filtering-header.png
+thumbnail: /static/img/dns-filtering-header.svg
+redirect_from:
+  - /windows/DNS-Filtering/
 ---
 
 ![A filtering DNS server answers normal domains and returns 0.0.0.0 for ad and malware domains](/static/img/dns-filtering-header.svg){: width="1000" height="360"}

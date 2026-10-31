@@ -4,6 +4,11 @@ title: "Basic iptables Tutorial: Lock Down a Linux Server"
 description: "Step-by-step iptables setup: default-deny rules, allowing SSH, HTTP/HTTPS, DNS and NTP, restricting DNS to trusted IPs, and loading the rules on boot."
 date: 2018-01-20
 categories: linux
+slug: iptables-example
+image: /static/img/og/iptables-header.png
+thumbnail: /static/img/iptables-header.svg
+redirect_from:
+  - /linux/iptables-exmple/
 ---
 
 ![iptables default-deny firewall allowing only SSH, HTTP/HTTPS, DNS and NTP through to the server](/static/img/iptables-header.svg){: width="1000" height="360"}

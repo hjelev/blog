@@ -4,6 +4,12 @@ title: "Raspberry Pi Operating Systems: Alternatives to Raspberry Pi OS"
 description: "Alternative operating systems for the Raspberry Pi: DietPi, RetroPie, Recalbox, Volumio, motionEyeOS, Ubuntu MATE and other purpose-built images."
 date: 2018-01-20
 categories: raspberry-pi
+seo_title: "Raspberry Pi OS Alternatives: Best Operating Systems"
+last_modified_at: 2019-01-22
+image: /static/img/og/rpi-os-header.png
+thumbnail: /static/img/rpi-os-header.svg
+redirect_from:
+  - /raspberry-pi/rpi-os-distributions/
 ---
 
 ![SD cards labelled DietPi, RetroPie, Recalbox, Volumio, motionEyeOS, Ubuntu MATE and OpenELEC](/static/img/rpi-os-header.svg){: width="1000" height="360"}

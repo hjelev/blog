@@ -4,6 +4,10 @@ description: "What Nerd Fonts are, why terminal tools like eza, Starship and Yaz
 seo_title: "Nerd Fonts: What They Are and How to Install Them"
 date: 2026-07-23
 categories: [linux, macos, windows, cli]
+image: /static/img/og/nerd-fonts-header.png
+thumbnail: /static/img/nerd-fonts-header.svg
+redirect_from:
+  - /linux/macos/windows/cli/nerd-fonts-what-why-how-to-install/
 ---
 
 ![Without a Nerd Font icons render as empty boxes; with one you get folder and Git branch glyphs](/static/img/nerd-fonts-header.svg){: width="1000" height="360"}

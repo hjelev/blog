@@ -5,6 +5,11 @@ description: "Mount a Samba (CIFS) share automatically at boot on Ubuntu with /e
 date: 2022-02-08
 categories: linux
 last_modified_at: 2026-10-21
+slug: mount-samba-share-fstab
+image: /static/img/og/samba-fstab-header.png
+thumbnail: /static/img/samba-fstab-header.svg
+redirect_from:
+  - /linux/mount-sama-share-fstab/
 ---
 
 ![An /etc/fstab line mounting //server/share on /mnt/share using a credentials file](/static/img/samba-fstab-header.svg){: width="1000" height="360"}

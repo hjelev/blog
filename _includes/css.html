@@ -1,8 +1,8 @@
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<!-- Fonts (self-hosted; latin files preloaded since every page uses them) -->
+<link rel="preload" href="{{ site.baseurl }}/static/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ site.baseurl }}/static/fonts/jetbrains-mono-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ site.baseurl }}/static/css/fonts.css">
 
 <!-- Syntax highlighting -->
 <link rel="stylesheet" href="{{ site.baseurl }}/static/css/syntax.css">

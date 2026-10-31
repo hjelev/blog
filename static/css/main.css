@@ -717,3 +717,13 @@ form button[type="submit"]:hover { filter: brightness(1.05); }
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ---- Dark-mode fixes for dark-on-transparent images ---------------------- */
+/* .invert-dark: black line art / silhouettes, flipped to white in dark mode   */
+/* .light-bg:    coloured logos with dark text, shown on a light card instead  */
+:root[data-theme="dark"] img.invert-dark { filter: invert(1); }
+:root[data-theme="dark"] img.light-bg { background: #f6f8fa; padding: 0.75rem; border-radius: 8px; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) img.invert-dark { filter: invert(1); }
+  :root:not([data-theme="light"]) img.light-bg { background: #f6f8fa; padding: 0.75rem; border-radius: 8px; }
+}

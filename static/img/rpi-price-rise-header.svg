@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Raspberry Pi 5 16GB: now $385</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">more than a complete N150 mini PC, so which Pi should you buy?</text>
+
+  <!-- price steps -->
+  <g font-size="17" font-weight="700" text-anchor="middle">
+    <rect x="60" y="152" width="130" height="44" rx="6" fill="none" stroke="#4ec27a" stroke-width="2"/>
+    <text x="125" y="180" fill="#4ec27a">$120</text>
+    <text x="210" y="181" fill="#9aa3b2" font-weight="400" font-size="20">→</text>
+
+    <rect x="230" y="152" width="130" height="44" rx="6" fill="none" stroke="#9aa3b2" stroke-width="2"/>
+    <text x="295" y="180" fill="#ffffff">$145</text>
+    <text x="380" y="181" fill="#9aa3b2" font-weight="400" font-size="20">→</text>
+
+    <rect x="400" y="152" width="130" height="44" rx="6" fill="none" stroke="#febc2e" stroke-width="2"/>
+    <text x="465" y="180" fill="#febc2e">$205</text>
+    <text x="550" y="181" fill="#9aa3b2" font-weight="400" font-size="20">→</text>
+
+    <rect x="570" y="152" width="130" height="44" rx="6" fill="none" stroke="#ff7a59" stroke-width="2"/>
+    <text x="635" y="180" fill="#ff7a59">$305</text>
+    <text x="720" y="181" fill="#9aa3b2" font-weight="400" font-size="20">→</text>
+
+    <rect x="740" y="152" width="130" height="44" rx="6" fill="#ff7a59"/>
+    <text x="805" y="180" fill="#14161b">$385</text>
+  </g>
+  <g font-size="14" fill="#9aa3b2" text-anchor="middle">
+    <text x="125" y="220">Jan 2025</text>
+    <text x="295" y="220">Dec 2025</text>
+    <text x="465" y="220">Feb 2026</text>
+    <text x="635" y="220">Apr 2026</text>
+    <text x="805" y="220" fill="#ff7a59">Nov 2026</text>
+  </g>
+
+  <g font-size="16">
+    <text x="60" y="270" fill="#9aa3b2">small jobs</text>
+    <text x="230" y="270" fill="#ffffff">1GB to 4GB Pi, or the one in your drawer</text>
+    <text x="60" y="304" fill="#9aa3b2">home server</text>
+    <text x="230" y="304" fill="#febc2e">N100/N150 mini PC</text>
+  </g>
+</svg>

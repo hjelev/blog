@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Monitor a Pi in Home Assistant</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">rpi-mqtt-monitor: MQTT discovery, no YAML</text>
+
+  <!-- data flow -->
+  <g font-size="15" font-weight="700" text-anchor="middle">
+    <rect x="60" y="152" width="230" height="44" rx="6" fill="#ff7a59"/>
+    <text x="175" y="179" fill="#14161b">Raspberry Pi</text>
+
+    <text x="335" y="180" fill="#9aa3b2" font-weight="400" font-size="20">⇄</text>
+
+    <rect x="380" y="152" width="230" height="44" rx="6" fill="none" stroke="#febc2e" stroke-width="2"/>
+    <text x="495" y="179" fill="#febc2e">MQTT broker</text>
+
+    <text x="655" y="180" fill="#9aa3b2" font-weight="400" font-size="20">⇄</text>
+
+    <rect x="700" y="152" width="230" height="44" rx="6" fill="none" stroke="#4ec27a" stroke-width="2"/>
+    <text x="815" y="179" fill="#4ec27a">Home Assistant</text>
+  </g>
+  <g font-size="14" fill="#9aa3b2" text-anchor="middle">
+    <text x="175" y="220">readings</text>
+    <text x="815" y="220">restart, shutdown, update</text>
+  </g>
+
+  <g font-size="16">
+    <text x="60" y="270" fill="#9aa3b2">sensors</text>
+    <text x="230" y="270" fill="#ffffff">CPU, temperature, disk, memory, power status</text>
+    <text x="60" y="304" fill="#9aa3b2">install</text>
+    <text x="230" y="304" fill="#febc2e">one script, a few minutes</text>
+  </g>
+</svg>

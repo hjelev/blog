@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="76" fill="#ffffff" font-size="34" font-weight="700">Ubuntu 26.04 → 26.10</text>
+  <text x="60" y="110" fill="#9aa3b2" font-size="17">what to check before, and what not to touch after</text>
+
+  <!-- 26.04 -->
+  <rect x="60" y="150" width="170" height="150" rx="10" fill="#e95420"/>
+  <text x="145" y="214" fill="#ffffff" font-size="32" font-weight="700" text-anchor="middle">26.04</text>
+  <text x="145" y="244" fill="#ffffff" font-size="16" text-anchor="middle">LTS · 5 years</text>
+
+  <!-- before -->
+  <g font-size="15">
+    <text x="262" y="172" fill="#febc2e">before</text>
+    <text x="262" y="204" fill="#d6dae2">/boot layout</text>
+    <text x="262" y="232" fill="#d6dae2">/lib32 symlink</text>
+    <text x="262" y="260" fill="#d6dae2">TPM encryption</text>
+    <text x="262" y="288" fill="#d6dae2">all updates in</text>
+  </g>
+
+  <!-- arrow -->
+  <g stroke="#febc2e" stroke-width="3" fill="none">
+    <path d="M430 225 H516"/>
+    <path d="M504 215 L518 225 L504 235"/>
+  </g>
+  <text x="473" y="208" fill="#febc2e" font-size="14" text-anchor="middle">-d, for now</text>
+
+  <!-- 26.10 -->
+  <rect x="534" y="150" width="170" height="150" rx="10" fill="#77216f"/>
+  <text x="619" y="214" fill="#ffffff" font-size="32" font-weight="700" text-anchor="middle">26.10</text>
+  <text x="619" y="244" fill="#ffffff" font-size="16" text-anchor="middle">9 months</text>
+
+  <!-- after -->
+  <g font-size="15">
+    <text x="734" y="172" fill="#4ec27a">after</text>
+    <text x="734" y="204" fill="#ff7a59">don't purge rc</text>
+    <text x="734" y="232" fill="#ff7a59">openssh-* packages</text>
+    <text x="734" y="260" fill="#d6dae2">re-enable repos</text>
+    <text x="734" y="288" fill="#d6dae2">systemctl --failed</text>
+  </g>
+</svg>

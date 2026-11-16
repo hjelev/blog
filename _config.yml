@@ -20,6 +20,9 @@ plugins:
   - jekyll-redirect-from
 baseurl: ""
 url: "https://blog.masoko.net"
+# Build in local time so a post dated "today" isn't treated as a future post
+# (Jekyll defaults to the build server's UTC clock and skips future posts).
+timezone: Europe/Sofia
 
 allowsearch: true
 

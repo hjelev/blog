@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">codeberg.org: clientHold</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">registrar NameSilo suspended the domain without warning · Nov 18, 2026</text>
+
+  <!-- terminal-ish status lines -->
+  <g font-size="16">
+    <text x="60" y="162" fill="#9aa3b2">$ curl -sL rdap.org/domain/codeberg.org | jq -r '.status[]'</text>
+    <text x="60" y="192" fill="#ff5f57" font-weight="700">client hold</text>
+    <text x="200" y="192" fill="#9aa3b2">05:52 UTC → DNS gone</text>
+    <text x="60" y="220" fill="#4ec27a" font-weight="700">client transfer prohibited</text>
+    <text x="340" y="220" fill="#9aa3b2">11:02 UTC → back</text>
+  </g>
+
+  <!-- outage bar -->
+  <g font-size="13">
+    <rect x="60" y="248" width="880" height="12" rx="6" fill="#2a2e37"/>
+    <rect x="275" y="248" width="190" height="12" rx="6" fill="#ff5f57"/>
+    <text x="60" y="280" fill="#9aa3b2">00:00</text>
+    <text x="275" y="280" fill="#ff5f57" text-anchor="middle">05:52</text>
+    <text x="465" y="280" fill="#4ec27a" text-anchor="middle">11:02</text>
+    <text x="940" y="280" fill="#9aa3b2" text-anchor="end">24:00 UTC</text>
+  </g>
+
+  <g font-size="16">
+    <text x="60" y="320" fill="#9aa3b2">lesson</text>
+    <text x="160" y="320" fill="#febc2e">your registrar is a single point of failure</text>
+  </g>
+
+  <!-- broken globe / DNS icon -->
+  <g transform="translate(866 44)" fill="none" stroke="#ff5f57" stroke-width="4" stroke-linecap="round">
+    <circle cx="34" cy="34" r="28"/>
+    <ellipse cx="34" cy="34" rx="12" ry="28"/>
+    <path d="M6 34 H62"/>
+    <path d="M10 10 L58 58" stroke-width="5"/>
+  </g>
+</svg>

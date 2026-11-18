@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">free DNS that blocks ads</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">AdGuard DNS, Control D, NextDNS, DNS4EU, Quad9 · tested 2026</text>
+
+  <g font-size="16">
+    <text x="60" y="162" fill="#9aa3b2">$ dig +short @94.140.14.14 doubleclick.net</text>
+    <text x="60" y="190" fill="#4ec27a">0.0.0.0</text>
+    <text x="150" y="190" fill="#9aa3b2">← blocked before your browser ever connects</text>
+  </g>
+
+  <!-- resolver rows -->
+  <g font-size="16">
+    <text x="60"  y="232" fill="#4ec27a" font-weight="700">✓</text><text x="84"  y="232" fill="#ffffff">AdGuard DNS</text>
+    <text x="330" y="232" fill="#4ec27a" font-weight="700">✓</text><text x="354" y="232" fill="#ffffff">Control D</text>
+    <text x="600" y="232" fill="#4ec27a" font-weight="700">✓</text><text x="624" y="232" fill="#ffffff">DNS4EU</text><text x="694" y="232" fill="#9aa3b2">(ad-block profile)</text>
+    <text x="60"  y="262" fill="#febc2e" font-weight="700">~</text><text x="84"  y="262" fill="#ffffff">NextDNS</text><text x="164" y="262" fill="#9aa3b2">(300k/mo)</text>
+    <text x="330" y="262" fill="#febc2e" font-weight="700">~</text><text x="354" y="262" fill="#ffffff">Quad9</text><text x="414" y="262" fill="#9aa3b2">(malware only)</text>
+    <text x="600" y="262" fill="#f25f5c" font-weight="700">✗</text><text x="624" y="262" fill="#ffffff">Mullvad, dns0.eu</text><text x="794" y="262" fill="#9aa3b2">(gone)</text>
+  </g>
+
+  <g font-size="16">
+    <text x="60" y="318" fill="#9aa3b2">tip</text>
+    <text x="130" y="318" fill="#febc2e">Android Private DNS → dns.adguard-dns.com: works on every network</text>
+  </g>
+
+  <!-- shield icon -->
+  <g transform="translate(870 36)">
+    <path d="M34 4 L62 14 V36 C62 54 50 66 34 72 C18 66 6 54 6 36 V14 Z" fill="none" stroke="#4ec27a" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M22 26 L46 50 M46 26 L22 50" stroke="#febc2e" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

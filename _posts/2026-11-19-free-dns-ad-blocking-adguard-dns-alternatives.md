@@ -22,6 +22,7 @@ Every IP address in this post was tested on **19 November 2026**: I asked each s
 > - **Your own blocklists and logs, free:** [NextDNS](#nextdns), up to 300,000 queries a month.
 > - **EU-run:** [DNS4EU](#dns4eu) "no ads" profile `86.54.11.13`
 > - **Malware only, non-profit:** [Quad9](#quad9) `9.9.9.9` (doesn't block ads)
+> - **No filtering, just fast DNS:** [Cloudflare, Google, Quad9 unfiltered](#the-big-unfiltered-resolvers)
 > - **Full control at home:** self-host [AdGuard Home or Pi-hole](#self-hosting-adguard-home-or-pi-hole)
 
 ## How DNS filtering works
@@ -138,6 +139,21 @@ Both of these are aimed at **family filtering**, not ad blocking:
 
 - **CleanBrowsing**: Security `185.228.168.9`, Adult `185.228.168.10`, Family `185.228.168.168` (also blocks proxies and VPNs, and forces YouTube Restricted Mode).
 - **OpenDNS FamilyShield** (Cisco): `208.67.222.123`, `208.67.220.123`, which blocks adult content. A free OpenDNS Home account adds category filtering, but it hasn't changed much in years.
+
+## The big unfiltered resolvers
+
+Sometimes you want **no filtering at all**: as an upstream for your own Pi-hole or AdGuard Home (which does the blocking), to troubleshoot a site you think a filter broke, or because your ISP's DNS is slow, hijacks typos to show ads, or censors domains. These are the well-known free ones. None of them block ads. All of them returned the real address for `doubleclick.net` in my test.
+
+| Provider | IPv4 | IPv6 | DoH / DoT | Notes |
+|---|---|---|---|---|
+| **Cloudflare** | `1.1.1.1`, `1.0.0.1` | `2606:4700:4700::1111`, `2606:4700:4700::1001` | `https://cloudflare-dns.com/dns-query`, `one.one.one.one` | usually the fastest; query logs deleted within 25 hours, audited by KPMG |
+| **Google Public DNS** | `8.8.8.8`, `8.8.4.4` | `2001:4860:4860::8888`, `2001:4860:4860::8844` | `https://dns.google/dns-query`, `dns.google` | the most widely used; very reliable, but it's Google |
+| **Quad9 unfiltered** | `9.9.9.10`, `149.112.112.10` | `2620:fe::10`, `2620:fe::fe:10` | `https://dns10.quad9.net/dns-query`, `dns10.quad9.net` | Swiss non-profit, no IP logging |
+| **OpenDNS** (Cisco) | `208.67.222.222`, `208.67.220.220` | `2620:119:35::35`, `2620:119:53::53` | `https://doh.opendns.com/dns-query` | not quite unfiltered: blocks known phishing domains by default |
+
+The other providers above also have unfiltered addresses: AdGuard `94.140.14.140`, Control D `76.76.2.0` and DNS4EU `86.54.11.100`. They're useful when you want to stay with the same provider and just switch filtering off.
+
+**As a Pi-hole or AdGuard Home upstream**, use the encrypted versions (DoH or DoT) instead of the plain IPs. Otherwise your ISP can still see every query your filter forwards. Quad9 and Cloudflare are the usual choices.
 
 ## Gone: services you should remove from your config
 

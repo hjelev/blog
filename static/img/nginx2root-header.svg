@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">NGINX2Root · CVE-2026-123007</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">find and patch every nginx you run</text>
+
+  <g font-size="16">
+    <text x="60" y="166" fill="#9aa3b2">attack</text>
+    <rect x="230" y="144" width="110" height="34" rx="6" fill="none" stroke="#9aa3b2" stroke-width="2"/>
+    <text x="285" y="166" fill="#ffffff" text-anchor="middle">HTTP/2</text>
+    <text x="358" y="166" fill="#9aa3b2">→</text>
+    <rect x="388" y="144" width="160" height="34" rx="6" fill="#ff7a59"/>
+    <text x="468" y="166" fill="#14161b" text-anchor="middle" font-weight="700">nginx worker</text>
+    <text x="566" y="166" fill="#9aa3b2">→</text>
+    <rect x="596" y="144" width="140" height="34" rx="6" fill="#ff7a59"/>
+    <text x="666" y="166" fill="#14161b" text-anchor="middle" font-weight="700">SCTP bug</text>
+    <text x="754" y="166" fill="#9aa3b2">→</text>
+    <text x="784" y="166" fill="#f25f5c" font-weight="700">host root</text>
+
+    <text x="60" y="222" fill="#9aa3b2">fixed in</text>
+    <text x="230" y="222" fill="#4ec27a" font-weight="700">1.30.7 / 1.31.9</text>
+    <text x="396" y="222" fill="#9aa3b2">(get 1.30.8 / 1.31.10)</text>
+
+    <text x="60" y="256" fill="#9aa3b2">not off</text>
+    <text x="230" y="256" fill="#febc2e">listen 443 ssl http2; + http2 off;</text>
+
+    <text x="60" y="290" fill="#9aa3b2">not patched</text>
+    <text x="230" y="290" fill="#febc2e">nginx -s reload</text>
+    <text x="396" y="290" fill="#9aa3b2">(restart instead)</text>
+
+    <text x="60" y="324" fill="#9aa3b2">block</text>
+    <text x="230" y="324" fill="#4ec27a">install sctp /bin/false</text>
+  </g>
+
+  <!-- warning icon -->
+  <g transform="translate(870 34)">
+    <path d="M34 6 L64 62 H4 Z" fill="#ff7a59" stroke="#ff7a59" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M34 26 V44" stroke="#14161b" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="34" cy="54" r="3.6" fill="#14161b"/>
+  </g>
+</svg>

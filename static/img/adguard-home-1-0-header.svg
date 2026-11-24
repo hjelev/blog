@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">AdGuard Home 1.0</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">what changed, what breaks, how to roll back</text>
+
+  <g font-size="16">
+    <text x="60" y="170" fill="#9aa3b2">version</text>
+    <text x="230" y="170" fill="#ffffff">0.107.80</text><text x="420" y="170" fill="#9aa3b2">→</text><text x="460" y="170" fill="#4ec27a" font-weight="700">1.0.0</text>
+
+    <text x="60" y="204" fill="#9aa3b2">config</text>
+    <text x="230" y="204" fill="#ffffff">schema 34</text><text x="420" y="204" fill="#9aa3b2">→</text><text x="460" y="204" fill="#febc2e">schema 35 (back it up first)</text>
+
+    <text x="60" y="238" fill="#9aa3b2">new installs</text>
+    <text x="230" y="238" fill="#ffffff">Quad9</text><text x="420" y="238" fill="#9aa3b2">→</text><text x="460" y="238" fill="#4ec27a">Cloudflare</text><text x="570" y="238" fill="#9aa3b2">(yours isn't changed)</text>
+
+    <text x="60" y="272" fill="#9aa3b2">old API</text>
+    <text x="230" y="272" fill="#ffffff">12 endpoints</text><text x="420" y="272" fill="#9aa3b2">→</text><text x="460" y="272" fill="#f25f5c">removed</text>
+  </g>
+
+  <text x="60" y="322" fill="#febc2e" font-size="16">$ cp AdGuardHome.yaml AdGuardHome.yaml.0107</text>
+
+  <!-- shield icon -->
+  <g transform="translate(870 36)">
+    <path d="M34 4 L62 14 V36 C62 54 50 66 34 72 C18 66 6 54 6 36 V14 Z" fill="none" stroke="#4ec27a" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M21 36 L31 47 L48 26" fill="none" stroke="#4ec27a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

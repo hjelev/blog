@@ -1,6 +1,7 @@
 ---
 title: "Free DNS Servers That Block Ads: AdGuard DNS and the Best Alternatives (2026)"
 date: 2026-11-19
+last_modified_at: 2026-11-24
 categories: [selfhosting, security]
 description: "Free public DNS with ad, tracker and malware blocking: AdGuard DNS, Control D, NextDNS, DNS4EU, Quad9 and more. Tested IPs, DoH/DoT hostnames and setup."
 seo_title: "Free Ad-Blocking DNS Servers in 2026 (Tested)"
@@ -21,7 +22,7 @@ Every IP address in this post was tested on **19 November 2026**: I asked each s
 > - **More control, still no account:** [Control D free](#control-d-free-dns). Separate resolvers for ads, social media and family.
 > - **Your own blocklists and logs, free:** [NextDNS](#nextdns), up to 300,000 queries a month.
 > - **EU-run:** [DNS4EU](#dns4eu) "no ads" profile `86.54.11.13`
-> - **Malware only, non-profit:** [Quad9](#quad9) `9.9.9.9` (doesn't block ads)
+> - **Malware only, non-profit:** [Quad9](#quad9) `9.9.9.9` (doesn't block ads, [not available in France](#quad9))
 > - **No filtering, just fast DNS:** [Cloudflare, Google, Quad9 unfiltered](#the-big-unfiltered-resolvers)
 > - **Full control at home:** self-host [AdGuard Home or Pi-hole](#self-hosting-adguard-home-or-pi-hole)
 
@@ -120,6 +121,8 @@ For Europeans who want to avoid US providers, it's the natural replacement for d
 ## Quad9
 
 [Quad9](https://quad9.net/) is a Swiss non-profit that blocks **malware and phishing domains only**, using threat feeds from many security companies. **It doesn't block ads.** It's in this list because it's the best "safe default" for people who don't want any ad filtering (no broken sites, no support calls from family) but still want protection.
+
+> **Update, 24 November 2026:** Quad9 no longer works **in France**. It [refuses all queries](https://quad9.net/news/blog/quad9-service-deactivation-in-france/) from French IP addresses after losing a court case over blocking piracy sites. VPNs that exit in France can be affected too. If that's you, use another provider from this list, and check your Pi-hole or AdGuard Home upstream **and bootstrap** servers. Older AdGuard Home installs [use Quad9 by default]({% post_url 2026-11-24-adguard-home-1-0-upgrade %}#quad9-and-france-check-this-first).
 
 - Filtered: `9.9.9.9`, `149.112.112.112`, DoH `https://dns.quad9.net/dns-query`, DoT `dns.quad9.net`
 - Unfiltered: `9.9.9.10`, `149.112.112.10`

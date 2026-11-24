@@ -13,27 +13,29 @@
   </head>
 
   <body>
+    <a class="skip" href="#content">Skip to content</a>
     {%- include icons.html -%}
-
-    <header class="topbar">
-      <a class="topbar__brand" href="/">{{ site.title }}</a>
-      <button id="nav-toggle" class="iconbtn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="sidebar">
-        <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
-      </button>
-    </header>
-
-    <div class="layout">
-      {%- include sidebar.html -%}
-
-      <main class="content" id="content">
-        {%- include header.html -%}
-        <div class="content-inner">
-          {{ content }}
+    {%- include topbar.html -%}
+    {%- if paginator and paginator.page == 1 %}
+    <div class="board">
+      <div class="board__inner shell">
+        <div class="board__text">
+          <h1 class="board__title">{{ page.title }}</h1>
+          <p class="board__lede">{{ site.description }}</p>
         </div>
-        {%- include footer.html -%}
-      </main>
+        {%- include pinout.html -%}
+      </div>
     </div>
+    {%- endif %}
 
+    <main class="content shell" id="content">
+      {%- unless paginator and paginator.page == 1 %}{% include header.html %}{% endunless %}
+      <div class="content-inner">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
     {%- include js.html -%}
   </body>
 </html>

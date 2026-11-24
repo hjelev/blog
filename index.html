@@ -2,28 +2,12 @@
 layout: default
 title: Masoko's Blog and Notes
 ---
-<div class="home-intro">
-  <p class="home-intro__cmd"><span class="home-intro__prompt">$</span> cat about.txt</p>
-  <p class="home-intro__text">Notes on Linux, CLI tools, Raspberry Pi and home-lab DIY, written down so I can redo them when they break.</p>
-  <p class="home-intro__stats">{{ site.posts.size }} posts · {{ site.categories.size }} categories · <a href="/categories/">browse all</a></p>
-</div>
-
-<ul class="postlist">
+<ul class="cards">
   {%- for post in paginator.posts %}
-  <li class="postlist__item{% if post.thumbnail %} has-thumb{% endif %}">
-    {%- if forloop.index <= 2 %}{% assign eager = true %}{% else %}{% assign eager = false %}{% endif %}
-    {%- include post_thumb.html post=post eager=eager %}
-    <div class="postlist__date">{{ post.date | date: "%Y-%m-%d" }}</div>
-    <h2 class="postlist__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    <p class="postlist__excerpt">{{ post.description | default: post.content | strip_html | truncatewords: 40 }}</p>
-    {%- if post.categories.size > 0 %}
-    <div class="postlist__cats">
-      {%- for category in post.categories %}
-      <a class="tag" href="{{ site.baseurl }}/category/{{ category }}/">{{ category }}</a>
-      {%- endfor %}
-    </div>
-    {%- endif %}
-  </li>
+  {%- assign lead = false %}{% assign eager = false %}
+  {%- if forloop.first and paginator.page == 1 %}{% assign lead = true %}{% endif %}
+  {%- if forloop.index <= 3 %}{% assign eager = true %}{% endif %}
+  {% include post_card.html post=post lead=lead eager=eager %}
   {%- endfor %}
 </ul>
 

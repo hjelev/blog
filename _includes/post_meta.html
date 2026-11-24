@@ -1,0 +1,13 @@
+{%- comment -%} Date and category links. Pass post=; minutes= and updated= are optional. {%- endcomment -%}
+<p class="meta">
+  <time datetime="{{ include.post.date | date: '%Y-%m-%d' }}">{{ include.post.date | date: "%-d %b %Y" }}</time>
+  {%- if include.updated %}
+  <span>Updated {{ include.updated | date: "%-d %b %Y" }}</span>
+  {%- endif %}
+  {%- if include.minutes %}
+  <span>{{ include.minutes }} min read</span>
+  {%- endif %}
+  {%- for category in include.post.categories %}
+  <a class="tag" href="{{ site.baseurl }}/category/{{ category }}/">{{ site.data.topics[category] | default: category }}</a>
+  {%- endfor %}
+</p>

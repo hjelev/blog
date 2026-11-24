@@ -1,0 +1,41 @@
+
+<header class="topbar">
+  <div class="topbar__inner shell">
+    <a class="brand" href="/">
+      <img class="brand__avatar" src="{{ site.logo }}" alt="" width="36" height="36">
+      <span class="brand__name">blog.masoko.net</span>
+    </a>
+
+    <button id="nav-toggle" class="iconbtn topbar__toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+    </button>
+
+    <div class="topbar__panel" id="site-nav">
+      <nav aria-label="Primary">
+        {%- include navigation.html -%}
+      </nav>
+
+      {%- if site.allowsearch == true %}
+      <div class="search" id="js-search" role="search">
+        <label class="search__label" for="js-search__input">
+          <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+          <input class="search__input" type="text" id="js-search__input" aria-label="Search posts" placeholder="Search posts" autocomplete="off" spellcheck="false">
+          <kbd class="search__key" aria-hidden="true">/</kbd>
+        </label>
+        <ul class="search__results is-hidden" id="js-search__results"></ul>
+      </div>
+      {%- endif %}
+
+      <div class="topbar__tools">
+        <button id="theme-toggle" class="iconbtn theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+        </button>
+        {%- include social_links.html -%}
+        <a class="iconbtn" href="/feed.xml" aria-label="RSS feed">
+          <svg class="icon" aria-hidden="true"><use href="#i-rss"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

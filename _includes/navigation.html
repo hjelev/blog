@@ -1,24 +1,11 @@
 
-<ul class="menu__list">
+<ul class="menu">
 {%- for i in site.data.urls %}
-  {%- assign current = nil %}
-  {%- assign pageurl = page.url | split:'/' | last %}
-  {%- assign menuurl = i.url | split:'/' | last %}
-  {%- if i.url contains '://' %}
-    {%- assign linkurl = i.url %}
-  {%- else %}
-    {%- assign linkurl = i.url | prepend: site.baseurl %}
-  {%- endif %}
-  {%- assign target = i.target %}
-  {%- unless target %}{% assign target = '_self' %}{% endunless %}
-  {%- if pageurl == menuurl or page.layout == i.layout %}{% assign current = 'is-current' %}{% endif %}
-  {%- if i.text == "Categories" and page.layout == "posts_by_category" %}{% assign current = 'is-current' %}{% endif %}
-  {%- assign ic = i.icon | replace: 'fa-home','home' | replace: 'fa-desktop','grid' | replace: 'fa-comments','info' %}
-  <li class="menu__item {{ current }}">
-    <a class="menu__link" href="{{ linkurl }}" target="{{ target }}">
-      <svg class="icon" aria-hidden="true"><use href="#i-{{ ic }}"></use></svg>
-      <span class="menu__text">{{ i.text | downcase }}</span>
-    </a>
-  </li>
+  {%- assign current = false %}
+  {%- if page.url == i.url %}{% assign current = true %}{% endif %}
+  {%- if i.url == "/" and page.layout == "post" %}{% assign current = true %}{% endif %}
+  {%- if i.url == "/" and paginator %}{% assign current = true %}{% endif %}
+  {%- if i.url == "/categories/" and page.layout == "posts_by_category" %}{% assign current = true %}{% endif %}
+  <li><a class="menu__link{% if current %} is-current{% endif %}" href="{{ i.url | relative_url }}"{% if page.url == i.url %} aria-current="page"{% endif %}>{{ i.text }}</a></li>
 {%- endfor %}
 </ul>

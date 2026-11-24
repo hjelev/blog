@@ -1,0 +1,12 @@
+{%- comment -%} One post in a list. Pass post=; lead=true for the large first entry; level= sets the heading level. {%- endcomment -%}
+{%- assign h = include.level | default: "h2" -%}
+<li class="card{% if include.lead %} card--lead{% endif %}">
+  {%- include post_thumb.html post=include.post eager=include.eager -%}
+  <div class="card__body">
+    <{{ h }} class="card__title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></{{ h }}>
+    {%- unless include.brief %}
+    <p class="card__excerpt">{{ include.post.description | default: include.post.content | strip_html | truncatewords: 40 }}</p>
+    {%- endunless %}
+    {% include post_meta.html post=include.post %}
+  </div>
+</li>

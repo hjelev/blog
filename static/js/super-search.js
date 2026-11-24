@@ -54,7 +54,13 @@
         }).filter(function (r) { return r.score > 0; });
         scored.sort(function (a, b) { return b.score - a.score; });
 
-        if (!scored.length) return hideResults();
+        if (!scored.length) {
+            lastSearchResultHash = '';
+            if (!posts.length) return hideResults(); // index still loading
+            searchResultsEl.innerHTML = '<li class="search__empty">No posts match. Try a shorter word.</li>';
+            searchResultsEl.classList.remove('is-hidden');
+            return;
+        }
 
         var currentResultHash = scored.map(function (r) { return r.post.url; }).join('|');
         if (currentResultHash !== lastSearchResultHash) {

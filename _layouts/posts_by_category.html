@@ -1,46 +1,39 @@
 ---
 layout: default
 ---
-<div class="cat-filters">
-  {%- for category in site.categories %}
-    {%- capture category_slug %}{{ category | first }}{% endcapture %}
-    {%- for c_slug in category_slug %}
-      {%- if c_slug == page.categories %}
-        <span class="btn is-active">{{ c_slug }}</span>
-      {%- else %}
-        <a href="{{ site.baseurl }}/category/{{ c_slug }}/" class="btn">{{ c_slug }}</a>
-      {%- endif %}
-    {%- endfor %}
-  {%- endfor %}
-</div>
-
 {%- if content != "" %}
 <div class="prose category-intro">
   {{ content }}
 </div>
 {%- endif %}
 
-{%- if site.categories[page.categories] %}
-<ul class="postlist">
-  {%- for post in site.categories[page.categories] %}
-    {%- capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
-    {%- if forloop.first %}
-      <li class="postlist__year">{{ post_year }}</li>
-    {%- else %}
-      {%- assign previous_index = forloop.index0 | minus: 1 %}
-      {%- capture previous_post_year %}{{ site.categories[page.categories][previous_index].date | date: '%Y' }}{% endcapture %}
-      {%- if post_year != previous_post_year %}
-        <li class="postlist__year">{{ post_year }}</li>
-      {%- endif %}
-    {%- endif %}
-    <li class="postlist__item{% if post.thumbnail %} has-thumb{% endif %}">
-      {%- include post_thumb.html post=post %}
-      <div class="postlist__date">{{ post.date | date: "%Y-%m-%d" }}</div>
-      <h2 class="postlist__title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="postlist__excerpt">{{ post.description | default: post.content | strip_html | truncatewords: 24 }}</p>
-    </li>
+<nav class="chips" aria-label="Categories">
+  {%- for category in site.categories %}
+    {%- assign slug = category[0] %}
+    <a class="chip{% if slug == page.categories %} is-active{% endif %}" href="{{ site.baseurl }}/category/{{ slug }}/"{% if slug == page.categories %} aria-current="page"{% endif %}>{{ site.data.topics[slug] | default: slug }}</a>
   {%- endfor %}
-</ul>
+</nav>
+
+{%- assign posts = site.categories[page.categories] %}
+{%- if posts %}
+{%- assign years = posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+{%- for year in years %}
+<section class="year">
+  <h2 class="year__label">{{ year.name }}</h2>
+  <ul class="rows">
+    {%- for post in year.items %}
+    <li class="row">
+      <div class="row__text">
+        <h3 class="row__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="row__excerpt">{{ post.description | default: post.content | strip_html | truncatewords: 40 }}</p>
+        <p class="meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %b" }}</time></p>
+      </div>
+      {%- include post_thumb.html post=post -%}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
 {%- else %}
   <p>There are no posts in this category.</p>
 {%- endif %}

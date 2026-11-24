@@ -9,9 +9,9 @@ description: "Who writes blog.masoko.net: Hristo Jelev's notes on Linux, CLI too
   <img class="about-card__avatar" src="{{ site.logo }}" alt="{{ site.author }}" width="96" height="96">
   <div>
     <p class="about-card__name">{{ site.author }}</p>
-    <p class="about-card__line">Linux · CLI tools · Raspberry Pi · self-hosting</p>
+    <p class="about-card__line">Linux, CLI tools, Raspberry Pi, self-hosting</p>
     <p class="about-card__links">
-      <a href="{{ site.github }}" target="_blank" rel="noopener">github.com/hjelev</a> ·
+      <a href="{{ site.github }}" target="_blank" rel="noopener">github.com/hjelev</a>
       <a href="/feed.xml">RSS</a>
     </p>
   </div>

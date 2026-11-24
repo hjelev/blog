@@ -31,20 +31,20 @@
     var btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'codeblock__copy';
-    btn.textContent = 'copy';
+    btn.textContent = 'Copy';
     btn.setAttribute('aria-label', 'Copy code to clipboard');
     wrap.appendChild(btn);
 
     btn.addEventListener('click', function () {
       var code = pre.querySelector('code') || pre;
       copyText(code.innerText.replace(/\n$/, '')).then(function () {
-        btn.textContent = 'copied';
+        btn.textContent = 'Copied';
         btn.classList.add('is-done');
       }, function () {
-        btn.textContent = 'error';
+        btn.textContent = 'Copy failed';
       }).then(function () {
         setTimeout(function () {
-          btn.textContent = 'copy';
+          btn.textContent = 'Copy';
           btn.classList.remove('is-done');
         }, 1600);
       });
@@ -70,7 +70,7 @@
   toc.setAttribute('aria-label', 'On this page');
   var inner = document.createElement('div');
   inner.className = 'toc__inner';
-  inner.innerHTML = '<div class="toc__title">on this page</div>';
+  inner.innerHTML = '<div class="toc__title">On this page</div>';
   var list = document.createElement('ol');
   list.className = 'toc__list';
 

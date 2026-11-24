@@ -1,22 +1,9 @@
 
 <header class="page-head">
-  <h1 class="page-title">{{ page.title }}</h1>
+  <h1 class="page-title">{% if paginator %}Older posts, page {{ paginator.page }} of {{ paginator.total_pages }}{% else %}{{ page.title }}{% endif %}</h1>
   {%- if page.date %}
   {%- assign words = page.content | number_of_words %}
   {%- assign minutes = words | divided_by: 200 | at_least: 1 %}
-  <p class="page-meta">
-    <span class="page-meta__date">{{ page.date | date: "%Y-%m-%d" }}</span>
-    {%- if page.last_modified_at %}
-    <span class="page-meta__updated">updated {{ page.last_modified_at | date: "%Y-%m-%d" }}</span>
-    {%- endif %}
-    <span class="page-meta__read">{{ minutes }} min read</span>
-    {%- if page.categories.size > 0 %}
-      <span class="page-meta__cats">
-        {%- for category in page.categories %}
-          <a class="tag" href="{{ site.baseurl }}/category/{{ category }}/">{{ category }}</a>
-        {%- endfor %}
-      </span>
-    {%- endif %}
-  </p>
+  {% include post_meta.html post=page minutes=minutes updated=page.last_modified_at %}
   {%- endif %}
 </header>

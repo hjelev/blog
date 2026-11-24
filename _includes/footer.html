@@ -1,8 +1,11 @@
 
 <footer class="site-footer">
-  <span class="site-footer__line">© {{ site.time | date: "%Y" }} {{ site.author }}</span>
-  <span class="site-footer__sep">·</span>
-  <span class="site-footer__line">built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a></span>
-  <span class="site-footer__sep">·</span>
-  <a class="site-footer__line" href="/feed.xml">RSS</a>
+  <div class="site-footer__inner shell">
+    <p>© {{ site.time | date: "%Y" }} {{ site.author }}. Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>.</p>
+    <ul class="site-footer__links">
+      <li><a href="/about/">Report a mistake</a></li>
+      <li><a href="/feed.xml">RSS feed</a></li>
+      <li><a href="https://github.com/hjelev/blog" target="_blank" rel="noopener">Source</a></li>
+    </ul>
+  </div>
 </footer>

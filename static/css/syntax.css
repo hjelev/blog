@@ -1,11 +1,11 @@
 /* Rouge syntax highlighting — themed for light/dark */
 :root {
-  --syn-comment: #6a737d;
+  --syn-comment: #5c656e;
   --syn-keyword: #b51a72;
-  --syn-string:  #0a7c3f;
+  --syn-string:  #09733a;
   --syn-number:  #0a52c7;
   --syn-name:    #6f42c1;
-  --syn-builtin: #b3590e;
+  --syn-builtin: #a34f0a;
   --syn-op:      #1f2328;
   --syn-err-bg:  rgba(207, 34, 46, 0.12);
 }
@@ -32,7 +32,6 @@
   }
 }
 
-.highlight, .highlight pre { background: transparent; }
 .highlight .c, .highlight .c1, .highlight .cm, .highlight .cs, .highlight .cd { color: var(--syn-comment); font-style: italic; }
 .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .kc { color: var(--syn-keyword); }
 .highlight .o, .highlight .ow, .highlight .p { color: var(--syn-op); }

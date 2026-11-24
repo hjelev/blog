@@ -1,0 +1,11 @@
+# Display names for category slugs (fallback: the slug itself)
+ai: AI
+cli: CLI
+linux: Linux
+macos: macOS
+python: Python
+raspberry-pi: Raspberry Pi
+security: Security
+selfhosting: Self-Hosting
+webcams: Webcams
+windows: Windows

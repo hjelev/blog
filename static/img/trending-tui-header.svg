@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <text x="60" y="58" fill="#ffffff" font-size="32" font-weight="700">top 10 trending TUI tools</text>
+  <text x="60" y="88" fill="#9aa3b2" font-size="16">GitHub stars gained, 10 to 24 November 2026 · cli.masoko.net</text>
+  <g font-size="15">
+    <text x="88" y="122" fill="#9aa3b2" text-anchor="end">1</text><text x="102" y="122" fill="#ffffff">OpenCode</text>
+    <path d="M220 111 H856.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="870.0" y="122" fill="#ffffff">+3,114</text>
+    <text x="88" y="143.5" fill="#9aa3b2" text-anchor="end">2</text><text x="102" y="143.5" fill="#ffffff">Herdr</text>
+    <path d="M220 132.5 H774.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="788.2" y="143.5" fill="#ffffff">+2,716</text>
+    <text x="88" y="165" fill="#9aa3b2" text-anchor="end">3</text><text x="102" y="165" fill="#ffffff">Claude Code</text>
+    <path d="M220 154 H575.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="589.0" y="165" fill="#ffffff">+1,747</text>
+    <text x="88" y="186.5" fill="#9aa3b2" text-anchor="end">4</text><text x="102" y="186.5" fill="#ffffff">Codex</text>
+    <path d="M220 175.5 H554.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="568.7" y="186.5" fill="#ffffff">+1,648</text>
+    <text x="88" y="208" fill="#9aa3b2" text-anchor="end">5</text><text x="102" y="208" fill="#ffffff">Mole</text>
+    <path d="M220 197 H397.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="411.1" y="208" fill="#ffffff">+881*</text>
+    <text x="88" y="229.5" fill="#9aa3b2" text-anchor="end">6</text><text x="102" y="229.5" fill="#ffffff">Atuin</text>
+    <path d="M220 218.5 H285.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="299.9" y="229.5" fill="#ffffff">+340</text>
+    <text x="88" y="251" fill="#9aa3b2" text-anchor="end">7</text><text x="102" y="251" fill="#ffffff">Yazi</text>
+    <path d="M220 240 H277.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="291.2" y="251" fill="#ffffff">+298</text>
+    <text x="88" y="272.5" fill="#9aa3b2" text-anchor="end">8</text><text x="102" y="272.5" fill="#ffffff">dnsglobe</text>
+    <path d="M220 261.5 H274.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="288.2" y="272.5" fill="#ffffff">+283</text>
+    <text x="88" y="294" fill="#9aa3b2" text-anchor="end">9</text><text x="102" y="294" fill="#ffffff">Neovim</text>
+    <path d="M220 283 H271.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="285.1" y="294" fill="#ffffff">+268</text>
+    <text x="88" y="315.5" fill="#9aa3b2" text-anchor="end">10=</text><text x="102" y="315.5" fill="#ffffff">fzf</text>
+    <path d="M220 304.5 H270.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="284.3" y="315.5" fill="#ffffff">+264</text>
+    <text x="88" y="337" fill="#9aa3b2" text-anchor="end">10=</text><text x="102" y="337" fill="#ffffff">lazygit</text>
+    <path d="M220 326 H270.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 H220 Z" fill="#4ec27a"/><text x="284.3" y="337" fill="#ffffff">+264</text>
+  </g>
+  <text x="940" y="346" fill="#9aa3b2" font-size="13" text-anchor="end">* since 16 Nov</text>
+</svg>

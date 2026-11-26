@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+
+  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Shirudo · OpenAI + Cisco</text>
+  <text x="60" y="114" fill="#9aa3b2" font-size="17">signed eBPF shields for unpatched Linux, and what they need</text>
+
+  <g font-size="16">
+    <text x="60" y="166" fill="#9aa3b2">flow</text>
+    <rect x="230" y="144" width="120" height="34" rx="6" fill="none" stroke="#9aa3b2" stroke-width="2"/>
+    <text x="290" y="166" fill="#ffffff" text-anchor="middle">sign</text>
+    <text x="362" y="166" fill="#9aa3b2">→</text>
+    <rect x="390" y="144" width="120" height="34" rx="6" fill="none" stroke="#9aa3b2" stroke-width="2"/>
+    <text x="450" y="166" fill="#ffffff" text-anchor="middle">OCI pull</text>
+    <text x="522" y="166" fill="#9aa3b2">→</text>
+    <rect x="550" y="144" width="150" height="34" rx="6" fill="#4ec27a"/>
+    <text x="625" y="166" fill="#14161b" text-anchor="middle" font-weight="700">kernel verify</text>
+    <text x="712" y="166" fill="#9aa3b2">→</text>
+    <rect x="740" y="144" width="110" height="34" rx="6" fill="#4ec27a"/>
+    <text x="795" y="166" fill="#14161b" text-anchor="middle" font-weight="700">TPM log</text>
+
+    <text x="60" y="222" fill="#9aa3b2">needs</text>
+    <text x="230" y="222" fill="#febc2e">bpf-next kernel + 5 patches + TPM 2.0</text>
+
+    <text x="60" y="256" fill="#9aa3b2">status</text>
+    <text x="230" y="256" fill="#febc2e">0.0.0-dev</text>
+    <text x="340" y="256" fill="#9aa3b2">(pre-release, "not yet" for production)</text>
+
+    <text x="60" y="290" fill="#9aa3b2">stock kernel</text>
+    <text x="230" y="290" fill="#f25f5c">Ubuntu 26.10: boots without enforcement</text>
+
+    <text x="60" y="324" fill="#9aa3b2">blocks</text>
+    <text x="230" y="324" fill="#f25f5c">bpftrace · Cilium · Docker device rules</text>
+  </g>
+
+  <!-- shield icon -->
+  <g transform="translate(872 30)">
+    <path d="M34 4 L64 16 V40 C64 60 50 72 34 80 C18 72 4 60 4 40 V16 Z" fill="#4ec27a"/>
+    <path d="M20 42 L30 52 L49 31" fill="none" stroke="#14161b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

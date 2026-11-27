@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="glow" cx="76%" cy="50%" r="42%">
+      <stop offset="0" stop-color="#ff7a3d" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ff7a3d" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#343946"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/>
+  <rect width="1000" height="360" rx="14" fill="url(#glow)"/>
+
+  <text x="60" y="88" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#ff7a3d" letter-spacing="2">REDDIT · NOVEMBER 2026</text>
+  <text x="60" y="146" font-size="44" font-weight="700" fill="#ffffff">Reddit RSS</text>
+  <text x="60" y="198" font-size="44" font-weight="700" fill="#ffffff">is dead</text>
+  <text x="60" y="242" font-size="19" fill="#9aa3b2">What still works for your feed reader</text>
+  <rect x="60" y="274" width="330" height="40" rx="20" fill="#262a33" stroke="#343946"/>
+  <text x="82" y="300" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e">/r/selfhosted/.rss → 404</text>
+
+  <!-- RSS icon, struck through -->
+  <g transform="translate(600 112)">
+    <rect width="140" height="140" rx="28" fill="none" stroke="#9aa3b2" stroke-width="4"/>
+    <circle cx="40" cy="100" r="11" fill="#9aa3b2"/>
+    <path d="M30 64 A46 46 0 0 1 76 110" fill="none" stroke="#9aa3b2" stroke-width="10" stroke-linecap="round"/>
+    <path d="M30 34 A76 76 0 0 1 106 110" fill="none" stroke="#9aa3b2" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <line x1="590" y1="268" x2="750" y2="96" stroke="#f25f5c" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- empty feed reader list -->
+  <g fill="none" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="800" y="100" width="160" height="164" rx="14" stroke="#6b7180"/>
+    <line x1="820" y1="132" x2="940" y2="132" stroke="#343946"/>
+    <line x1="820" y1="164" x2="900" y2="164" stroke="#343946"/>
+    <line x1="820" y1="196" x2="920" y2="196" stroke="#343946"/>
+    <line x1="820" y1="228" x2="880" y2="228" stroke="#343946"/>
+  </g>
+  <text x="880" y="290" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#6b7180">0 new items</text>
+</svg>

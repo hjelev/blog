@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">
+  <rect width="1000" height="340" rx="14" fill="#14161b"/>
+  <rect x="40" y="30" width="920" height="280" rx="10" fill="#0d0f13" stroke="#343946" stroke-width="1.5"/>
+  <path d="M40 40 a10 10 0 0 1 10 -10 h900 a10 10 0 0 1 10 10 v28 h-920 z" fill="#262a33"/>
+  <circle cx="66" cy="50" r="6" fill="#f25f5c"/><circle cx="88" cy="50" r="6" fill="#febc2e"/><circle cx="110" cy="50" r="6" fill="#4ec27a"/>
+  <text x="500" y="55" text-anchor="middle" font-size="14" fill="#9aa3b2">user@homelab: ~</text>
+
+  <text x="64" y="108"><tspan fill="#4ec27a">$</tspan><tspan dx="10" fill="#ffffff">some-command --flag</tspan></text>
+  <text x="64" y="138" fill="#9aa3b2">normal output line</text>
+  <text x="64" y="168" fill="#9aa3b2">normal output line</text>
+  <rect x="56" y="182" width="888" height="30" rx="4" fill="#f25f5c" fill-opacity="0.12"/>
+  <text x="64" y="203" fill="#f25f5c">the line that matters: error / result</text>
+  <text x="64" y="248"><tspan fill="#4ec27a">$</tspan><tspan dx="10" fill="#ffffff">next-command</tspan></text>
+  <text x="64" y="278" fill="#4ec27a">ok</text>
+</svg>

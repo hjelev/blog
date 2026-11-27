@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="16">
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#6b7180"/></marker></defs>
+  <rect width="1000" height="460" rx="14" fill="#14161b"/>
+  <g text-anchor="middle">
+    <rect x="330" y="36" width="340" height="56" rx="28" fill="#262a33" stroke="#5b9cf5" stroke-width="2"/>
+    <text x="500" y="70" fill="#ffffff" font-weight="700">First question?</text>
+
+    <rect x="80" y="170" width="340" height="56" rx="28" fill="#262a33" stroke="#343946" stroke-width="1.5"/>
+    <text x="250" y="204" fill="#ffffff" font-weight="700">Second question?</text>
+
+    <rect x="600" y="170" width="320" height="72" rx="10" fill="#16291f" stroke="#4ec27a" stroke-width="2"/>
+    <text x="760" y="202" fill="#4ec27a" font-weight="700">Outcome A (recommended)</text>
+    <text x="760" y="226" fill="#9aa3b2" font-size="14">short why</text>
+
+    <rect x="40" y="320" width="300" height="72" rx="10" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+    <text x="190" y="352" fill="#ffffff" font-weight="700">Outcome B</text>
+    <text x="190" y="376" fill="#9aa3b2" font-size="14">short why</text>
+
+    <rect x="380" y="320" width="300" height="72" rx="10" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+    <text x="530" y="352" fill="#ffffff" font-weight="700">Outcome C</text>
+    <text x="530" y="376" fill="#9aa3b2" font-size="14">short why</text>
+  </g>
+  <g stroke="#6b7180" stroke-width="2" fill="none" marker-end="url(#arr)">
+    <path d="M420 92 L270 166"/><path d="M580 92 L740 166"/>
+    <path d="M220 226 L190 316"/><path d="M290 226 L500 316"/>
+  </g>
+  <g font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="318" y="124" fill="#9aa3b2">no</text><text x="668" y="124" fill="#4ec27a">yes</text>
+    <text x="178" y="276" fill="#9aa3b2">no</text><text x="402" y="276" fill="#9aa3b2">yes</text>
+  </g>
+</svg>

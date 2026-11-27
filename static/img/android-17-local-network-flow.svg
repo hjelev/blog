@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="16">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#4ec27a"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#f25f5c"/></marker>
+  </defs>
+  <rect width="1000" height="400" rx="14" fill="#14161b"/>
+  <text x="40" y="52" font-size="22" font-weight="700" fill="#ffffff">Why it looks like a server problem</text>
+  <text x="40" y="80" font-size="15" fill="#9aa3b2">An app targeting SDK 37 without ACCESS_LOCAL_NETWORK, on your home Wi-Fi</text>
+
+
+  <g text-anchor="middle">
+    <rect x="40" y="186" width="200" height="90" rx="10" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+    <text x="140" y="224" fill="#ffffff" font-weight="700">App on phone</text>
+    <text x="140" y="250" fill="#9aa3b2" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">cloud.home.lan</text>
+
+    <rect x="700" y="150" width="230" height="72" rx="10" fill="#16291f" stroke="#4ec27a" stroke-width="2"/>
+    <text x="815" y="182" fill="#ffffff" font-weight="700">Pi-hole / AdGuard</text>
+    <text x="815" y="206" fill="#4ec27a" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">port 53: exempt</text>
+
+    <rect x="700" y="252" width="230" height="72" rx="10" fill="#1d2027" stroke="#343946" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="815" y="284" fill="#6b7180" font-weight="700">Server 192.168.1.10</text>
+    <text x="815" y="308" fill="#6b7180" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">0 log lines</text>
+  </g>
+
+  <!-- step 1: DNS ok -->
+  <path d="M240 210 C 420 210, 520 186, 694 186" stroke="#4ec27a" stroke-width="2" fill="none" marker-end="url(#ag)"/>
+  <text x="372" y="182" font-size="14" fill="#4ec27a"><tspan font-weight="700">1</tspan>  DNS lookup answers 192.168.1.10</text>
+
+  <!-- step 2: TCP blocked -->
+  <path d="M240 252 C 270 252, 280 288, 306 288" stroke="#f25f5c" stroke-width="2" fill="none"/>
+  <path d="M370 288 H694" stroke="#343946" stroke-width="2" stroke-dasharray="5 6" fill="none"/>
+  <g transform="translate(338 288)">
+    <circle r="24" fill="#2a1a1c" stroke="#f25f5c" stroke-width="3"/>
+    <line x1="-14" y1="-14" x2="14" y2="14" stroke="#f25f5c" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="386" y="276" font-size="14" fill="#f25f5c"><tspan font-weight="700">2</tspan>  TCP connect to 192.168.1.10</text>
+  <text x="386" y="310" font-size="14" fill="#f25f5c">blocked on the phone, no SYN sent</text>
+
+  <text x="40" y="376" font-size="15" fill="#febc2e">The name resolves, then the connection hangs. Your network is fine.</text>
+</svg>

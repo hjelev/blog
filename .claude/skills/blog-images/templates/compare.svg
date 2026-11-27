@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="16">
+  <rect width="1000" height="400" rx="14" fill="#14161b"/>
+  <!-- left: before / broken -->
+  <rect x="40" y="40" width="440" height="320" rx="12" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+  <rect x="40" y="40" width="440" height="6" rx="3" fill="#f25f5c"/>
+  <text x="70" y="90" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#f25f5c" letter-spacing="2">BEFORE</text>
+  <text x="70" y="124" font-size="24" font-weight="700" fill="#ffffff">Left option</text>
+  <g font-size="16" fill="#9aa3b2">
+    <text x="70" y="180"><tspan fill="#f25f5c">✗</tspan>  point one</text>
+    <text x="70" y="216"><tspan fill="#f25f5c">✗</tspan>  point two</text>
+    <text x="70" y="252"><tspan fill="#f25f5c">✗</tspan>  point three</text>
+  </g>
+  <text x="70" y="326" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#6b7180">footnote / version</text>
+
+  <!-- right: after / fixed -->
+  <rect x="520" y="40" width="440" height="320" rx="12" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+  <rect x="520" y="40" width="440" height="6" rx="3" fill="#4ec27a"/>
+  <text x="550" y="90" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#4ec27a" letter-spacing="2">AFTER</text>
+  <text x="550" y="124" font-size="24" font-weight="700" fill="#ffffff">Right option</text>
+  <g font-size="16" fill="#9aa3b2">
+    <text x="550" y="180"><tspan fill="#4ec27a">✓</tspan>  point one</text>
+    <text x="550" y="216"><tspan fill="#4ec27a">✓</tspan>  point two</text>
+    <text x="550" y="252"><tspan fill="#4ec27a">✓</tspan>  point three</text>
+  </g>
+  <text x="550" y="326" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#6b7180">footnote / version</text>
+</svg>

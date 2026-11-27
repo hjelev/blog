@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1000" height="260" rx="14" fill="#14161b"/>
+  <g>
+    <rect x="40" y="40" width="210" height="180" rx="12" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+    <text x="64" y="124" font-size="52" font-weight="700" fill="#5b9cf5">37</text>
+    <text x="64" y="164" font-size="16" fill="#ffffff">label line one</text>
+    <text x="64" y="188" font-size="14" fill="#9aa3b2">detail</text>
+
+    <rect x="270" y="40" width="210" height="180" rx="12" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+    <text x="294" y="124" font-size="52" font-weight="700" fill="#f25f5c">0</text>
+    <text x="294" y="164" font-size="16" fill="#ffffff">label line one</text>
+    <text x="294" y="188" font-size="14" fill="#9aa3b2">detail</text>
+
+    <rect x="500" y="40" width="210" height="180" rx="12" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+    <text x="524" y="124" font-size="52" font-weight="700" fill="#4ec27a">53</text>
+    <text x="524" y="164" font-size="16" fill="#ffffff">label line one</text>
+    <text x="524" y="188" font-size="14" fill="#9aa3b2">detail</text>
+
+    <rect x="730" y="40" width="230" height="180" rx="12" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+    <text x="754" y="124" font-size="52" font-weight="700" fill="#febc2e">1 tap</text>
+    <text x="754" y="164" font-size="16" fill="#ffffff">label line one</text>
+    <text x="754" y="188" font-size="14" fill="#9aa3b2">detail</text>
+  </g>
+</svg>

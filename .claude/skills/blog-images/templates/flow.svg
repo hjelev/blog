@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="16">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#6b7180"/></marker>
+    <marker id="arr-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#f25f5c"/></marker>
+  </defs>
+  <rect width="1000" height="320" rx="14" fill="#14161b"/>
+  <text x="40" y="52" font-size="22" font-weight="700" fill="#ffffff">What happens to the request</text>
+  <text x="40" y="80" font-size="15" fill="#9aa3b2">one-line context for the diagram</text>
+
+  <g text-anchor="middle">
+    <rect x="40" y="130" width="200" height="90" rx="10" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+    <text x="140" y="170" fill="#ffffff" font-weight="700">Step one</text>
+    <text x="140" y="196" fill="#9aa3b2" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">detail</text>
+
+    <rect x="290" y="130" width="200" height="90" rx="10" fill="#1d2027" stroke="#343946" stroke-width="1.5"/>
+    <text x="390" y="170" fill="#ffffff" font-weight="700">Step two</text>
+    <text x="390" y="196" fill="#9aa3b2" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">detail</text>
+
+    <rect x="540" y="130" width="200" height="90" rx="10" fill="#2a1a1c" stroke="#f25f5c" stroke-width="2"/>
+    <text x="640" y="170" fill="#ffffff" font-weight="700">The problem</text>
+    <text x="640" y="196" fill="#f25f5c" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">blocked here</text>
+
+    <rect x="790" y="130" width="170" height="90" rx="10" fill="#1d2027" stroke="#343946" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="875" y="170" fill="#6b7180" font-weight="700">Never reached</text>
+    <text x="875" y="196" fill="#6b7180" font-size="14" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">no log line</text>
+  </g>
+  <g stroke-width="2" fill="none">
+    <path d="M240 175 H284" stroke="#6b7180" marker-end="url(#arr)"/>
+    <path d="M490 175 H534" stroke="#6b7180" marker-end="url(#arr)"/>
+    <path d="M740 175 H784" stroke="#f25f5c" stroke-dasharray="5 5" marker-end="url(#arr-r)"/>
+  </g>
+  <text x="40" y="282" font-size="15" fill="#febc2e">Takeaway line: what the reader should do about it</text>
+</svg>

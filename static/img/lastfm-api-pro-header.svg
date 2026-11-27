@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="glow" cx="76%" cy="50%" r="42%">
+      <stop offset="0" stop-color="#e31b23" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#e31b23" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#343946"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="360" rx="14" fill="#14161b"/>
+  <rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/>
+  <rect width="1000" height="360" rx="14" fill="url(#glow)"/>
+
+  <text x="60" y="88" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#f25f5c" letter-spacing="2">LAST.FM · 1 DECEMBER 2026</text>
+  <text x="60" y="146" font-size="44" font-weight="700" fill="#ffffff">Last.fm API</text>
+  <text x="60" y="198" font-size="44" font-weight="700" fill="#ffffff">now needs Pro</text>
+  <text x="60" y="242" font-size="19" fill="#9aa3b2">Scrobbling stays free. Everything else doesn't.</text>
+  <rect x="60" y="274" width="330" height="40" rx="20" fill="#262a33" stroke="#343946"/>
+  <text x="82" y="300" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e">export your history now</text>
+
+  <g font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">
+    <rect x="590" y="96" width="370" height="176" rx="14" fill="#1b1e25" stroke="#343946" stroke-width="2"/>
+    <text x="614" y="134" fill="#ffffff">track.scrobble</text><text x="936" y="134" text-anchor="end" fill="#4ec27a" font-weight="700">free</text>
+    <text x="614" y="170" fill="#ffffff">updateNowPlaying</text><text x="936" y="170" text-anchor="end" fill="#4ec27a" font-weight="700">free</text>
+    <text x="614" y="206" fill="#ffffff">user.getRecentTracks</text><text x="936" y="206" text-anchor="end" fill="#f25f5c" font-weight="700">Pro</text>
+    <text x="614" y="242" fill="#ffffff">new API key</text><text x="936" y="242" text-anchor="end" fill="#f25f5c" font-weight="700">Pro</text>
+  </g>
+  <text x="775" y="300" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#6b7180">paid by whoever owns the key</text>
+</svg>

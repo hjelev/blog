@@ -9,7 +9,7 @@ image: /static/img/og/free-dns-filtering-header.png
 thumbnail: /static/img/free-dns-filtering-header.svg
 ---
 
-![Free filtering DNS: AdGuard DNS, Control D and DNS4EU block ads, NextDNS and Quad9 with caveats, Mullvad and dns0.eu are gone](/static/img/free-dns-filtering-header.svg){: width="1000" height="360"}
+![Free filtering DNS: example.com resolves normally while doubleclick.net gets 0.0.0.0](/static/img/free-dns-filtering-header.svg){: width="1000" height="360"}
 
 Changing one setting, your DNS server, blocks most ads and trackers on every device behind it, including smart TVs, phone apps and other things you can't install an ad blocker on. You don't need to install software, sign up or pay.
 
@@ -25,6 +25,8 @@ Every IP address in this post was tested on **19 November 2026**: I asked each s
 > - **Malware only, non-profit:** [Quad9](#quad9) `9.9.9.9` (doesn't block ads, [not available in France](#quad9))
 > - **No filtering, just fast DNS:** [Cloudflare, Google, Quad9 unfiltered](#the-big-unfiltered-resolvers)
 > - **Full control at home:** self-host [AdGuard Home or Pi-hole](#self-hosting-adguard-home-or-pi-hole)
+
+![Pick AdGuard DNS for no-account ad blocking, Control D for separate resolvers, NextDNS for custom lists, DNS4EU for EU-run, Quad9 for malware only, AdGuard Home or Pi-hole to self-host](/static/img/free-dns-filtering-pick.svg){: width="1000" height="409"}
 
 ## How DNS filtering works
 
@@ -42,6 +44,8 @@ $ dig +short @94.140.14.140 doubleclick.net     # AdGuard, unfiltered
 - **It doesn't hide empty ad boxes.** The page layout stays the same. You just see blank space where the ad was.
 - **Apps can ignore it.** Chrome, Firefox and many apps can use their own built-in DNS over HTTPS. Some smart TVs and IoT devices also hardcode `8.8.8.8`. See [Making it stick](#making-it-stick) below.
 - **Whoever runs the DNS server sees every domain you visit.** Pick a provider you trust more than your ISP.
+
+![An app asks for ads.tracker.net, the filtering resolver checks its blocklist, answers 0.0.0.0, and the ad never loads](/static/img/free-dns-filtering-how.svg){: width="1000" height="273"}
 
 ## The comparison
 

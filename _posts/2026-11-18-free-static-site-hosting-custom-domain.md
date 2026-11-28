@@ -8,7 +8,7 @@ image: /static/img/og/free-hosting-custom-domain-header.png
 thumbnail: /static/img/free-hosting-custom-domain-header.svg
 ---
 
-![Free static hosting with your own domain: GitHub Pages, Cloudflare, Codeberg Pages, GitLab Pages, Netlify, all with HTTPS and no ads](/static/img/free-hosting-custom-domain-header.svg){: width="1000" height="360"}
+![Free static hosting with your own domain: example.com pointed at GitHub Pages, Cloudflare, Codeberg or GitLab](/static/img/free-hosting-custom-domain-header.svg){: width="1000" height="360"}
 
 You don't need to pay for hosting to run a personal site, a project page, docs or a blog. If the site is **static**, meaning plain HTML, CSS, JavaScript and images, several big providers will host it for free. They'll serve it over HTTPS on **your own domain**, they won't inject ads or banners, and they won't put "Powered by X" in your footer.
 
@@ -23,6 +23,8 @@ Below are the services that pass three tests: **$0 hosting**, **custom domain wi
 > - **Also solid:** [GitLab Pages](#gitlab-pages) and [Netlify](#netlify). Netlify's free plan now runs on credits, so keep an eye on it.
 > - **Personal projects only:** [Vercel](#vercel-hobby). The Hobby plan doesn't allow commercial use.
 > - The **domain** still costs about $10–15 a year. Everything else can be free.
+
+![GitHub Pages is the default, Cloudflare the most generous, Codeberg Pages the non-profit option, GitLab Pages solid, Netlify credit-capped and Vercel Hobby non-commercial only](/static/img/free-hosting-custom-domain-pick.svg){: width="1000" height="424"}
 
 ## What "static" means (and why it's free)
 
@@ -113,6 +115,8 @@ For plain HTML, skip the build step and point `path:` at the folder with your `i
 1. **Verify your domain** first, under your account's **Settings → Pages → Add a domain**. GitHub gives you a TXT record to add. This stops anyone else from claiming your domain if you ever delete the repo.
 2. In the repo, go to **Settings → Pages → Custom domain**, enter the domain and save.
 3. Add DNS records at your DNS provider.
+
+![Custom domain steps: verify with a TXT record, add the domain in the host's settings, point A/AAAA records for the apex and a CNAME for www, HTTPS is issued automatically](/static/img/free-hosting-custom-domain-dns.svg){: width="1000" height="273"}
 
 For an **apex** domain (`example.com`):
 

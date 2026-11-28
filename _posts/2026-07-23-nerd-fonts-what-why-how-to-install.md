@@ -10,7 +10,7 @@ redirect_from:
   - /linux/macos/windows/cli/nerd-fonts-what-why-how-to-install/
 ---
 
-![Without a Nerd Font icons render as empty boxes; with one you get folder and Git branch glyphs](/static/img/nerd-fonts-header.svg){: width="1000" height="360"}
+![Without a Nerd Font icons render as empty boxes; with one you get folder, Git branch and file glyphs](/static/img/nerd-fonts-header.svg){: width="1000" height="360"}
 
 If you spend time in a terminal, you've probably seen screenshots where file listings, prompts, and status bars are full of clean little icons — a folder glyph next to directories, a language logo next to source files, a Git branch symbol in the prompt. Most of the time, that's not a special app doing custom rendering. It's just a **Nerd Font**.
 
@@ -20,6 +20,8 @@ If you spend time in a terminal, you've probably seen screenshots where file lis
 
 The result is a regular monospace coding font that *also* happens to contain icons for programming languages, file types, operating systems, Git status, and more — all renderable as a single character, at any font size, in any app that supports the font.
 
+
+![A coding font such as JetBrains Mono is patched with icon sets for file types, operating systems and Git to make a Nerd Font, which tools like eza, Starship, btop and Neovim use](/static/img/nerd-fonts-patching.svg){: width="1000" height="283"}
 
 ## Why you need them
 

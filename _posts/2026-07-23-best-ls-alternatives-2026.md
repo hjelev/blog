@@ -9,7 +9,7 @@ redirect_from:
   - /linux/macos/cli/best-ls-alternatives-2026/
 ---
 
-![eza -l output with Git status and icons, next to lsd, colorls and the unmaintained exa](/static/img/ls-alternatives-header.svg){: width="1000" height="360"}
+![eza -l output with Git status columns and Nerd Font icons](/static/img/ls-alternatives-header.svg){: width="1000" height="360"}
 
 `ls` has been listing files the same basic way for decades, and for plain output it's still fine. But a handful of modern replacements add colored, icon-annotated, Git-aware output while staying just as fast (or close to it) — and they're common enough now that you'll see them in a lot of dotfiles repos. Here's a rundown of the main options.
 
@@ -95,6 +95,8 @@ Install:
 ```bash
 gem install colorls
 ```
+
+![Pick eza for features and Git columns, lsd for icons by default, colorls if you already use Ruby; exa is unmaintained, use eza instead](/static/img/ls-alternatives-pick.svg){: width="1000" height="378"}
 
 ## Picking one
 

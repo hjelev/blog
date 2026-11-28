@@ -9,11 +9,17 @@ redirect_from:
   - /linux/Useful-cli-tools/
 last_modified_at: 2026-10-21
 seo_title: "Useful Linux CLI Tools: fd, jq, bat, eza, btop"
-thumbnail: /static/img/btop-screenshot.png
+thumbnail: /static/img/useful-cli-tools-header.svg
+image: /static/img/og/useful-cli-tools-header.png
 ---
+
+![Terminal showing fd, duf and bat: command-line tools I install on every Linux machine](/static/img/useful-cli-tools-header.svg){: width="1000" height="360"}
+
 These are the command-line tools I install on every new Linux machine, with links to their GitHub repos and the install commands for Ubuntu.
 
 For more tools in the same spirit, see [the best ls alternatives]({% post_url 2026-07-23-best-ls-alternatives-2026 %}) and [the best TUI file managers]({% post_url 2026-07-23-best-tui-file-managers-2026 %}).
+![Nine CLI tools: fd, jq, bat, fff, duf, eza, oh my zsh, btop and HTTPie, each with a one-line description](/static/img/useful-cli-tools-overview.svg){: width="1000" height="483"}
+
 ## fd
 [https://github.com/sharkdp/fd/](https://github.com/sharkdp/fd/){:target="_blank"}
 ![fd screenshot](/static/img/fd-screenshot.png){: width="467" height="70"}  

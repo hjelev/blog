@@ -1,36 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">PHP2Shell · CVE-2026-109618 / 109619</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">out of memory before your code runs, then a destructor nobody set</text>
-
-  <!-- hash table buckets -->
-  <g font-size="15">
-    <text x="60" y="176" fill="#9aa3b2">$_POST buckets</text>
-    <g fill="#4ec27a">
-      <rect x="230" y="156" width="90" height="30" rx="4"/>
-      <rect x="326" y="156" width="90" height="30" rx="4"/>
-      <rect x="422" y="156" width="90" height="30" rx="4"/>
-    </g>
-    <rect x="518" y="156" width="90" height="30" rx="4" fill="none" stroke="#ff7a59" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="563" y="176" fill="#ff7a59" text-anchor="middle">???</text>
-    <path d="M608 171 H660" stroke="#ff7a59" stroke-width="2"/>
-    <path d="M652 165 L662 171 L652 177" fill="none" stroke="#ff7a59" stroke-width="2"/>
-    <text x="672" y="176" fill="#ff7a59">dtor() → system()</text>
-    <text x="371" y="212" fill="#4ec27a" text-anchor="middle">valid entries</text>
-    <text x="563" y="212" fill="#ff7a59" text-anchor="middle">nNumUsed++ then OOM</text>
-  </g>
-
-  <g font-size="16">
-    <text x="60" y="270" fill="#9aa3b2">reached via</text>
-    <text x="230" y="270" fill="#ffffff">any PHP URL · mod_php / FPM / CGI</text>
-    <text x="60" y="304" fill="#9aa3b2">fixed in</text>
-    <text x="230" y="304" fill="#febc2e">PHP 8.5.12 / 8.4.27 / 8.3.36 / 8.2.35</text>
-  </g>
-
-  <!-- elephant-ish badge -->
-  <g transform="translate(860 40)">
-    <ellipse cx="40" cy="34" rx="44" ry="26" fill="#777bb3"/>
-    <text x="40" y="42" fill="#14161b" font-size="22" font-weight="700" text-anchor="middle">php</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#b48ead" stop-opacity="0.2"/><stop offset="1" stop-color="#b48ead" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#b48ead" letter-spacing="2">PHP · CVE-2026-109618/9</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >PHP2Shell:</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >patch PHP itself</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >Two exploited unauthenticated RCE bugs in the</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >PHP engine</text><rect x="60" y="310" width="341" height="40" rx="20.0" fill="#262a33" stroke="#343946" stroke-width="1.5"/><text x="82" y="335.4" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#4ec27a" >8.5.12 · 8.4.27 · 8.3.36 · 8.2.35</text><g transform="translate(590 96) scale(5.0000)"><path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z" fill="#ffffff"/></g><rect x="740" y="80" width="230" height="142" rx="10" fill="#0d0f13" stroke="#343946" stroke-width="1.5"/><path d="M740 90 a10 10 0 0 1 10 -10 h210 a10 10 0 0 1 10 10 v20 h-230 z" fill="#262a33"/><circle cx="758" cy="95" r="5" fill="#f25f5c"/><circle cx="774" cy="95" r="5" fill="#febc2e"/><circle cx="790" cy="95" r="5" fill="#4ec27a"/><text x="756" y="132" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa3b2" xml:space="preserve"><tspan fill="#9aa3b2">POST /</tspan></text><text x="756" y="154" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa3b2" xml:space="preserve"><tspan fill="#febc2e">aaaa…aaaa</tspan>=<tspan fill="#9aa3b2">1</tspan></text><text x="756" y="176" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa3b2" xml:space="preserve"><tspan fill="#f25f5c">memory_limit hit</tspan></text><text x="756" y="198" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa3b2" xml:space="preserve"><tspan fill="#f25f5c">→ system()</tspan></text>
 </svg>

@@ -1,46 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Free Windows tools</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">the small apps I install on every PC</text>
-  <rect x="860" y="40" width="32" height="32" rx="3" fill="#5c9cf5"/>
-  <rect x="896" y="40" width="32" height="32" rx="3" fill="#4ec27a"/>
-  <rect x="860" y="76" width="32" height="32" rx="3" fill="#febc2e"/>
-  <rect x="896" y="76" width="32" height="32" rx="3" fill="#ff7a59"/>
-  <rect x="60" y="160" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="60" y="160" width="5" height="40" rx="2" fill="#5c9cf5"/>
-  <text x="78" y="185.5" fill="#ffffff" font-size="16" text-anchor="start">WinSCP</text>
-  <rect x="280" y="160" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="280" y="160" width="5" height="40" rx="2" fill="#4ec27a"/>
-  <text x="298" y="185.5" fill="#ffffff" font-size="16" text-anchor="start">KiTTY</text>
-  <rect x="500" y="160" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="500" y="160" width="5" height="40" rx="2" fill="#febc2e"/>
-  <text x="518" y="185.5" fill="#ffffff" font-size="16" text-anchor="start">7-Zip</text>
-  <rect x="720" y="160" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="720" y="160" width="5" height="40" rx="2" fill="#ff7a59"/>
-  <text x="738" y="185.5" fill="#ffffff" font-size="16" text-anchor="start">Everything</text>
-  <rect x="60" y="214" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="60" y="214" width="5" height="40" rx="2" fill="#b48ead"/>
-  <text x="78" y="239.5" fill="#ffffff" font-size="16" text-anchor="start">Rufus</text>
-  <rect x="280" y="214" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="280" y="214" width="5" height="40" rx="2" fill="#2a8f8f"/>
-  <text x="298" y="239.5" fill="#ffffff" font-size="16" text-anchor="start">Notepad++</text>
-  <rect x="500" y="214" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="500" y="214" width="5" height="40" rx="2" fill="#5c9cf5"/>
-  <text x="518" y="239.5" fill="#ffffff" font-size="16" text-anchor="start">NSSM</text>
-  <rect x="720" y="214" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="720" y="214" width="5" height="40" rx="2" fill="#4ec27a"/>
-  <text x="738" y="239.5" fill="#ffffff" font-size="16" text-anchor="start">FileZilla</text>
-  <rect x="60" y="268" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="60" y="268" width="5" height="40" rx="2" fill="#febc2e"/>
-  <text x="78" y="293.5" fill="#ffffff" font-size="16" text-anchor="start">Inkscape</text>
-  <rect x="280" y="268" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="280" y="268" width="5" height="40" rx="2" fill="#ff7a59"/>
-  <text x="298" y="293.5" fill="#ffffff" font-size="16" text-anchor="start">Calibre</text>
-  <rect x="500" y="268" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="500" y="268" width="5" height="40" rx="2" fill="#b48ead"/>
-  <text x="518" y="293.5" fill="#ffffff" font-size="16" text-anchor="start">Win32 Disk Imager</text>
-  <rect x="720" y="268" width="206" height="40" rx="8" fill="#2a2d36"/>
-  <rect x="720" y="268" width="5" height="40" rx="2" fill="#2a8f8f"/>
-  <text x="738" y="293.5" fill="#ffffff" font-size="16" text-anchor="start">Open HW Monitor</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#5b9cf5" stop-opacity="0.2"/><stop offset="1" stop-color="#5b9cf5" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#5b9cf5" letter-spacing="2">WINDOWS · FREE TOOLS</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >Free Windows</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >software I keep</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >Transfers, SSH, archives, search, USB images and</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >services</text><rect x="60" y="310" width="260" height="40" rx="20.0" fill="#262a33" stroke="#343946" stroke-width="1.5"/><text x="82" y="335.4" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e" >winget install 7zip.7zip</text><g transform="translate(590 80) scale(1.2000)" fill="none" stroke="#5b9cf5" stroke-width="3.33" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="10" width="36" height="36" rx="3" stroke="#5b9cf5"/><rect x="54" y="10" width="36" height="36" rx="3" stroke="#5b9cf5"/><rect x="10" y="54" width="36" height="36" rx="3" stroke="#5b9cf5"/><rect x="54" y="54" width="36" height="36" rx="3" stroke="#5b9cf5"/></g><g transform="translate(740 70) scale(0.8600)" fill="none" stroke="#9aa3b2" stroke-width="4.65" stroke-linejoin="round" stroke-linecap="round"><path d="M8 26 a6 6 0 0 1 6 -6 H38 L46 30 H86 a6 6 0 0 1 6 6 V78 a6 6 0 0 1 -6 6 H14 a6 6 0 0 1 -6 -6 Z"/></g><g transform="translate(850 80) scale(0.8600)" fill="none" stroke="#9aa3b2" stroke-width="4.65" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="14" width="88" height="72" rx="8"/><path d="M22 40 L36 50 L22 60"/><line x1="44" y1="62" x2="64" y2="62"/></g><g transform="translate(756 200) scale(2.6667)"><path d="M0 18.858h24V8.181H10.717V5.142H0ZM2.021 7.271h6.657v1.994c-1.74 2.09-2.84 4.502-2.948 7.404H3.477c.09-2.501.353-4.954 2.283-6.994l.033-.033H2.021Zm8.45 1.253h13.215v10.143H10.47Zm6.01 1.213v6.871h1.482v-6.87Zm2.755.043v6.912h1.616v-2.42h1.029c.43-.001.754-.29.969-.716.427-.848.429-2.257-.024-3.092-.227-.419-.571-.697-1.033-.684zm-7.924.002v1.596h2.217l-2.304 3.736v1.54h4.287V15.1h-2.698l2.786-3.909v-1.41Zm9.452 1.512h.595c.164-.006.287.081.371.217.17.273.172.736.004.99a.364.364 0 0 1-.373.176l-.55.047z" fill="#ffffff"/></g><g transform="translate(858 190) scale(0.8000)" fill="none" stroke="#9aa3b2" stroke-width="5.00" stroke-linejoin="round" stroke-linecap="round"><path d="M24 6 H70 L84 20 V94 H24 Z"/><path d="M38 6 V22 M50 6 V22 M62 6 V22"/></g><g transform="translate(620 224) scale(0.6400)" fill="none" stroke="#9aa3b2" stroke-width="6.25" stroke-linejoin="round" stroke-linecap="round"><circle cx="42" cy="42" r="28"/><line x1="62" y1="62" x2="90" y2="90"/></g>
 </svg>

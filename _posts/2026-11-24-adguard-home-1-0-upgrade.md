@@ -8,7 +8,7 @@ image: /static/img/og/adguard-home-1-0-header.png
 thumbnail: /static/img/adguard-home-1-0-header.svg
 ---
 
-![AdGuard Home 0.107.80 to 1.0.0: config schema 34 to 35, default upstream Quad9 to Cloudflare, 12 API endpoints removed](/static/img/adguard-home-1-0-header.svg){: width="1000" height="360"}
+![AdGuard Home upgrade from 0.107.80 to 1.0.0 with config schema 35](/static/img/adguard-home-1-0-header.svg){: width="1000" height="360"}
 
 [AdGuard Home 1.0](https://github.com/AdguardTeam/AdGuardHome/releases/tag/v1.0.0) came out on 19 November 2026 with a rewritten web interface. For most people the upgrade takes a minute and DNS keeps working. But it also removes old API endpoints, changes the default upstream, and **upgrades your config file to a version that 0.107.80 refuses to read**, so a careless rollback leaves you without DNS.
 
@@ -37,6 +37,8 @@ $ curl -s http://127.0.0.1:3999/control/dns_info | jq -c '{upstream_dns,bootstra
 | Upstream | `https://dns10.quad9.net/dns-query` | `https://cloudflare-dns.com/dns-query` |
 | Bootstrap | `9.9.9.10`, `149.112.112.10` | `1.1.1.1`, `1.0.0.1` |
 | Bootstrap (IPv6) | `2620:fe::10`, `2620:fe::fe:10` | `2606:4700:4700::1111`, `2606:4700:4700::1001` |
+
+![The old default upstream was Quad9, which stopped serving France on 24 November; the 1.0 default is Cloudflare DNS, but upgrades keep your existing setting](/static/img/adguard-home-1-0-upstream.svg){: width="1000" height="406"}
 
 If you're affected, go to **Settings → DNS settings** and change the upstream **and the bootstrap servers**. If you only change the upstream to another DoH hostname, AdGuard Home may have no working server to look that hostname up with. Check the **fallback servers** too.
 
@@ -216,6 +218,8 @@ In Docker, set the image to `adguard/adguardhome:v0.107.80` and copy `conf.0107`
 **No backup?** Since the migration normally changes only the number, editing `schema_version: 35` to `34` in the YAML, with the service stopped, should be enough. AdGuard has documented that method for earlier schema changes. I haven't tested it for this one, so treat it as a last resort.
 
 ## Should you upgrade now?
+
+![Upgrade now on a default home setup; wait for 1.0.1 if you use per-client blocked services, access lists, DNSCrypt or self-rewrites; stay on 0.107.80 with a screen reader; wait for the Home Assistant app update](/static/img/adguard-home-1-0-should-i.svg){: width="1000" height="390"}
 
 - **Home user, default setup:** yes. Copy the config and go. You get the Go security fixes.
 - **You use per-client blocked services, access lists, DNSCrypt or self-rewrites:** wait for 1.0.1, or check that your bug is fixed there. Until then, 0.107.80 works fine.

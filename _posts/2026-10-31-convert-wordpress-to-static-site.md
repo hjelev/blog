@@ -10,7 +10,7 @@ redirect_from:
   - /linux/selfhosting/convert-wordpress-to-static-site/
 ---
 
-![Converting WordPress to a static site: WordPress, PHP and MySQL on the left become plain HTML files served from a CDN on the right](/static/img/wp-to-static-header.svg){: width="1000" height="360"}
+![WordPress exported to static HTML files, with PHP no longer exposed to the internet](/static/img/wp-to-static-header.svg){: width="1000" height="360"}
 
 This month's [PHP2Shell vulnerabilities]({% post_url 2026-10-31-php2shell-php-vulnerabilities-october-2026 %}) were a good reminder of something a lot of us already knew: most WordPress sites don't need to run code on every page view. A blog, a portfolio, a docs site, a small business page. The content changes a few times a month, but the server boots PHP, opens a MySQL connection and runs a few dozen plugins for **every single visitor**.
 
@@ -27,6 +27,8 @@ This blog has been static for years (it's Jekyll on GitHub Pages; I wrote about 
 | PHP exposed to the internet | no | no |
 | Effort | an afternoon | a weekend |
 | Best for | non-technical editors, heavy use of Gutenberg/page builders | developers, people who like Git and Markdown |
+
+![Option A keeps WordPress private and exports HTML with Simply Static; option B exports to Markdown and builds with Jekyll or Hugo; both publish to a free host](/static/img/wp-to-static-paths.svg){: width="1000" height="462"}
 
 Both get you the main win: **nothing on the public internet runs PHP**. Pick A if someone else edits the site and loves WordPress. Pick B if you're the only author and you're comfortable in a terminal.
 
@@ -190,6 +192,8 @@ curl -s https://example.com/sitemap.xml | grep -oP '(?<=<loc>)[^<]+' | sed 's#ht
 find _site -name index.html | sed 's#_site##; s#index.html##' | sort > new.txt
 comm -23 old.txt new.txt     # URLs that would 404
 ```
+
+![Comments move to Giscus or Disqus, forms to Formspree or Netlify Forms, search to Pagefind; logins and shops still need a backend](/static/img/wp-to-static-dynamic.svg){: width="1000" height="356"}
 
 ## Replacing the dynamic bits
 

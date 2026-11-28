@@ -1,33 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">iptables: default deny</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">drop everything, then allow only what the server needs</text>
-  <rect x="60" y="190" width="170" height="90" rx="8" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
-  <text x="145.0" y="231.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">internet</text>
-  <text x="145.0" y="253.6" fill="#9aa3b2" font-size="13" text-anchor="middle">any port</text>
-  <rect x="470" y="150" width="26" height="190" rx="4" fill="#ff7a59"/>
-  <line x1="470" y1="165" x2="496" y2="165" stroke="#14161b" stroke-width="3"/>
-  <line x1="470" y1="195" x2="496" y2="195" stroke="#14161b" stroke-width="3"/>
-  <line x1="470" y1="225" x2="496" y2="225" stroke="#14161b" stroke-width="3"/>
-  <line x1="470" y1="255" x2="496" y2="255" stroke="#14161b" stroke-width="3"/>
-  <line x1="470" y1="285" x2="496" y2="285" stroke="#14161b" stroke-width="3"/>
-  <line x1="470" y1="315" x2="496" y2="315" stroke="#14161b" stroke-width="3"/>
-  <text x="483" y="143" fill="#ff7a59" font-size="13" text-anchor="middle" font-weight="700">INPUT DROP</text>
-  <text x="260" y="172" fill="#ffffff" font-size="15" text-anchor="start">22/tcp  ssh</text>
-  <path d="M430 167 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="260" y="206" fill="#ffffff" font-size="15" text-anchor="start">80,443  web</text>
-  <path d="M430 201 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="260" y="240" fill="#ffffff" font-size="15" text-anchor="start">53/udp  dns*</text>
-  <path d="M430 235 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="260" y="274" fill="#ffffff" font-size="15" text-anchor="start">123/udp ntp</text>
-  <path d="M430 269 l6 6 l12 -13" fill="none" stroke="#4ec27a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="260" y="308" fill="#9aa3b2" font-size="15" text-anchor="start">*       other</text>
-  <path d="M430 296 l13 13 M443 296 l-13 13" stroke="#ff5f57" stroke-width="3.5" stroke-linecap="round"/>
-  <line x1="510" y1="240" x2="690" y2="240" stroke="#4ec27a" stroke-width="2.5"/>
-  <path d="M690.0 240.0 L681.0 244.3 L681.0 235.7 Z" fill="#4ec27a"/>
-  <rect x="700" y="190" width="240" height="90" rx="8" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
-  <text x="820.0" y="231.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">pi-hole server</text>
-  <text x="820.0" y="253.6" fill="#9aa3b2" font-size="13" text-anchor="middle">192.168.0.103</text>
-  <text x="700" y="312" fill="#9aa3b2" font-size="13" text-anchor="start">* dns from trusted IPs only</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#4ec27a" stop-opacity="0.2"/><stop offset="1" stop-color="#4ec27a" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#4ec27a" letter-spacing="2">LINUX · FIREWALL</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >iptables:</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >deny by default</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >Close everything, then open only SSH, web, NTP</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >and DNS</text><rect x="60" y="310" width="161" height="40" rx="20.0" fill="#262a33" stroke="#343946" stroke-width="1.5"/><text x="82" y="335.4" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#f25f5c" >-P INPUT DROP</text><g transform="translate(600 80) scale(1.9000)" fill="none" stroke="#9aa3b2" stroke-width="2.11" stroke-linejoin="round" stroke-linecap="round"><path d="M50 6 L86 20 V48 C86 70 70 86 50 94 C30 86 14 70 14 48 V20 Z"/><path d="M34 50 L46 62 L68 38" stroke="#4ec27a"/></g><text x="830" y="100" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#4ec27a" >22  ssh</text><text x="830" y="138" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#4ec27a" >80  http</text><text x="830" y="176" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#4ec27a" >443 https</text><text x="830" y="214" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#febc2e" >53  lan only</text><text x="830" y="252" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#f25f5c" font-weight="700" >*   DROP</text><path d="M800 92 V262" stroke="#343946" stroke-width="2"/>
 </svg>

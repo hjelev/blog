@@ -11,7 +11,7 @@ redirect_from:
   - /linux/ssh-without-password/
 ---
 
-![ssh-keygen, ssh-copy-id and a passwordless ssh login, with the public key copied to the server](/static/img/ssh-keys-header.svg){: width="1000" height="360"}
+![An Ed25519 key on a laptop, the public key copied to a server, and a passwordless SSH login](/static/img/ssh-keys-header.svg){: width="1000" height="360"}
 
 Typing a password every time you SSH into a Raspberry Pi or a server gets old fast. SSH keys fix that: you create a key pair once, put the public half on the remote machine, and from then on you log in without a password. Keys are also a lot harder to brute-force than a password.
 
@@ -34,6 +34,8 @@ cat ~/.ssh/id_ed25519.pub
 ```
 
 You should see one line starting with `ssh-ed25519`. This is the part you copy to other machines. Never share the file without `.pub`, that's your private key.
+
+![The private key id_ed25519 stays on your laptop; ssh-copy-id appends id_ed25519.pub to authorized_keys on the server](/static/img/ssh-keys-where.svg){: width="1000" height="350"}
 
 ## 3. Copy the key to the remote machine
 

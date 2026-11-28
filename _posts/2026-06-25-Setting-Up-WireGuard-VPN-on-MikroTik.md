@@ -11,7 +11,7 @@ redirect_from:
   - /linux/Setting-Up-WireGuard-VPN-on-MikroTik/
 ---
 
-![Android and Windows 11 clients connect over a WireGuard tunnel on UDP 13231 to a MikroTik router and the home LAN](/static/img/wireguard-header.svg){: width="1000" height="360"}
+![MikroTik router running WireGuard at 10.0.0.1 with an Android phone at 10.0.0.2 and a Windows laptop at 10.0.0.3](/static/img/wireguard-header.svg){: width="1000" height="360"}
 
 Remote access is a cornerstone of any robust home lab or small business network. While there are many VPN flavors out there, WireGuard has quickly become the gold standard due to its incredible speed, lightweight footprint, and cryptographic security.
 
@@ -24,6 +24,8 @@ If you run a MikroTik router (RouterOS v7+), you have a powerful enterprise-grad
 * **Roaming Support:** If your phone switches from Wi-Fi to 4G/5G, the WireGuard connection transitions instantly without dropping your session.
 
 ---
+
+![Topology: MikroTik wireguard1 at 10.0.0.1/24 listening on UDP 13231; Android peer 10.0.0.2 with full tunnel 0.0.0.0/0, Windows peer 10.0.0.3 with split tunnel 192.168.88.0/24](/static/img/wireguard-topology.svg){: width="1000" height="400"}
 
 ## Phase 1: Configuring the MikroTik Server
 
@@ -107,6 +109,8 @@ The `PersistentKeepalive = 25` line ensures that your PC sends a tiny blank pack
 ## Troubleshooting: Why am I getting 0 B Received?
 
 If your client says "Active" but the Transfer: Received counter sits stubbornly at `0 B`, your tunnel is failing its cryptographic handshake. Check these three things:
+
+![0 B received checklist: swapped public keys, client address not matching the peer's /32, CGNAT or a dynamic public IP](/static/img/wireguard-0b-received.svg){: width="1000" height="386"}
 
 * **Key Swap Mishap:** Double-check that you didn't accidentally paste the router's key into the router's peer settings. The router must hold the client's key, and the client must hold the router's key.
 * **IP Subnet Mismatch:** Ensure the client IP (e.g., `10.0.0.3`) matches the specific `/32` allowed address you assigned to that peer inside MikroTik.

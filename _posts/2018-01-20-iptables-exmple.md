@@ -11,13 +11,15 @@ redirect_from:
   - /linux/iptables-exmple/
 ---
 
-![iptables default-deny firewall allowing only SSH, HTTP/HTTPS, DNS and NTP through to the server](/static/img/iptables-header.svg){: width="1000" height="360"}
+![iptables default-deny firewall: SSH, HTTP, HTTPS and LAN-only DNS allowed, everything else dropped](/static/img/iptables-header.svg){: width="1000" height="360"}
 
 This is the iptables configuration I have used to secure my pihole instance before exposing it publicly.  
 
 This configuration will close all ports, then allow connections on port 80, 443, 123 and allow ping to IP 192.168.0.103 which is hosting my pihole.
 Allow access to port 53 from your local network. 
 Then it will open port 53 only to IP 46.249.76.212 (you can allow multiple IPs by cloning the 4 lines from the configuration for IP 46.249.76.212 )
+
+![Table of traffic the finished rules allow: SSH, HTTP and HTTPS, NTP and ping from anywhere, DNS only from the LAN and one trusted IP, everything else dropped](/static/img/iptables-allowed.svg){: width="1000" height="434"}
 
 
 First we need to create a file that will hold our iptables rules.  
@@ -43,6 +45,8 @@ Use your favorite text editor to open the file we just created **/etc/iptables.u
 	COMMIT
 
 	
+![Each incoming packet is checked in order: replies to our traffic, loopback and allowed ports are accepted; anything else hits the DROP policy](/static/img/iptables-chain.svg){: width="1000" height="305"}
+
 Replace the COMMIT command with the text below:
 	
 

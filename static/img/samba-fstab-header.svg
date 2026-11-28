@@ -1,23 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Mount a Samba share at boot</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">one fstab line and a credentials file</text>
-  <rect x="60" y="150" width="200" height="70" rx="8" fill="#2a2d36" stroke="#ff7a59" stroke-width="2"/>
-  <text x="160.0" y="181.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">//server/share</text>
-  <text x="160.0" y="203.6" fill="#9aa3b2" font-size="13" text-anchor="middle">Samba / NAS</text>
-  <line x1="264" y1="185" x2="386" y2="185" stroke="#9aa3b2" stroke-width="2.5"/>
-  <path d="M386.0 185.0 L377.0 189.3 L377.0 180.7 Z" fill="#9aa3b2"/>
-  <text x="325" y="172" fill="#9aa3b2" font-size="13" text-anchor="middle">cifs</text>
-  <rect x="400" y="150" width="200" height="70" rx="8" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
-  <text x="500.0" y="181.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">/mnt/share</text>
-  <text x="500.0" y="203.6" fill="#9aa3b2" font-size="13" text-anchor="middle">mounted on boot</text>
-  <rect x="740" y="150" width="200" height="70" rx="8" fill="#2a2d36" stroke="#febc2e" stroke-width="2"/>
-  <text x="840.0" y="181.25" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">.smbcredentials</text>
-  <text x="840.0" y="203.25" fill="#9aa3b2" font-size="13" text-anchor="middle">chmod 600</text>
-  <line x1="736" y1="185" x2="604" y2="185" stroke="#febc2e" stroke-width="2.5" stroke-dasharray="6 6"/>
-  <path d="M604.0 185.0 L613.0 180.7 L613.0 189.3 Z" fill="#febc2e"/>
-  <rect x="60" y="250" width="880" height="80" rx="10" fill="#1d2027"/>
-  <text x="80" y="280" fill="#9aa3b2" font-size="15" text-anchor="start"># /etc/fstab</text>
-  <text x="80" y="310" font-size="15" fill="#9aa3b2" xml:space="preserve"><tspan fill="#ff7a59">//server/share</tspan> <tspan fill="#4ec27a">/mnt/share</tspan> <tspan fill="#ffffff">cifs</tspan> <tspan fill="#febc2e">credentials=/root/.smbcredentials</tspan><tspan fill="#ffffff">,_netdev,nofail</tspan> 0 0</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#febc2e" stop-opacity="0.2"/><stop offset="1" stop-color="#febc2e" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e" letter-spacing="2">UBUNTU · SAMBA</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >Mount a Samba share</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >at boot</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >One line in /etc/fstab and a root-only credentials</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >file</text><rect x="60" y="310" width="341" height="40" rx="20.0" fill="#262a33" stroke="#343946" stroke-width="1.5"/><text x="82" y="335.4" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e" >credentials=/root/.smbcredentials</text><g transform="translate(590 90) scale(1.3000)" fill="none" stroke="#9aa3b2" stroke-width="3.08" stroke-linejoin="round" stroke-linecap="round"><rect x="12" y="8" width="76" height="24" rx="5"/><rect x="12" y="38" width="76" height="24" rx="5"/><rect x="12" y="68" width="76" height="24" rx="5"/><line x1="24" y1="20" x2="48" y2="20"/><line x1="24" y1="50" x2="48" y2="50"/><line x1="24" y1="80" x2="48" y2="80"/><circle cx="74" cy="20" r="2.5" fill="#4ec27a" stroke="none"/><circle cx="74" cy="50" r="2.5" fill="#4ec27a" stroke="none"/><circle cx="74" cy="80" r="2.5" fill="#4ec27a" stroke="none"/></g><path d="M730 155 L790 155" stroke="#9aa3b2" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/><g transform="translate(800 96) scale(1.3000)" fill="none" stroke="#9aa3b2" stroke-width="3.08" stroke-linejoin="round" stroke-linecap="round"><path d="M8 26 a6 6 0 0 1 6 -6 H38 L46 30 H86 a6 6 0 0 1 6 6 V78 a6 6 0 0 1 -6 6 H14 a6 6 0 0 1 -6 -6 Z"/></g><text x="865" y="252" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e" text-anchor="middle" >/mnt/share</text><text x="655" y="252" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#9aa3b2" text-anchor="middle" >//nas/share</text>
 </svg>

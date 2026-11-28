@@ -8,7 +8,7 @@ image: /static/img/og/codeberg-clienthold-header.png
 thumbnail: /static/img/codeberg-clienthold-header.svg
 ---
 
-![codeberg.org was put on clientHold by its registrar NameSilo on November 18, 2026, and was unreachable from about 05:52 to 11:02 UTC](/static/img/codeberg-clienthold-header.svg){: width="1000" height="360"}
+![codeberg.org put on clientHold by its registrar NameSilo from 05:52 to 11:02 UTC, so it stopped resolving](/static/img/codeberg-clienthold-header.svg){: width="1000" height="360"}
 
 This morning [Codeberg](https://codeberg.org), the non-profit Git host behind Forgejo, Zig, GNU Guix, Libreboot and a lot of other projects, disappeared from the internet. The servers were fine and nobody hacked anything. Its domain registrar, NameSilo, put `codeberg.org` on **clientHold**, and DNS for the domain stopped working.
 
@@ -36,6 +36,8 @@ Here's the timeline as best I can piece it together (times in UTC):
 | 11:02 | The RDAP record's "last changed" timestamp, most likely the moment the hold was removed |
 | 11:23 | Codeberg [posts](https://social.anoxinon.de/@codebergstatus/117637187711177698) that the domain "is slowly recovering" |
 
+![Timeline on November 18: clientHold set at 05:52 UTC, users report failures at 07:20, incident opened on codeberg.eu at 08:07, hold removed at 11:02, recovery announced at 11:23](/static/img/codeberg-clienthold-timeline.svg){: width="1000" height="248"}
+
 That's roughly **five hours** with no DNS, plus however long it took for the change to reach resolvers that had cached the failure.
 
 According to Codeberg, the domain "entirely disappeared" from its NameSilo account. It hadn't expired (it's paid up until **July 2028**), it hadn't been transferred, and the account showed no suspicious logins. Codeberg also says it got no warning before the suspension.
@@ -53,6 +55,8 @@ The "client" part means the **registrar** set it, not the registry (that would b
 - **Unpaid or disputed payments.**
 
 Codeberg's case went to the abuse team, which points to the second one. But neither NameSilo nor Codeberg has said what the actual trigger was, so I won't guess.
+
+![clientHold: the registrar sets the status, the registry drops the domain from the .org zone, the name stops resolving, and the website, Git, CI and package registry break although the servers keep running](/static/img/codeberg-clienthold-flow.svg){: width="1000" height="283"}
 
 ### What broke
 
@@ -94,6 +98,8 @@ I run a handful of services at home, plus this blog, and I'll admit I'd never gi
 There have been similar cases before. Heise points out that Italian activist host Autistici/Inventati lost access to its domain in September. And registrar-level suspensions after abuse reports, sometimes false or automated, are a known problem. The registrar has to act fast on real phishing domains, and the side effect is that a legitimate service can go down on the strength of one complaint.
 
 You can't remove that risk completely. You can make it less likely and make it hurt less.
+
+![Six lessons: monitor domain status, keep the registrar account verified, use a registrar with a human process, spread risk across domains, mirror your forge, don't trust random IPs during an outage](/static/img/codeberg-clienthold-lessons.svg){: width="1000" height="364"}
 
 ### 1. Monitor your domain's status, not just your site
 

@@ -1,28 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">AdGuard Home 1.0</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">what changed, what breaks, how to roll back</text>
-
-  <g font-size="16">
-    <text x="60" y="170" fill="#9aa3b2">version</text>
-    <text x="230" y="170" fill="#ffffff">0.107.80</text><text x="420" y="170" fill="#9aa3b2">→</text><text x="460" y="170" fill="#4ec27a" font-weight="700">1.0.0</text>
-
-    <text x="60" y="204" fill="#9aa3b2">config</text>
-    <text x="230" y="204" fill="#ffffff">schema 34</text><text x="420" y="204" fill="#9aa3b2">→</text><text x="460" y="204" fill="#febc2e">schema 35 (back it up first)</text>
-
-    <text x="60" y="238" fill="#9aa3b2">new installs</text>
-    <text x="230" y="238" fill="#ffffff">Quad9</text><text x="420" y="238" fill="#9aa3b2">→</text><text x="460" y="238" fill="#4ec27a">Cloudflare</text><text x="570" y="238" fill="#9aa3b2">(yours isn't changed)</text>
-
-    <text x="60" y="272" fill="#9aa3b2">old API</text>
-    <text x="230" y="272" fill="#ffffff">12 endpoints</text><text x="420" y="272" fill="#9aa3b2">→</text><text x="460" y="272" fill="#f25f5c">removed</text>
-  </g>
-
-  <text x="60" y="322" fill="#febc2e" font-size="16">$ cp AdGuardHome.yaml AdGuardHome.yaml.0107</text>
-
-  <!-- shield icon -->
-  <g transform="translate(870 36)">
-    <path d="M34 4 L62 14 V36 C62 54 50 66 34 72 C18 66 6 54 6 36 V14 Z" fill="none" stroke="#4ec27a" stroke-width="4" stroke-linejoin="round"/>
-    <path d="M21 36 L31 47 L48 26" fill="none" stroke="#4ec27a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#4ec27a" stop-opacity="0.2"/><stop offset="1" stop-color="#4ec27a" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#4ec27a" letter-spacing="2">ADGUARD HOME · UPGRADE</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >AdGuard Home 1.0</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >upgrade guide</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >New UI, Quad9 default dropped, removed APIs</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >and flags</text><rect x="60" y="310" width="404" height="40" rx="20.0" fill="#262a33" stroke="#343946" stroke-width="1.5"/><text x="82" y="335.4" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e" >cp AdGuardHome.yaml AdGuardHome.yaml.bak</text><g transform="translate(590 100) scale(4.1667)"><path d="M12 0C8.249 0 3.725.861 0 2.755 0 6.845-.051 17.037 12 24 24.051 17.037 24 6.845 24 2.755 20.275.861 15.751 0 12 0zm-.106 15.429L6.857 9.612c.331-.239 1.75-1.143 2.794.042l2.187 2.588c.009-.001 5.801-5.948 5.815-5.938.246-.22.694-.503 1.204-.101l-6.963 9.226z" fill="#68BC71"/></g><text x="640" y="246" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#6b7180" text-anchor="middle" >0.107.80</text><path d="M706 150 L770 150" stroke="#9aa3b2" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/><rect x="780" y="104" width="180" height="92" rx="12" fill="#16291f" stroke="#4ec27a" stroke-width="2"/><text x="870" y="148" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="30" fill="#4ec27a" font-weight="700" text-anchor="middle" >1.0.0</text><text x="870" y="178" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa3b2" text-anchor="middle" >schema 35</text>
 </svg>

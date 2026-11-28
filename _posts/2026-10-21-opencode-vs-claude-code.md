@@ -10,7 +10,7 @@ redirect_from:
   - /linux/macos/cli/ai/opencode-vs-claude-code/
 ---
 
-![OpenCode vs Claude Code](/static/img/opencode-vs-claude-code-header.svg){: width="1000" height="360"}
+![OpenCode, open source and model-agnostic, versus Claude Code, built by Anthropic for Claude models](/static/img/opencode-vs-claude-code-header.svg){: width="1000" height="360"}
 
 AI coding agents that live in the terminal have gone from a novelty to a normal part of a lot of people's workflow. You describe what you want, and the agent searches the codebase, edits files, runs commands, and checks its own work. Two of the most talked-about options right now are **OpenCode** and **Claude Code**. They look similar at first glance, but they come from very different philosophies, so here's how they compare.
 
@@ -49,7 +49,7 @@ brew install anomalyco/tap/opencode-v2
 
 ## Claude Code
 
-![Claude Code session](/static/img/claude-code-session.svg){: width="1000" height="560"}
+![Claude Code session: asked why the tag page 404s on mobile, it searches the layouts, reads nav.html, fixes the link from /tags to /categories/ and rebuilds the site](/static/img/claude-code-session.svg){: width="1000" height="494"}
 *Illustration of a typical Claude Code session in the terminal.*
 
 [Claude Code](https://code.claude.com/) is Anthropic's agentic coding tool. Where OpenCode tries to work with every model, Claude Code goes the other way: it only runs Claude models (Opus, Sonnet, Haiku), and the tool and the models are built by the same company. In practice, that shows up as very solid tool use, long autonomous runs, and new model capabilities landing in the tool on day one.
@@ -88,7 +88,7 @@ You'll need a Claude Pro ($20/month, or $17/month billed yearly) or Max (from $1
 
 This is the core difference between the two, and the one that should drive your decision:
 
-![How OpenCode and Claude Code connect to models](/static/img/opencode-vs-claude-code-models.svg){: width="1000" height="420"}
+![OpenCode connects to Anthropic, OpenAI, Google and local Ollama models with your own key or its gateway; Claude Code uses Claude models through a subscription, the API, Bedrock or Vertex](/static/img/opencode-vs-claude-code-models.svg){: width="1000" height="460"}
 
 OpenCode gives you **choice**: you can switch models per task, mix a cheap model for simple work with a frontier model for hard problems, or run fully offline. Claude Code gives you **integration**: one model family, with a tool designed around how those models work.
 

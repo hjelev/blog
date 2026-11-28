@@ -8,7 +8,7 @@ image: /static/img/og/shirudo-header.png
 thumbnail: /static/img/shirudo-header.svg
 ---
 
-![Shirudo: the operator signs a upatch and pushes it to an OCI registry, the target pulls it, its kernel checks the signature and its TPM records the load. Needs a patched bpf-next kernel and a TPM 2.0. Pre-release. Blocks Docker device rules, bpftrace and Cilium on the same host.](/static/img/shirudo-header.svg){: width="1000" height="360"}
+![Shirudo: a signed upatch blocks a bug's code path while all other eBPF is refused](/static/img/shirudo-header.svg){: width="1000" height="360"}
 
 On 23 November, OpenAI and Cisco released [Shirudo](https://openai.com/index/introducing-shirudo/), an open-source tool that blocks an exploit on a running Linux machine while you wait for the real patch. No reboot, no restart of the service. Most coverage made it sound like something you install next to `unattended-upgrades`.
 
@@ -33,6 +33,8 @@ The design, from the README:
 - **Targets pull.** There's no daemon and no open port. A systemd timer runs one-shot commands that pull packages and load them.
 - **The kernel checks the signature.** At boot, `shirudo init` runs from the initrd, puts your certificate in the kernel's `.bpf` keyring and seals it. After that, the kernel only loads BPF from a signed loader, **even for root**.
 - **The TPM records everything.** Every load and unload extends a TPM register. `shirudo attest` produces signed evidence you can check offline, so you can prove what a machine is running.
+
+![The operator signs a upatch with an ML-DSA-87 key and pushes it to an OCI registry; targets pull on a timer, the kernel checks the signature against a sealed keyring and the TPM records each load](/static/img/shirudo-how.svg){: width="1000" height="266"}
 
 The AI part is about writing the upatches, not running them. OpenAI's demo had Codex write a shield for a Java bug and attach it to a running Elasticsearch. The repo ships that example as [`java-base64`](https://github.com/shirudo-dev/shirudo/tree/main/upatches/java-base64), a guard for **CVE-2026-114938**, an AVX-512 overflow in `java.util.Base64`. A person still approves each shield and holds the signing key.
 
@@ -88,6 +90,8 @@ The first two `OK` lines matter more than they look. Signed BPF programs are alr
 ## What it breaks
 
 This is the part the announcements leave out. On a running target, Shirudo blocks **every** BPF load that isn't a signed upatch, from every process including root. The [interoperability page](https://github.com/shirudo-dev/shirudo/blob/main/Documentation/operate/plan/interoperability.rst) lists what stops working:
+
+![Shirudo refuses all other BPF: bpftrace and bcc, Cilium, XDP and tc, Tetragon and Falco's eBPF driver, systemd sandboxing settings, container device rules, and kexec, kdump and hibernation](/static/img/shirudo-breaks.svg){: width="1000" height="397"}
 
 - **bpftrace, bcc and anything built on libbpf.** They "Fail at their first map creation or program load."
 - **Cilium and other eBPF network plugins.** "the datapath does not come up."

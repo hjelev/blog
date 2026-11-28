@@ -1,24 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Ubuntu tweaks with gsettings</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">dock, Files and wallpaper settings from the terminal</text>
-  <rect x="60" y="140" width="720" height="196" rx="10" fill="#1d2027"/>
-  <rect x="60" y="140" width="720" height="26" rx="10" fill="#2a2d36"/>
-  <rect x="60" y="156" width="720" height="10" rx="0" fill="#2a2d36"/>
-  <circle cx="78" cy="153" r="5" fill="#ff5f57"/>
-  <circle cx="96" cy="153" r="5" fill="#febc2e"/>
-  <circle cx="114" cy="153" r="5" fill="#28c840"/>
-  <text x="78" y="191" font-size="14" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">gsettings set </tspan><tspan fill="#5c9cf5">org.gnome.shell.extensions.dash-to-dock</tspan></text>
-  <text x="78" y="216" font-size="14" xml:space="preserve"><tspan fill="#ffffff">    click-action </tspan><tspan fill="#febc2e">'minimize'</tspan></text>
-  <text x="78" y="241" font-size="14" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">gsettings set </tspan><tspan fill="#5c9cf5">… dash-to-dock</tspan><tspan fill="#ffffff"> background-opacity </tspan><tspan fill="#febc2e">0.4</tspan></text>
-  <text x="78" y="266" font-size="14" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">gsettings set </tspan><tspan fill="#5c9cf5">org.gnome.nautilus.preferences</tspan></text>
-  <text x="78" y="291" font-size="14" xml:space="preserve"><tspan fill="#ffffff">    always-use-location-entry </tspan><tspan fill="#febc2e">true</tspan></text>
-  <text x="78" y="316" font-size="14" xml:space="preserve"><tspan fill="#4ec27a">$ </tspan><tspan fill="#ffffff">gsettings set </tspan><tspan fill="#ffffff">… background picture-uri </tspan><tspan fill="#febc2e">…</tspan></text>
-  <rect x="820" y="140" width="120" height="196" rx="12" fill="#2a2d36" opacity="0.7"/>
-  <rect x="852" y="156" width="56" height="34" rx="8" fill="#ff7a59"/>
-  <rect x="852" y="200" width="56" height="34" rx="8" fill="#5c9cf5"/>
-  <rect x="852" y="244" width="56" height="34" rx="8" fill="#4ec27a"/>
-  <rect x="852" y="288" width="56" height="34" rx="8" fill="#b48ead"/>
-  <circle cx="838" cy="173" r="3" fill="#ffffff"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#f0883e" stop-opacity="0.2"/><stop offset="1" stop-color="#f0883e" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#f0883e" letter-spacing="2">UBUNTU · GNOME</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >Tweak Ubuntu</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >from the terminal</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >gsettings one-liners for the dock, Files and</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >wallpapers</text><rect x="60" y="310" width="413" height="40" rx="20.0" fill="#262a33" stroke="#343946" stroke-width="1.5"/><text x="82" y="335.4" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e" >gsettings set ... click-action 'minimize'</text><g transform="translate(584 80) scale(2.0000)" fill="none" stroke="#9aa3b2" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="12" width="84" height="56" rx="6"/><line x1="50" y1="68" x2="50" y2="84"/><line x1="32" y1="86" x2="68" y2="86"/></g><rect x="616" y="118" width="22" height="100" rx="6" fill="#262a33" stroke="#5b9cf5" stroke-width="2"/><circle cx="627" cy="136" r="6" fill="#5b9cf5"/><circle cx="627" cy="158" r="6" fill="#6b7180"/><circle cx="627" cy="180" r="6" fill="#6b7180"/><circle cx="627" cy="202" r="6" fill="#6b7180"/><rect x="800" y="90" width="180" height="96" rx="10" fill="#0d0f13" stroke="#343946" stroke-width="1.5"/><path d="M800 100 a10 10 0 0 1 10 -10 h160 a10 10 0 0 1 10 10 v20 h-180 z" fill="#262a33"/><circle cx="818" cy="105" r="5" fill="#f25f5c"/><circle cx="834" cy="105" r="5" fill="#febc2e"/><circle cx="850" cy="105" r="5" fill="#4ec27a"/><text x="816" y="142" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#9aa3b2" xml:space="preserve"><tspan fill="#4ec27a">$</tspan> gsettings</text><text x="816" y="163" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#9aa3b2" xml:space="preserve">  set ... 'minimize'</text>
 </svg>

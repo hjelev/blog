@@ -6,13 +6,15 @@ date: 2018-01-19
 categories: webcams
 noindex: true
 sitemap: false
-thumbnail: /static/img/ip-camera.png
+thumbnail: /static/img/web-cameras-header.svg
 redirect_from:
   - /webcams/web-cameras/
+image: /static/img/og/web-cameras-header.png
 ---
 
+![Free live webcams: sites that stream public cameras from around the world](/static/img/web-cameras-header.svg){: width="1000" height="360"}
+
 ## Collection of sites offering free live webcamera feeds from around the world
-![Public Ip Cameras](/static/img/ip-camera.png){: width="399" height="326"}
 
 - [webcamhopper.com](http://www.webcamhopper.com/){:target="_blank"} - Live Webcams from Around the World
 
@@ -23,5 +25,7 @@ redirect_from:
 - [weather-webcam.eu](http://weather-webcam.eu/){:target="_blank"} -  Webcams from Bulgaria and all around Europe.
  
 I love webcams and this is a list of the good web sites I have stumbled. If you know some other interesting sites, post them in the comments.
+
+![Four webcam sites: EarthCam, Lookr, WebcamHopper and weather-webcam.eu](/static/img/web-cameras-sites.svg){: width="1000" height="356"}
 
 [//]: # "- [](){:target="_blank"} - "

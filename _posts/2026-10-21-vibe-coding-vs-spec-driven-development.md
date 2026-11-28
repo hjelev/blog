@@ -9,7 +9,7 @@ redirect_from:
   - /ai/cli/vibe-coding-vs-spec-driven-development/
 ---
 
-![Vibe coding vs spec-driven development](/static/img/vibe-vs-spec-header.svg){: width="1000" height="360"}
+![Vibe coding as a back-and-forth chat with the AI versus spec-driven development as numbered spec, plan, tasks and implement steps](/static/img/vibe-vs-spec-header.svg){: width="1000" height="360"}
 
 AI coding agents have made writing code cheap. Knowing *what* code to write, and whether the result is right, hasn't gotten any cheaper. Two very different ways of working with AI have grown out of that: **vibe coding**, where you chat with the agent and react to what it builds, and **spec-driven development (SDD)**, where you write down what you want first and let the agent build from that document.
 
@@ -44,7 +44,7 @@ The key idea is that when requirements change, you **update the spec** and regen
 
 ## The two workflows side by side
 
-![Vibe coding loop vs spec-driven pipeline](/static/img/vibe-vs-spec-workflow.svg){: width="1000" height="560"}
+![Vibe coding loop: prompt, AI writes code, run it, ship or try again; spec-driven pipeline: specify, plan, tasks, implement, verify against the spec, with changes going back to the spec](/static/img/vibe-vs-spec-workflow.svg){: width="1000" height="590"}
 
 Vibe coding is one tight loop with a single checkpoint at the end: "does it look right?". Spec-driven development is a pipeline with a review gate between each step. You catch a wrong assumption in a one-page spec instead of in 2,000 lines of generated code.
 
@@ -67,7 +67,7 @@ Vibe coding is one tight loop with a single checkpoint at the end: "does it look
 
 ## When to use which
 
-![When each approach fits](/static/img/vibe-vs-spec-when.svg){: width="1000" height="600"}
+![Quadrant by code lifespan and cost of a bug: vibe coding for throwaway and side projects, a safety net for demos and internal pages, a light spec for long-lived personal tools, full spec-driven for payments, team projects and long-lived services](/static/img/vibe-vs-spec-when.svg){: width="1000" height="590"}
 
 A simple way to decide is to ask two questions: **how long will this code live**, and **how bad is it if it breaks**?
 

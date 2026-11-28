@@ -46,7 +46,7 @@ The validation reuse change also matters. Today, once you prove you control a do
 
 ## Who is actually affected?
 
-![When renewals fire: ARI and certbot defaults are fine; a fixed 60-day schedule is cutting it close on 64-day certs and fails on 45-day certs](/static/img/le-64-day-renewal.svg){: width="1000" height="420"}
+![When renewals fire on a 64-day certificate: ARI renews around day 43, certbot's default at 30 days left, a fixed every-60-days job leaves 4 days of margin, and the same job on a 45-day certificate lets it expire](/static/img/le-64-day-renewal.svg){: width="1000" height="444"}
 *Renewal timing on a 64-day certificate. Fixed schedules are the risk.*
 
 **You're fine if** your client checks expiry (or asks Let's Encrypt via ARI) at least once a day and renews when it's told to or when about 30 days are left. That describes most modern clients with their default settings.
@@ -74,7 +74,7 @@ If your client supports ARI, the 64-day change is a non-event.
 
 ## The 5-minute readiness check
 
-![64-day readiness checklist](/static/img/le-64-day-checklist.svg){: width="1000" height="400"}
+![64-day readiness checklist: ARI-capable client, daily renewal, no hard-coded day counts, services reload, staging dry run, and an expiry alert](/static/img/le-64-day-checklist.svg){: width="1000" height="364"}
 
 ### 1. Check your client version
 

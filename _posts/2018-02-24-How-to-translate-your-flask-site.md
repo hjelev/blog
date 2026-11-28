@@ -10,9 +10,11 @@ redirect_from:
   - /python/How-to-translate-your-flask-site/
 ---
 
-![Flask-Babel workflow: tag strings, pybabel extract, init, translate, compile](/static/img/flask-babel-header.svg){: width="1000" height="360"}
+![Translate a Flask site with Flask-Babel: gettext strings compiled into English and Bulgarian catalogs](/static/img/flask-babel-header.svg){: width="1000" height="360"}
 
 This article will show you how to translate your Fask site using the python module Babel on a Debian based system running python 3.
+
+![Flask-Babel workflow: tag strings with gettext, extract to messages.pot, init a locale, translate the .po file, compile to .mo; on changes re-extract and update](/static/img/flask-babel-flow.svg){: width="1000" height="273"}
 
 ## Install Flask-Babel
 
@@ -115,6 +117,8 @@ The final step to get your site translated is to compile the ``messages.po`` fil
 ```
 $ pybabel compile -d translations
 ```
+
+![Terminal: pybabel extract, init, compile, and later pybabel update](/static/img/flask-babel-commands.svg){: width="1000" height="418"}
 
 ## Updating locales
 

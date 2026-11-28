@@ -12,11 +12,13 @@ redirect_from:
   - /raspberry-pi/multi-room-audio-system-with-rpis/
 ---
 
-![Logitech Media Server streaming in sync to Raspberry Pi Zero W Squeezelite players and speakers in three rooms](/static/img/multi-room-audio-header.svg){: width="1000" height="360"}
+![Multi-room audio: Logitech Media Server streams to Raspberry Pi Zero W Squeezelite players and speakers in three rooms](/static/img/multi-room-audio-header.svg){: width="1000" height="360"}
 
 This build will use raspberry pis for network players and logitec media server that can be run on windows or linux.
 ---------------
 Logitec Media Server <a href="https://www.mysqueezebox.com/download" target="_blank">LMS</a> is a media server made for the logitec squeezebox Network music players. We will use this software for our project and will build squeezebox players using a raspberry pi, USB sound card and some multimedia speakers.
+
+![Logitech Media Server on a PC sends audio over Wi-Fi to a Pi Zero W running Squeezelite in the kitchen, living room and bedroom, each with a USB sound card and speakers](/static/img/multi-room-audio-layout.svg){: width="1000" height="420"}
 
 The parts we need:
 ----------
@@ -28,6 +30,8 @@ The parts we need:
 6. **Multimedia Speakers** with 3.5 inch audio input.  
 I have started my multi-room audio system with Logitech Multimedia 2.1 Speakers Z213 as they are very cheap and offer decent sound for their price - around $25. Later I have picked Logitech Z333.
 7. **USB hub** and **USB network card** - wi-fi or wired depending on your need - (You'll need this if you don't use pi zero w)
+
+![Parts for one player: Pi Zero W, SD card, USB sound card, OTG adapter, 5 V supply and speakers](/static/img/multi-room-audio-parts.svg){: width="1000" height="378"}
 
 ![Raspberry pi 0 w](/static/img/RaspberryPi-Zero-W-Top_128x.png){: width="128" height="128"}
 
@@ -41,8 +45,6 @@ For the hosting of the logitech media server you can use your desktop computer, 
 Go to <a href="https://www.mysqueezebox.com/download" target="_blank">Logitech Media Server</a> site and download the version matching your choice of OS.
 
 <a href="http://wiki.slimdevices.com/index.php/Logitech_Media_Server#Installing_to_a_Computer_or_Laptop" target="_blank">Here you can find instructions for installing LMS on different operation systems</a>
-
-![Logitec Media Server](/static/img/logitech-logo.png){: width="66" height="60"}
 
 Preparing the raspberry pi SD card:
 ----------
@@ -157,7 +159,6 @@ There is also a third player on my windows desktop PC - this one causes no issue
 If some player (mainly the wi-fi one) disappears from the network or I don't see it in LMS I just restart it from the plug and it comes back in a minute.
 
 You can start a network player on the computer running the logitech media server using a build in plug-in.
-
 
 What media is supported by my multi-room audio system?
 --------------------------

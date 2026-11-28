@@ -12,7 +12,7 @@ redirect_from:
   - /raspberry-pi/rpi-software/
 ---
 
-![A Raspberry Pi running Pi-hole, AdGuard Home, PiVPN, Home Assistant and CUPS](/static/img/rpi-software-header.svg){: width="1000" height="360"}
+![Software for a Raspberry Pi: Pi-hole, AdGuard Home, PiVPN, Home Assistant and CUPS](/static/img/rpi-software-header.svg){: width="1000" height="360"}
 
 Collection of software for raspberry pi
 ---------
@@ -25,5 +25,7 @@ Collection of software for raspberry pi
 - [Home Assistant](https://home-assistant.io/){:target="_blank"} - open-source home automation platform running on Python 3. Track and control all devices at home and automate control. Installation in less than a minute.
 
 - [CUPS](http://www.instructables.com/id/Turn-any-printer-into-a-wireless-printer-with-a-Ra/?ALLSTEPS){:target="_blank"} - Turn any printer into a wireless printer with a Raspberry Pi
+
+![Pi-hole and AdGuard Home block ads via DNS, PiVPN runs a VPN server, Home Assistant automates the home and CUPS shares a printer](/static/img/rpi-software-roles.svg){: width="1000" height="416"}
 
 [//]: # "- []() - "

@@ -13,7 +13,7 @@ image: /static/img/og/squeezelite-header.png
 thumbnail: /static/img/squeezelite-header.svg
 ---
 
-![Squeezelite as a system service locks the sound card; as a user app PipeWire mixes it with the browser](/static/img/squeezelite-header.svg){: width="1000" height="360"}
+![Squeezelite as a system service blocks other audio; as a user autostart app it mixes through PipeWire](/static/img/squeezelite-header.svg){: width="1000" height="360"}
 
 The Squeezelite audio player is a wonderful headless solution, but getting it to run as a reliable, shareable background service on modern Linux distributions (like Ubuntu, Debian, or Fedora, especially those using PipeWire) can be a nightmare.
 
@@ -38,6 +38,8 @@ The core issue was demonstrated by this error log, which repeats when using devi
 2.  **Environment Conflict:** When attempting to use the mixing devices (`-o default` or `-o pulse`), the service fails. This is because **System Services** run in a minimal environment and **cannot reliably connect** to the **User Session PipeWire/PulseAudio server** that manages all desktop audio (including your browser). It's a fundamental conflict between a system process and a user-level audio mixer. The "Host is down" error simply means the connection to the mixer server was refused or the socket was not found.
 
 -----
+
+![As a system service Squeezelite either grabs the sound card exclusively or fails with Host is down; as a user autostart app it joins the PipeWire session and mixes with other audio](/static/img/squeezelite-compare.svg){: width="1000" height="418"}
 
 ## ✅ The Easy Fix: Switch to a User Autostart Application
 

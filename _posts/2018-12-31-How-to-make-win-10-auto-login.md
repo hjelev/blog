@@ -11,11 +11,13 @@ redirect_from:
   - /windows/How-to-make-win-10-auto-login/
 ---
 
-![Unticking 'Users must enter a user name and password' in netplwiz to sign in automatically](/static/img/win-autologin-header.svg){: width="1000" height="360"}
+![Windows automatic sign-in: the password prompt is skipped by unticking a box in netplwiz](/static/img/win-autologin-header.svg){: width="1000" height="360"}
 
 If you are like me and don't like to enter passwords each time you use your home computer, you'll like this.
 
 This is the easiest way to automatically log in to Windows 10 without entering a password. It works on Windows 11 too.
+
+![Four steps: open netplwiz, untick the password checkbox, enter your password twice, restart; if the checkbox is missing turn off the Windows Hello only option](/static/img/win-autologin-steps.svg){: width="1000" height="450"}
 
 ## Method 1: netplwiz
 

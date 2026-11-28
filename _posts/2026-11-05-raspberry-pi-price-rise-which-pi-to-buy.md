@@ -8,7 +8,7 @@ image: /static/img/og/rpi-price-rise-header.png
 thumbnail: /static/img/rpi-price-rise-header.svg
 ---
 
-![Raspberry Pi 5 16GB price rises: $120 at launch, then $145, $205, $305 and now $385. Memory costs are the stated reason](/static/img/rpi-price-rise-header.svg){: width="1000" height="360"}
+![Raspberry Pi 5 16GB price rising from $120 at launch to $385 in November 2026](/static/img/rpi-price-rise-header.svg){: width="1000" height="360"}
 
 On **November 2**, Raspberry Pi raised the price of the **16GB Pi 5** by another $80, to **$385**. It launched at **$120** in January 2025. The bare board now costs more than a complete N150 mini PC with memory, an SSD, a case and a power supply.
 
@@ -34,6 +34,8 @@ Here's how the 16GB Pi 5 got here:
 | February 2, 2026 | $205 | +$60 |
 | April 1, 2026 | $305 | +$100 |
 | November 2, 2026 | **$385** | +$80 |
+
+![Raspberry Pi 5 16GB price: $120 at launch, $145 December 2025, $205 February 2026, $305 April 2026, $385 November 2026](/static/img/rpi-price-rise-history.svg){: width="1000" height="396"}
 
 The 16GB Compute Module 5 variants went up $40 at the same time. The Pi 500+ stayed at $410.
 
@@ -82,6 +84,8 @@ The board price leaves out a lot. To compare fairly, I added what you need for a
 The Beelink prices are from Amazon as of October 13, via ComputingForGeeks, and stock was limited on the 16GB model. A cheaper SSD will bring the Pi totals down: the same article lists a 512GB Patriot drive at $85.99.
 
 Mini PCs aren't immune to the memory shortage either. A Mini S13 sold for about [$169 in August 2025](https://www.starryhope.com/minipcs/dram-price-spike-mini-pc-raspberry-pi-2026/), although that may not be the same configuration. Mini PC prices move quickly at the moment, so check them before you decide.
+
+![Full build totals: Pi 5 2GB $233.40, 4GB $265.90, 8GB $330.90, 16GB $540.90, against N150 mini PCs at $329 and $349](/static/img/rpi-price-rise-builds.svg){: width="1000" height="466"}
 
 ### Performance and power
 

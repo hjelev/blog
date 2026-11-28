@@ -68,19 +68,67 @@ Rules:
   inline the `<path>`, fill with the brand hex or white) over an invented drawing.
 - Always escape `&` as `&amp;` and `<` as `&lt;` in `<text>`.
 
-## 3. Catalogue
+## 3. Build with svgkit (preferred) or templates
 
-Templates live in `templates/`; copy one and edit — don't start from a blank file.
+`scripts/svgkit.py` turns a short Python spec into a finished SVG in the house style, with
+wrapping, arrow markers, real brand logos and line icons. Use it rather than hand-writing SVG:
 
-| Type | Template | viewBox | Notes |
-|---|---|---|---|
-| header | `header.svg` | 0 0 1000 360 | **Visual first**: a big illustrative motif on the right ~40 %, title (≤ 6 words) + one-line subtitle on the left. At most 3 short supporting lines. Not a wall of text — detail belongs in figures. |
-| flow | `flow.svg` | 0 0 1000 300–420 | 3–5 boxes left→right with arrows; label arrows if meaningful; highlight the failing/important hop. |
-| compare | `compare.svg` | 0 0 1000 380–460 | Two columns, red "before"/green "after" (or two options), same structure on each side so differences pop. |
-| terminal | `terminal.svg` | 0 0 1000 300–480 | Window chrome (three dots), `$` prompt in green, output in muted, the key line highlighted in yellow/red. Use real commands from the post. |
-| stat cards | `stats.svg` | 0 0 1000 260 | 3–4 cards, big number/word (40–56 px) + short label. |
-| decision | `decision.svg` | 0 0 1000 420–520 | Question diamonds/pills → yes/no branches → outcome boxes (green = recommended). |
-| architecture | build from flow/compare | 0 0 1000 400–520 | Icons for devices, grouped zones (LAN / internet) as dashed rounded rects with a label. |
+```python
+import sys; sys.path.insert(0, ".claude/skills/blog-images/scripts")
+from svgkit import *
+header("static/img/x-header.svg", kicker="Self-hosting · nginx", title=["Many Python apps,", "one nginx"],
+       subtitle="Reverse proxy several Flask apps on one server", chip="proxy_pass :5001", accent="green",
+       motif=[logo("nginx", 600, 120, 110), link(730, 175, 800, 175), icon("server", 820, 95, 150, accent="green")])
+flow(path, title, steps=[dict(t="Browser", d="example.com"), dict(t="nginx", d=":443", state="green"), ...],
+     arrows=[("HTTPS", "blue", None), None, ...], note="takeaway")
+```
+
+| Builder | Use for |
+|---|---|
+| `header` | 1000×360 header: kicker, 1–2 line title, subtitle, optional chip, `motif=[...]` in x 560–960 |
+| `flow` | 3–5 steps left→right, per-step `state` (green/red/yellow/blue) or `dashed` |
+| `compare` | two columns, before/after or option A/B, ✗/✓ bullets |
+| `terminal` | real commands: `("$", cmd)`, `("out", ..)`, `("hl", ..)` yellow band, `("err", ..)`, `("ok", ..)` |
+| `stats` | 3–4 big-number cards |
+| `cards` | grid of tools/services with `logo=` (simple-icons slug) or `icon=`, optional tag |
+| `bars` | horizontal bar comparison (prices, sizes, counts) |
+| `timeline` | 3–6 dated events (CVE disclosure, release dates) |
+| `checklist` | numbered steps; detail starting with `"$ "` renders as a command |
+| `decision` | question → yes (green) / no (red) → optional row of options |
+| `table` | small styled table (only if it isn't already a markdown table in the post) |
+| `raw` | escape hatch for a custom body on the standard card |
+
+Motif pieces: `icon(name, x, y, size, color, accent)` (see `ICONS`: phone, server, router,
+laptop, desktop, window, terminal, shield, shield-check, lock, unlock, key, cloud, globe, folder,
+file, cert, speaker, camera, bug, gear, package, chip, board, sdcard, git, wifi, list, check,
+cross, block, warning, clock, calendar, house, database, code, user, users, dns, mail, rss,
+chart, tag, bolt, search, font, plug, power, thermo, store, vpn, windows), `logo(slug, x, y, size)`,
+`link()` dotted connector, `blocked()` / `ok_disc()` overlays, `mini_term()`, `pill()`, `badge()`.
+Text accepts `**bold**` and `[[color|text]]` spans.
+
+Logos come from `logos.json` (vendored simple-icons). To add one: `npm pack simple-icons@15.0.0`
+into a scratch dir, extract it, then `python3 -I scripts/fetch_logos.py <dir>/package <slug>...`.
+Windows has no simple-icons logo — use `icon("windows", ...)`.
+
+Hand-editable starting points are also in `templates/` for one-off layouts.
+
+### Worked examples and post-editing helpers
+
+`examples/postedit.py` has helpers that place figures in a post: `header_md()` (sets the
+header and the front matter `image:`/`thumbnail:`), `insert_before()`/`insert_after()` (after
+the block containing a snippet), `replace_img()` and `remove_img()`. They're idempotent, so a
+batch can be re-run after tweaking a spec. `examples/batch01.py` … `batch11.py` are the specs
+that built every image on the blog (Nov 2026). Copy the closest one when starting a new post.
+
+### Gotchas learned the hard way
+
+- Nerd Font / private-use glyphs don't render in the SVGs. Use plain text or `icon()`.
+- Runs of spaces collapse unless the text has `xml:space="preserve"` (terminal and mini_term already set it).
+- Flow boxes get narrow with 5 steps: keep `d=` details short (the kit warns when one is too wide).
+- Long card names collide with tags: the kit moves the tag below, but keep names to about 22 characters.
+- `logo()` swaps near-black brand marks to white; pass `"text"` for dark brands (Anthropic, OpenAI, MQTT).
+- Every claim in a figure must come from the post. Re-read the section before writing labels.
+- A figure must not repeat a code block or table that is already in the post.
 
 ## 4. Files and naming
 

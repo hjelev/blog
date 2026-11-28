@@ -12,11 +12,13 @@ redirect_from:
   - /raspberry-pi/rpi-os-distributions/
 ---
 
-![SD cards labelled DietPi, RetroPie, Recalbox, Volumio, motionEyeOS, Ubuntu MATE and OpenELEC](/static/img/rpi-os-header.svg){: width="1000" height="360"}
+![Raspberry Pi operating systems: DietPi, RetroPie, Volumio and motionEyeOS SD cards](/static/img/rpi-os-header.svg){: width="1000" height="360"}
 
 Collection of different OS Distributions for the SBC Raspberry Pi
 ------------
 - [motionEyeOS](https://github.com/ccrisan/motioneyeos){:target="_blank"} - a Linux distribution that turns your single board computer into a video surveillance system.
+
+![Raspberry Pi distributions by use: gaming, music and TV, cameras, lightweight server, desktop, beginners](/static/img/rpi-os-uses.svg){: width="1000" height="356"}
 
 - [Diet Pi](http://dietpi.com/){:target="_blank"} - DietPi is a extremely lightweight Debian Jessie OS. With images starting at 400MB, thats 3x lighter than 'Raspbian Lite'.
 

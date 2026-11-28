@@ -8,7 +8,7 @@ image: /static/img/og/rpi-mqtt-monitor-header.png
 thumbnail: /static/img/rpi-mqtt-monitor-header.svg
 ---
 
-![rpi-mqtt-monitor: a Raspberry Pi publishes CPU, temperature, disk and memory readings to an MQTT broker, and Home Assistant creates the device automatically and can send restart commands back](/static/img/rpi-mqtt-monitor-header.svg){: width="1000" height="360"}
+![rpi-mqtt-monitor: a Raspberry Pi publishes temperature and power status over MQTT to Home Assistant](/static/img/rpi-mqtt-monitor-header.svg){: width="1000" height="360"}
 
 Raspberry Pis tend to fail quietly. The SD card fills up, a weak power supply causes random problems, or a case with poor airflow slows everything down, and you don't notice until something stops working. If you already run Home Assistant, it's the obvious place to watch for all of that.
 
@@ -48,6 +48,8 @@ Each machine appears as a single device in Home Assistant, with its readings and
 | `ext_sensors` | DS18B20 and SHT21 temperature and humidity sensors |
 
 The [README](https://github.com/hjelev/rpi-mqtt-monitor#what-gets-monitored) has the full list.
+
+![The Pi runs rpi-mqtt-monitor and publishes to Mosquitto; Home Assistant picks up the sensors through MQTT discovery for dashboards and alerts](/static/img/rpi-mqtt-monitor-flow.svg){: width="1000" height="273"}
 
 ## What you need
 
@@ -136,6 +138,8 @@ On a Pi, I'd start with these:
 - **`ssd_health`:** if you boot from NVMe or USB SSD, this shows wear and SMART status. The installer offers to set it up when it finds an SSD. It needs `smartmontools` and root.
 - **`rpi5_fan_speed`:** a Pi 5 running hot with the fan stopped means the fan has failed.
 - **`used_space_paths`:** add this if you have a separate data drive, since the main disk sensor only watches `/` by default.
+
+![rpi_power_status values: OK, Under-voltage, Soft temperature limit, ARM frequency capped and Throttled](/static/img/rpi-mqtt-monitor-power.svg){: width="1000" height="397"}
 
 ## Alerts that are actually useful
 

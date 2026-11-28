@@ -1,40 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <defs>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4ec27a"/>
-      <stop offset="1" stop-color="#2a8f8f"/>
-    </linearGradient>
-  </defs>
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Let's Encrypt certificate lifetimes</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">shorter certs, shorter validation reuse: automate or break</text>
-
-  <!-- 90 days -->
-  <g font-size="16">
-    <text x="60" y="172" fill="#9aa3b2">today</text>
-    <rect x="200" y="152" width="720" height="30" rx="6" fill="#2a2d36"/>
-    <rect x="200" y="152" width="720" height="30" rx="6" fill="#5c9cf5" opacity="0.55"/>
-    <text x="900" y="173" fill="#ffffff" font-weight="700" text-anchor="end">90 days</text>
-
-    <!-- 64 days -->
-    <text x="60" y="232" fill="#febc2e">Feb 2027</text>
-    <rect x="200" y="212" width="720" height="30" rx="6" fill="#2a2d36"/>
-    <rect x="200" y="212" width="512" height="30" rx="6" fill="url(#bar)"/>
-    <text x="692" y="233" fill="#ffffff" font-weight="700" text-anchor="end">64 days</text>
-
-    <!-- 45 days -->
-    <text x="60" y="292" fill="#ff7a59">2028</text>
-    <rect x="200" y="272" width="720" height="30" rx="6" fill="#2a2d36"/>
-    <rect x="200" y="272" width="360" height="30" rx="6" fill="#ff7a59" opacity="0.8"/>
-    <text x="540" y="293" fill="#ffffff" font-weight="700" text-anchor="end">45 days</text>
-  </g>
-
-  <!-- lock icon -->
-  <g transform="translate(870 52)">
-    <path d="M14 30 v-12 a16 16 0 0 1 32 0 v12" fill="none" stroke="#4ec27a" stroke-width="6"/>
-    <rect x="4" y="30" width="52" height="40" rx="7" fill="#4ec27a"/>
-    <circle cx="30" cy="48" r="5" fill="#14161b"/>
-    <rect x="27.5" y="50" width="5" height="11" rx="2" fill="#14161b"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#febc2e" stop-opacity="0.2"/><stop offset="1" stop-color="#febc2e" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e" letter-spacing="2">LET'S ENCRYPT · CERTIFICATES</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >Certificates drop</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >to 64 days</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >Shorter lifetimes from Feb 2027: automate</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >renewal or break</text><rect x="60" y="310" width="251" height="40" rx="20.0" fill="#262a33" stroke="#343946" stroke-width="1.5"/><text x="82" y="335.4" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e" >certbot &gt;= 4.1 with ARI</text><g transform="translate(590 70) scale(2.3333)"><path d="M11.9914 0a.8829.8829 0 00-.8718.817v3.0209A.8829.8829 0 0012 4.7207a.8829.8829 0 00.8803-.8803V.817a.8829.8829 0 00-.889-.817zm7.7048 3.1089a.8804.8804 0 00-.5214.1742l-2.374 1.9482a.8804.8804 0 00.5592 1.5622.8794.8794 0 00.5592-.2001l2.3714-1.9506a.8804.8804 0 00-.5944-1.534zm-15.3763.0133a.8829.8829 0 00-.611 1.5206l2.37 1.9506a.876.876 0 00.5606.2001v-.002a.8804.8804 0 00.5597-1.5602L4.8277 3.2831a.8829.8829 0 00-.5078-.161zm7.6598 3.2275a5.0456 5.0456 0 00-5.0262 5.0455v1.4876H5.787a.9672.9672 0 00-.9647.9643v9.1887a.9672.9672 0 00.9647.9643H18.213a.9672.9672 0 00.9643-.9643v-9.1907a.9672.9672 0 00-.9643-.9623h-1.1684v-1.4876a5.0456 5.0456 0 00-5.0649-5.0455zm.0127 2.8933a2.1522 2.1522 0 012.1593 2.1522v1.4876H9.8473v-1.4876a2.1522 2.1522 0 012.145-2.1522zm7.3812.5033a.8829.8829 0 10.0705 1.7632h3.0267a.8829.8829 0 000-1.7609H19.444a.8829.8829 0 00-.0705-.0023zm-17.8444.0023a.8829.8829 0 000 1.7609h2.9983a.8829.8829 0 000-1.7609zm10.4596 6.7746a1.2792 1.2792 0 01.641 2.3926v1.2453a.6298.6298 0 01-1.2595 0v-1.2453a1.2792 1.2792 0 01.6185-2.3926z" fill="#003A70"/></g><text x="590" y="170" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa3b2" >today</text><rect x="680" y="150" width="243" height="28" rx="6" fill="#9aa3b2"/><text x="933" y="170" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#9aa3b2" font-weight="700" >90d</text><text x="590" y="222" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#febc2e" >Feb 2027</text><rect x="680" y="202" width="172.8" height="28" rx="6" fill="#febc2e"/><text x="862.8" y="222" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#febc2e" font-weight="700" >64d</text><text x="590" y="274" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#f25f5c" >2028</text><rect x="680" y="254" width="121.5" height="28" rx="6" fill="#f25f5c"/><text x="811.5" y="274" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#f25f5c" font-weight="700" >45d</text>
 </svg>

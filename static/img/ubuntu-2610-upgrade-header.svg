@@ -1,41 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-
-  <text x="60" y="76" fill="#ffffff" font-size="34" font-weight="700">Ubuntu 26.04 → 26.10</text>
-  <text x="60" y="110" fill="#9aa3b2" font-size="17">what to check before, and what not to touch after</text>
-
-  <!-- 26.04 -->
-  <rect x="60" y="150" width="170" height="150" rx="10" fill="#e95420"/>
-  <text x="145" y="214" fill="#ffffff" font-size="32" font-weight="700" text-anchor="middle">26.04</text>
-  <text x="145" y="244" fill="#ffffff" font-size="16" text-anchor="middle">LTS · 5 years</text>
-
-  <!-- before -->
-  <g font-size="15">
-    <text x="262" y="172" fill="#febc2e">before</text>
-    <text x="262" y="204" fill="#d6dae2">/boot layout</text>
-    <text x="262" y="232" fill="#d6dae2">/lib32 symlink</text>
-    <text x="262" y="260" fill="#d6dae2">TPM encryption</text>
-    <text x="262" y="288" fill="#d6dae2">all updates in</text>
-  </g>
-
-  <!-- arrow -->
-  <g stroke="#febc2e" stroke-width="3" fill="none">
-    <path d="M430 225 H516"/>
-    <path d="M504 215 L518 225 L504 235"/>
-  </g>
-  <text x="473" y="208" fill="#febc2e" font-size="14" text-anchor="middle">-d, for now</text>
-
-  <!-- 26.10 -->
-  <rect x="534" y="150" width="170" height="150" rx="10" fill="#77216f"/>
-  <text x="619" y="214" fill="#ffffff" font-size="32" font-weight="700" text-anchor="middle">26.10</text>
-  <text x="619" y="244" fill="#ffffff" font-size="16" text-anchor="middle">9 months</text>
-
-  <!-- after -->
-  <g font-size="15">
-    <text x="734" y="172" fill="#4ec27a">after</text>
-    <text x="734" y="204" fill="#ff7a59">don't purge rc</text>
-    <text x="734" y="232" fill="#ff7a59">openssh-* packages</text>
-    <text x="734" y="260" fill="#d6dae2">re-enable repos</text>
-    <text x="734" y="288" fill="#d6dae2">systemctl --failed</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#f0883e" stop-opacity="0.2"/><stop offset="1" stop-color="#f0883e" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#f0883e" letter-spacing="2">UBUNTU · UPGRADE</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >Upgrade 26.04</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >to 26.10?</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >Why it isn't offered yet, what breaks, and how to</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >do it</text><g transform="translate(590 100) scale(4.5833)"><path d="M17.61.455a3.41 3.41 0 0 0-3.41 3.41 3.41 3.41 0 0 0 3.41 3.41 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41zM12.92.8C8.923.777 5.137 2.941 3.148 6.451a4.5 4.5 0 0 1 .26-.007 4.92 4.92 0 0 1 2.585.737A8.316 8.316 0 0 1 12.688 3.6 4.944 4.944 0 0 1 13.723.834 11.008 11.008 0 0 0 12.92.8zm9.226 4.994a4.915 4.915 0 0 1-1.918 2.246 8.36 8.36 0 0 1-.273 8.303 4.89 4.89 0 0 1 1.632 2.54 11.156 11.156 0 0 0 .559-13.089zM3.41 7.932A3.41 3.41 0 0 0 0 11.342a3.41 3.41 0 0 0 3.41 3.409 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41zm2.027 7.866a4.908 4.908 0 0 1-2.915.358 11.1 11.1 0 0 0 7.991 6.698 11.234 11.234 0 0 0 2.422.249 4.879 4.879 0 0 1-.999-2.85 8.484 8.484 0 0 1-.836-.136 8.304 8.304 0 0 1-5.663-4.32zm11.405.928a3.41 3.41 0 0 0-3.41 3.41 3.41 3.41 0 0 0 3.41 3.41 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41z" fill="#E95420"/></g><text x="645" y="260" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#9aa3b2" text-anchor="middle" >26.04 LTS</text><path d="M716 155 L790 155" stroke="#9aa3b2" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/><rect x="800" y="110" width="160" height="90" rx="12" fill="#2b1f15" stroke="#f0883e" stroke-width="2"/><text x="880" y="150" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" fill="#f0883e" font-weight="700" text-anchor="middle" >26.10</text><text x="880" y="180" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#9aa3b2" text-anchor="middle" >Stonking Stingray</text><text x="880" y="240" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#6b7180" text-anchor="middle" >do-release-upgrade -d</text>
 </svg>

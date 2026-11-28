@@ -8,7 +8,7 @@ image: /static/img/og/asahi-mit-to-gpl-header.png
 thumbnail: /static/img/asahi-mit-to-gpl-header.svg
 ---
 
-![Asahi Linux moves from the MIT licence to GPLv2-or-later after in-development code was copied without attribution and rewritten with LLMs; M3 support leaves the EXPERT flag](/static/img/asahi-mit-to-gpl-header.svg){: width="1000" height="360"}
+![Asahi Linux moves its code from the MIT licence to GPL-2.0-or-later](/static/img/asahi-mit-to-gpl-header.svg){: width="1000" height="360"}
 
 Asahi Linux, the project that made Linux actually usable on Apple Silicon Macs, is changing its license. In the [Linux 7.3 progress report](https://asahilinux.org/2026/11/progress-report-7-3/) (November 7, written by James Calligeros), the team announced they've decided to:
 
@@ -50,6 +50,8 @@ To be fair, the first case was never allowed even under MIT, since dropping the 
 
 The report also mentions "the insatiable appetite of frontier AI labs for high-quality training data" as part of the background. It doesn't say an AI lab was involved in any of these incidents. It's more a general point that permissively licensed code ends up everywhere.
 
+![What Asahi says happened: in-development code from personal forks was lifted or rewritten with an LLM, published without attribution, with the aim of replacing and monetising the project](/static/img/asahi-mit-to-gpl-what-happened.svg){: width="1000" height="283"}
+
 ### Why this hurts Asahi in particular
 
 Most of Asahi's value isn't lines of code. It's **reverse engineering**: years of work figuring out how Apple's undocumented GPU, display controller, audio and power management actually behave. The code is just how that knowledge gets written down.
@@ -87,6 +89,8 @@ This is where it gets uncomfortable, and where I think the LLM part of the story
 **Unmerged code in personal forks is a gap.** The incidents involved code taken from developers' *personal forks*, before it was merged. Whatever license applies there depends on what's in that fork. Switching the main repositories to the GPL closes that gap only if the forks follow.
 
 So the GPL isn't a fix for LLM laundering. It's the strongest tool a small open-source project has right now: it makes the obvious abuse illegal, makes it riskier to get caught, and gives the project grounds to send a takedown. But a sufficiently careful launderer is still hard to catch.
+
+![The GPL forces shipped forks to share source, bans proprietary products and is enforceable; it can't relicense code already released under MIT, and LLM rewrites are hard to prove](/static/img/asahi-mit-to-gpl-limits.svg){: width="1000" height="384"}
 
 ### The bigger picture
 

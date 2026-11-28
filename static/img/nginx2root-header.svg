@@ -1,41 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">NGINX2Root · CVE-2026-123007</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">find and patch every nginx you run</text>
-
-  <g font-size="16">
-    <text x="60" y="166" fill="#9aa3b2">attack</text>
-    <rect x="230" y="144" width="110" height="34" rx="6" fill="none" stroke="#9aa3b2" stroke-width="2"/>
-    <text x="285" y="166" fill="#ffffff" text-anchor="middle">HTTP/2</text>
-    <text x="358" y="166" fill="#9aa3b2">→</text>
-    <rect x="388" y="144" width="160" height="34" rx="6" fill="#ff7a59"/>
-    <text x="468" y="166" fill="#14161b" text-anchor="middle" font-weight="700">nginx worker</text>
-    <text x="566" y="166" fill="#9aa3b2">→</text>
-    <rect x="596" y="144" width="140" height="34" rx="6" fill="#ff7a59"/>
-    <text x="666" y="166" fill="#14161b" text-anchor="middle" font-weight="700">SCTP bug</text>
-    <text x="754" y="166" fill="#9aa3b2">→</text>
-    <text x="784" y="166" fill="#f25f5c" font-weight="700">host root</text>
-
-    <text x="60" y="222" fill="#9aa3b2">fixed in</text>
-    <text x="230" y="222" fill="#4ec27a" font-weight="700">1.30.7 / 1.31.9</text>
-    <text x="396" y="222" fill="#9aa3b2">(get 1.30.8 / 1.31.10)</text>
-
-    <text x="60" y="256" fill="#9aa3b2">not off</text>
-    <text x="230" y="256" fill="#febc2e">listen 443 ssl http2; + http2 off;</text>
-
-    <text x="60" y="290" fill="#9aa3b2">not patched</text>
-    <text x="230" y="290" fill="#febc2e">nginx -s reload</text>
-    <text x="396" y="290" fill="#9aa3b2">(restart instead)</text>
-
-    <text x="60" y="324" fill="#9aa3b2">block</text>
-    <text x="230" y="324" fill="#4ec27a">install sctp /bin/false</text>
-  </g>
-
-  <!-- warning icon -->
-  <g transform="translate(870 34)">
-    <path d="M34 6 L64 62 H4 Z" fill="#ff7a59" stroke="#ff7a59" stroke-width="6" stroke-linejoin="round"/>
-    <path d="M34 26 V44" stroke="#14161b" stroke-width="6" stroke-linecap="round"/>
-    <circle cx="34" cy="54" r="3.6" fill="#14161b"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#4ec27a" stop-opacity="0.2"/><stop offset="1" stop-color="#4ec27a" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#4ec27a" letter-spacing="2">NGINX · NGINX2ROOT</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >NGINX2Root:</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >update, then restart</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >Five nginx bugs, fixed versions per distro, and the</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >traps</text><rect x="60" y="310" width="251" height="40" rx="20.0" fill="#262a33" stroke="#343946" stroke-width="1.5"/><text x="82" y="335.4" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#4ec27a" >systemctl restart nginx</text><g transform="translate(590 96) scale(4.3333)"><path d="M12 0L1.605 6v12L12 24l10.395-6V6L12 0zm6 16.59c0 .705-.646 1.29-1.529 1.29-.631 0-1.351-.255-1.801-.81l-6-7.141v6.66c0 .721-.57 1.29-1.274 1.29H7.32c-.721 0-1.29-.6-1.29-1.29V7.41c0-.705.63-1.29 1.5-1.29.646 0 1.38.255 1.83.81l5.97 7.141V7.41c0-.721.6-1.29 1.29-1.29h.075c.72 0 1.29.6 1.29 1.29v9.18H18z" fill="#009639"/></g><text x="642" y="250" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#f25f5c" font-weight="700" text-anchor="middle" >5 CVEs</text><path d="M708 148 L770 148" stroke="#9aa3b2" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/><rect x="780" y="84" width="180" height="52" rx="10" fill="#2a1a1c" stroke="#f25f5c" stroke-width="1.5"/><text x="870" y="116" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#f25f5c" font-weight="700" text-anchor="middle" >reload</text><rect x="780" y="160" width="180" height="52" rx="10" fill="#16291f" stroke="#4ec27a" stroke-width="2"/><text x="870" y="192" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#4ec27a" font-weight="700" text-anchor="middle" >restart</text><text x="870" y="246" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa3b2" text-anchor="middle" >1.30.8 / 1.31.10</text>
 </svg>

@@ -9,7 +9,7 @@ redirect_from:
   - /linux/macos/cli/best-tui-file-managers-2026/
 ---
 
-![A three-column terminal file manager next to Yazi, ranger, nnn, lf, superfile, Walk, mc and Shell Buddy](/static/img/tui-file-managers-header.svg){: width="1000" height="360"}
+![A three-column terminal file manager showing folders, a selected directory and file previews](/static/img/tui-file-managers-header.svg){: width="1000" height="360"}
 
 Terminal file managers hit a sweet spot for a lot of people: faster than clicking through a GUI file browser, but with a real interface instead of typing `cd` and `ls` over and over. Below are some of the more actively-discussed options going into 2026, including a newer entry worth knowing about — **Shell Buddy**.
 
@@ -83,6 +83,8 @@ Once set up, running `lk` drops you into the navigator; pressing `esc` or `q` ex
 ## Midnight Commander (mc)
 
 [Midnight Commander](https://midnight-commander.org/) deserves a mention for context — it's the classic dual-pane, function-key-driven file manager that predates most of the tools above by decades and is still packaged in nearly every Linux distro's repositories. If you want the most "battle-tested" option with the least chance of surprises, this is it.
+
+![Pick Shell Buddy for Git and encryption, Yazi for image previews, ranger or lf for Vim keys, nnn for the smallest footprint, Walk for fuzzy cd, Midnight Commander for a stable classic](/static/img/tui-file-managers-pick.svg){: width="1000" height="375"}
 
 ## Picking one
 

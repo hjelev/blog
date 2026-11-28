@@ -1,34 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Asahi Linux: MIT → GPL</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">copyleft after code was copied and LLM-rewritten to hide its origin</text>
-
-  <!-- license change -->
-  <g font-size="15">
-    <rect x="60" y="150" width="200" height="44" rx="6" fill="none" stroke="#9aa3b2" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="160" y="177" fill="#9aa3b2" text-anchor="middle" font-weight="700">MIT (permissive)</text>
-
-    <text x="300" y="178" fill="#9aa3b2" text-anchor="middle" font-size="20">→</text>
-    <text x="300" y="214" fill="#9aa3b2" text-anchor="middle" font-size="13">all repos</text>
-
-    <rect x="340" y="150" width="290" height="44" rx="6" fill="#4ec27a"/>
-    <text x="485" y="177" fill="#14161b" text-anchor="middle" font-weight="700">GPL-2.0-or-later</text>
-
-    <text x="660" y="168" fill="#4ec27a">no closed forks</text>
-    <text x="660" y="190" fill="#4ec27a">changes come back</text>
-  </g>
-
-  <g font-size="16">
-    <text x="60" y="270" fill="#9aa3b2">can't fix</text>
-    <text x="180" y="270" fill="#febc2e">code already out under MIT · proving LLM rewrites</text>
-    <text x="60" y="304" fill="#9aa3b2">also</text>
-    <text x="180" y="304" fill="#ffffff">M3 support out of EXPERT mode · GPU still WIP</text>
-  </g>
-
-  <!-- copyleft icon -->
-  <g transform="translate(866 44)" fill="none" stroke="#4ec27a" stroke-width="5" stroke-linecap="round">
-    <circle cx="34" cy="34" r="28"/>
-    <path d="M24 24 A14 14 0 1 1 24 44"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#b48ead" stop-opacity="0.2"/><stop offset="1" stop-color="#b48ead" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#b48ead" letter-spacing="2">ASAHI LINUX · LICENSING</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >Asahi Linux goes</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >MIT → GPL</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >After code was copied and LLM-rewritten to hide</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >where it came from</text><g transform="translate(590 96) scale(4.5833)"><path d="m13.835 0-1.72 1.323v.97h2.178zm-1.95.057L9.81 1.095l2.076 4.153zm.23 3.768V6.22l-1.057-2.113L6.43 5.678 12 8.009l5.57-2.331zM6.21 5.835.533 15.957 11.885 24V8.21L6.222 5.84Zm11.58 0-.012.004-5.6 2.345 7.512 10.449 3.777-2.675zm-3.955 7.926v5.422l1.952-2.711zm2.864 3.981-4.411 6.135 5.846-4.14z" fill="#A61200"/></g><path d="M714 150 L770 150" stroke="#9aa3b2" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/><rect x="780" y="86" width="180" height="52" rx="10" fill="#1d2027" stroke="#343946" stroke-width="1.5"/><text x="870" y="119" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#6b7180" font-weight="700" text-anchor="middle" >MIT</text><line x1="830" y1="112" x2="910" y2="112" stroke="#f25f5c" stroke-width="3"/><rect x="780" y="166" width="180" height="52" rx="10" fill="#16291f" stroke="#4ec27a" stroke-width="2"/><text x="870" y="199" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#4ec27a" font-weight="700" text-anchor="middle" >GPL-2.0+</text>
 </svg>

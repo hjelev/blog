@@ -1,49 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Raspberry Pi operating systems</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">purpose-built images for media, games, cameras and more</text>
-  <path d="M60 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
-  <rect x="74" y="178" width="10" height="22" rx="2" fill="#4ec27a" opacity="0.8"/>
-  <rect x="92" y="178" width="10" height="22" rx="2" fill="#4ec27a" opacity="0.8"/>
-  <rect x="110" y="178" width="10" height="22" rx="2" fill="#4ec27a" opacity="0.8"/>
-  <rect x="128" y="178" width="10" height="22" rx="2" fill="#4ec27a" opacity="0.8"/>
-  <text x="105" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">DietPi</text>
-  <path d="M188 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#ff5f57" stroke-width="2"/>
-  <rect x="202" y="178" width="10" height="22" rx="2" fill="#ff5f57" opacity="0.8"/>
-  <rect x="220" y="178" width="10" height="22" rx="2" fill="#ff5f57" opacity="0.8"/>
-  <rect x="238" y="178" width="10" height="22" rx="2" fill="#ff5f57" opacity="0.8"/>
-  <rect x="256" y="178" width="10" height="22" rx="2" fill="#ff5f57" opacity="0.8"/>
-  <text x="233" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">RetroPie</text>
-  <path d="M316 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#febc2e" stroke-width="2"/>
-  <rect x="330" y="178" width="10" height="22" rx="2" fill="#febc2e" opacity="0.8"/>
-  <rect x="348" y="178" width="10" height="22" rx="2" fill="#febc2e" opacity="0.8"/>
-  <rect x="366" y="178" width="10" height="22" rx="2" fill="#febc2e" opacity="0.8"/>
-  <rect x="384" y="178" width="10" height="22" rx="2" fill="#febc2e" opacity="0.8"/>
-  <text x="361" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">Recalbox</text>
-  <path d="M444 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#b48ead" stroke-width="2"/>
-  <rect x="458" y="178" width="10" height="22" rx="2" fill="#b48ead" opacity="0.8"/>
-  <rect x="476" y="178" width="10" height="22" rx="2" fill="#b48ead" opacity="0.8"/>
-  <rect x="494" y="178" width="10" height="22" rx="2" fill="#b48ead" opacity="0.8"/>
-  <rect x="512" y="178" width="10" height="22" rx="2" fill="#b48ead" opacity="0.8"/>
-  <text x="489" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">Volumio</text>
-  <path d="M572 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
-  <rect x="586" y="178" width="10" height="22" rx="2" fill="#5c9cf5" opacity="0.8"/>
-  <rect x="604" y="178" width="10" height="22" rx="2" fill="#5c9cf5" opacity="0.8"/>
-  <rect x="622" y="178" width="10" height="22" rx="2" fill="#5c9cf5" opacity="0.8"/>
-  <rect x="640" y="178" width="10" height="22" rx="2" fill="#5c9cf5" opacity="0.8"/>
-  <text x="617" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">motionEyeOS</text>
-  <path d="M700 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#ff7a59" stroke-width="2"/>
-  <rect x="714" y="178" width="10" height="22" rx="2" fill="#ff7a59" opacity="0.8"/>
-  <rect x="732" y="178" width="10" height="22" rx="2" fill="#ff7a59" opacity="0.8"/>
-  <rect x="750" y="178" width="10" height="22" rx="2" fill="#ff7a59" opacity="0.8"/>
-  <rect x="768" y="178" width="10" height="22" rx="2" fill="#ff7a59" opacity="0.8"/>
-  <text x="745" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">Ubuntu</text>
-  <text x="745" y="284" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">MATE</text>
-  <path d="M828 170 h80 l22 22 v120 a6 6 0 0 1 -6 6 h-96 a6 6 0 0 1 -6 -6 v-136 a6 6 0 0 1 6 -6 z" fill="#2a2d36" stroke="#2a8f8f" stroke-width="2"/>
-  <rect x="842" y="178" width="10" height="22" rx="2" fill="#2a8f8f" opacity="0.8"/>
-  <rect x="860" y="178" width="10" height="22" rx="2" fill="#2a8f8f" opacity="0.8"/>
-  <rect x="878" y="178" width="10" height="22" rx="2" fill="#2a8f8f" opacity="0.8"/>
-  <rect x="896" y="178" width="10" height="22" rx="2" fill="#2a8f8f" opacity="0.8"/>
-  <text x="873" y="265" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">OpenELEC</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#f25f5c" stop-opacity="0.2"/><stop offset="1" stop-color="#f25f5c" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#f25f5c" letter-spacing="2">RASPBERRY PI · OPERATING SYSTEMS</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >Raspberry Pi</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >OS beyond Raspbian</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >Distros for gaming, media, cameras and minimal</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >servers</text><g transform="translate(590 90) scale(1.2000)" fill="none" stroke="#9aa3b2" stroke-width="3.33" stroke-linejoin="round" stroke-linecap="round"><path d="M24 6 H70 L84 20 V94 H24 Z"/><path d="M38 6 V22 M50 6 V22 M62 6 V22"/></g><g transform="translate(680 110) scale(1.2000)" fill="none" stroke="#5b9cf5" stroke-width="3.33" stroke-linejoin="round" stroke-linecap="round"><path d="M24 6 H70 L84 20 V94 H24 Z"/><path d="M38 6 V22 M50 6 V22 M62 6 V22"/></g><g transform="translate(770 90) scale(1.2000)" fill="none" stroke="#f25f5c" stroke-width="3.33" stroke-linejoin="round" stroke-linecap="round"><path d="M24 6 H70 L84 20 V94 H24 Z"/><path d="M38 6 V22 M50 6 V22 M62 6 V22"/></g><g transform="translate(860 110) scale(1.1000)" fill="none" stroke="#4ec27a" stroke-width="3.64" stroke-linejoin="round" stroke-linecap="round"><path d="M24 6 H70 L84 20 V94 H24 Z"/><path d="M38 6 V22 M50 6 V22 M62 6 V22"/></g><text x="650" y="270" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa3b2" text-anchor="middle" >DietPi</text><text x="740" y="290" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#5b9cf5" text-anchor="middle" >RetroPie</text><text x="830" y="270" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#f25f5c" text-anchor="middle" >Volumio</text><text x="915" y="290" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#4ec27a" text-anchor="middle" >motionEye</text>
 </svg>

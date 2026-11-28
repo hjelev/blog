@@ -8,7 +8,7 @@ image: /static/img/og/ha-marketplace-2026-11-header.png
 thumbnail: /static/img/ha-marketplace-2026-11-header.svg
 ---
 
-![HACS becomes the Home Assistant Marketplace in 2026.11: custom integrations, dashboard cards, themes and templates move to Settings → Marketplace, migrated automatically on first start](/static/img/ha-marketplace-2026-11-header.svg){: width="1000" height="360"}
+![Home Assistant 2026.11 replaces HACS with the built-in Marketplace](/static/img/ha-marketplace-2026-11-header.svg){: width="1000" height="360"}
 
 For years, the first thing almost everyone did after installing Home Assistant was install **HACS**. It's how you got the custom integrations, dashboard cards and themes that aren't in core: Mushroom cards, Bubble Card, Alexa Media Player, half the integrations for cheap Chinese devices.
 
@@ -56,7 +56,11 @@ From the [Marketplace docs](https://www.home-assistant.io/integrations/marketpla
 
 The files stay in the usual places: integrations in `custom_components/`, cards in `www/community/`, themes in `themes/`, templates in `custom_templates/`. On Home Assistant OS that's all under `/config`.
 
+![Migration: integrations, cards, themes and custom repos with hacs.json keep updating; repos without hacs.json and AppDaemon or Python scripts stay installed but stop updating](/static/img/ha-marketplace-2026-11-migration.svg){: width="1000" height="356"}
+
 ## Before you update: a checklist
+
+![Before updating: full backup, update everything in HACS, check custom repos for hacs.json, check integrations support 2026.11, fix anything calling HACS directly](/static/img/ha-marketplace-2026-11-checklist.svg){: width="1000" height="536"}
 
 **1. Take a full backup.**
 

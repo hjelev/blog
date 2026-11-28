@@ -12,7 +12,9 @@ image: /static/img/og/ubuntu-gsettings-header.png
 thumbnail: /static/img/ubuntu-gsettings-header.svg
 ---
 
-![gsettings commands for dock minimize-on-click, dock opacity, full path in Files and wallpaper](/static/img/ubuntu-gsettings-header.svg){: width="1000" height="360"}
+![Ubuntu dock and terminal: gsettings commands for minimize-on-click and dock transparency](/static/img/ubuntu-gsettings-header.svg){: width="1000" height="360"}
+
+![Four Ubuntu tweaks: minimize on click, transparent dock, full path in Files, wallpaper slideshow](/static/img/ubuntu-gsettings-tweaks.svg){: width="1000" height="378"}
 
 ## How do I enable 'minimize on click' on Ubuntu dock
 

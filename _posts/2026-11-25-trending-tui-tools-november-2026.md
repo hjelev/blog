@@ -7,7 +7,7 @@ image: /static/img/og/trending-tui-header.png
 thumbnail: /static/img/trending-tui-header.svg
 ---
 
-![Bar chart of GitHub stars gained from 10 to 24 November 2026: OpenCode 3,114, Herdr 2,716, Claude Code 1,747, Codex 1,648, Mole 881, Atuin 340, Yazi 298, dnsglobe 283, Neovim 268, fzf and lazygit 264 each](/static/img/trending-tui-header.svg){: width="1000" height="360"}
+![Trending TUI tools: OpenCode, Herdr, Claude Code and Codex gained the most GitHub stars from 10 to 24 November](/static/img/trending-tui-header.svg){: width="1000" height="360"}
 
 These are the ten terminal UI tools that gained the most GitHub stars over the last two weeks, from the [trending list](https://cli.masoko.net/?sort=trending) on The Terminal Index, the directory of terminal tools I run. It tracks 333 of them, so this is the top ten of that list, not of all GitHub.
 
@@ -33,9 +33,13 @@ These are the ten terminal UI tools that gained the most GitHub stars over the l
 | 10= | [fzf](https://cli.masoko.net/tools/fzf/) | Fuzzy finder | 264 | 84,381 | 0.3% |
 | 10= | [lazygit](https://cli.masoko.net/tools/lazygit/) | Git client | 264 | 84,052 | 0.3% |
 
+![Stars gained 10 to 24 November: OpenCode 3,114, Herdr 2,716, Claude Code 1,747, Codex 1,648, Mole about 881, then Atuin, Yazi, dnsglobe, Neovim, fzf and lazygit between 340 and 264](/static/img/trending-tui-stars.svg){: width="1000" height="708"}
+
 \* Mole was only added to the index on 16 November, so its count covers 8 days instead of 14.
 
 **What counts as a TUI here:** something you mainly use through an interactive screen. That leaves out command-line tools that gained more, such as sherlock (8,664) and yt-dlp (2,261), and also Ollama (915) and OpenClaw (866), which are mainly background services.
+
+![Growth as a share of total stars: dnsglobe 20.3%, Herdr 5.4%, the other tools between 0.3% and 1.4%](/static/img/trending-tui-growth.svg){: width="1000" height="552"}
 
 ## 1. OpenCode
 

@@ -11,7 +11,7 @@ redirect_from:
   - /linux/set-git-origin/
 ---
 
-![A git push asking for a username and password, and three ways to store the token](/static/img/git-credentials-header.svg){: width="1000" height="360"}
+![git push asking for a GitHub password and failing, fixed with a credential helper or gh auth login](/static/img/git-credentials-header.svg){: width="1000" height="360"}
 
 GitHub no longer accepts your account password for Git over HTTPS. You need a personal access token, and typing it on every `git push` gets old quickly. Here are three ways to make Git remember it.
 
@@ -57,6 +57,8 @@ gh auth setup-git
 ```
 
 `gh` handles the token for you and configures Git to use it for every GitHub repository.
+
+![Comparison: token in remote URL and credential.helper store keep the token in plain text; cache and the GitHub CLI do not; only the URL method is per repository](/static/img/git-credentials-options.svg){: width="1000" height="416"}
 
 ## Check which remote you're using
 

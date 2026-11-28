@@ -1,53 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">Raspberry Pi software</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">self-hosted services worth running on a Pi</text>
-  <g transform="translate(425 180) scale(1.0)">
-  <rect width="150" height="100" rx="8" fill="#2f8a57"/>
-  <rect x="56" y="30" width="40" height="40" rx="3" fill="#1d2027"/>
-  <circle cx="12.0" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="18.6" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="25.2" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="31.799999999999997" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="38.4" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="45.0" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="51.599999999999994" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="58.199999999999996" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="64.8" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="71.4" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="78.0" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="84.6" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="91.19999999999999" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="97.8" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="104.39999999999999" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="111.0" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="117.6" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="124.19999999999999" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="130.8" cy="10" r="2" fill="#febc2e"/>
-  <circle cx="137.39999999999998" cy="10" r="2" fill="#febc2e"/>
-  <rect x="112" y="60" width="38" height="30" rx="2" fill="#c0c6d0"/>
-  <rect x="10" y="64" width="34" height="26" rx="2" fill="#c0c6d0"/>
-  </g>
-  <text x="500" y="310" fill="#9aa3b2" font-size="14" text-anchor="middle">Raspberry Pi</text>
-  <rect x="70" y="150" width="180" height="48" rx="8" fill="#2a2d36" stroke="#ff5f57" stroke-width="2"/>
-  <text x="160.0" y="179.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">Pi-hole</text>
-  <line x1="420" y1="230" x2="255" y2="174" stroke="#ff5f57" stroke-width="2.5"/>
-  <path d="M255.0 174.0 L264.9 172.8 L262.1 181.0 Z" fill="#ff5f57"/>
-  <rect x="70" y="250" width="180" height="48" rx="8" fill="#2a2d36" stroke="#4ec27a" stroke-width="2"/>
-  <text x="160.0" y="279.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">AdGuard Home</text>
-  <line x1="420" y1="230" x2="255" y2="274" stroke="#4ec27a" stroke-width="2.5"/>
-  <path d="M255.0 274.0 L262.6 267.5 L264.8 275.9 Z" fill="#4ec27a"/>
-  <rect x="760" y="140" width="180" height="48" rx="8" fill="#2a2d36" stroke="#5c9cf5" stroke-width="2"/>
-  <text x="850.0" y="169.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">PiVPN</text>
-  <line x1="580" y1="230" x2="755" y2="164" stroke="#5c9cf5" stroke-width="2.5"/>
-  <path d="M755.0 164.0 L748.1 171.2 L745.0 163.1 Z" fill="#5c9cf5"/>
-  <rect x="760" y="210" width="180" height="48" rx="8" fill="#2a2d36" stroke="#2a8f8f" stroke-width="2"/>
-  <text x="850.0" y="239.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">Home Assistant</text>
-  <line x1="580" y1="230" x2="755" y2="234" stroke="#2a8f8f" stroke-width="2.5"/>
-  <path d="M755.0 234.0 L745.9 238.1 L746.1 229.4 Z" fill="#2a8f8f"/>
-  <rect x="760" y="280" width="180" height="48" rx="8" fill="#2a2d36" stroke="#b48ead" stroke-width="2"/>
-  <text x="850.0" y="309.6" fill="#ffffff" font-size="16" text-anchor="middle" font-weight="700">CUPS</text>
-  <line x1="580" y1="230" x2="755" y2="304" stroke="#b48ead" stroke-width="2.5"/>
-  <path d="M755.0 304.0 L745.0 304.5 L748.4 296.5 Z" fill="#b48ead"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#f25f5c" stop-opacity="0.2"/><stop offset="1" stop-color="#f25f5c" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#f25f5c" letter-spacing="2">RASPBERRY PI · SELF-HOSTING</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >Software for</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >your Raspberry Pi</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >Ad blocking, VPN, home automation and printing on</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >a $15 board</text><g transform="translate(600 110) scale(1.5000)" fill="none" stroke="#9aa3b2" stroke-width="2.67" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="18" width="88" height="64" rx="6"/><rect x="40" y="38" width="22" height="22" rx="2" stroke="#f25f5c"/><path d="M14 26 H62" stroke-dasharray="3 5"/><rect x="72" y="56" width="22" height="18" rx="2"/><rect x="14" y="62" width="16" height="12" rx="2"/></g><g transform="translate(800 70) scale(2.3333)"><path d="M4.344 0c.238 4.792 3.256 7.056 6.252 7.376.165-1.692-4.319-5.6-4.319-5.6-.008-.011.009-.025.019-.014 0 0 4.648 4.01 5.423 5.645 2.762-.15 5.196-1.947 5-4.912 0 0-4.12-.613-5 4.618C11.48 2.753 8.993 0 4.344 0zM12 7.682v.002a3.68 3.68 0 0 0-2.591 1.077L4.94 13.227a3.683 3.683 0 0 0-.86 1.356 3.31 3.31 0 0 0-.237 1.255A3.681 3.681 0 0 0 4.92 18.45l4.464 4.466a3.69 3.69 0 0 0 2.251 1.06l.002.001c.093.01.187.015.28.017l-.1-.008c.06.003.117.009.177.009l-.077-.001L12 24l-.004-.005a3.68 3.68 0 0 0 2.61-1.077l4.469-4.465a3.683 3.683 0 0 0 1.006-1.888l.012-.063a3.682 3.682 0 0 0 .057-.541l.003-.061c0-.017.003-.05.004-.06h-.002a3.683 3.683 0 0 0-1.077-2.607l-4.466-4.468a3.694 3.694 0 0 0-1.564-.927l-.07-.02a3.43 3.43 0 0 0-.946-.133L12 7.682zm3.165 3.357c.023 1.748-1.33 3.078-1.33 4.806.164 2.227 1.733 3.207 3.266 3.146-.035.003-.068.007-.104.009-1.847.135-3.209-1.326-5.002-1.326-2.23.164-3.21 1.736-3.147 3.27l-.008-.104c-.133-1.847 1.328-3.21 1.328-5.002-.173-2.32-1.867-3.284-3.46-3.132.1-.011.203-.021.31-.027 1.847-.133 3.209 1.328 5.002 1.328 2.082-.155 3.074-1.536 3.145-2.968zM4.344 0c.238 4.792 3.256 7.056 6.252 7.376.165-1.692-4.319-5.6-4.319-5.6-.008-.011.009-.025.019-.014 0 0 4.648 4.01 5.423 5.645 2.762-.15 5.196-1.947 5-4.912 0 0-4.12-.613-5 4.618C11.48 2.753 8.993 0 4.344 0zM12 7.682v.002a3.68 3.68 0 0 0-2.591 1.077L4.94 13.227a3.683 3.683 0 0 0-.86 1.356 3.31 3.31 0 0 0-.237 1.255A3.681 3.681 0 0 0 4.92 18.45l4.464 4.466a3.69 3.69 0 0 0 2.251 1.06l.002.001c.093.01.187.015.28.017l-.1-.008c.06.003.117.009.177.009l-.077-.001L12 24l-.004-.005a3.68 3.68 0 0 0 2.61-1.077l4.469-4.465a3.683 3.683 0 0 0 1.006-1.888l.012-.063a3.682 3.682 0 0 0 .057-.541l.003-.061c0-.017.003-.05.004-.06h-.002a3.683 3.683 0 0 0-1.077-2.607l-4.466-4.468a3.694 3.694 0 0 0-1.564-.927l-.07-.02a3.43 3.43 0 0 0-.946-.133L12 7.682zm3.165 3.357c.023 1.748-1.33 3.078-1.33 4.806.164 2.227 1.733 3.207 3.266 3.146-.035.003-.068.007-.104.009-1.847.135-3.209-1.326-5.002-1.326-2.23.164-3.21 1.736-3.147 3.27l-.008-.104c-.133-1.847 1.328-3.21 1.328-5.002-.173-2.32-1.867-3.284-3.46-3.132.1-.011.203-.021.31-.027 1.847-.133 3.209 1.328 5.002 1.328 2.082-.155 3.074-1.536 3.145-2.968z" fill="#96060C"/></g><g transform="translate(880 110) scale(2.3333)"><path d="M22.939 10.627 13.061.749a1.505 1.505 0 0 0-2.121 0l-9.879 9.878C.478 11.21 0 12.363 0 13.187v9c0 .826.675 1.5 1.5 1.5h9.227l-4.063-4.062a2.034 2.034 0 0 1-.664.113c-1.13 0-2.05-.92-2.05-2.05s.92-2.05 2.05-2.05 2.05.92 2.05 2.05c0 .233-.041.456-.113.665l3.163 3.163V9.928a2.05 2.05 0 0 1-1.15-1.84c0-1.13.92-2.05 2.05-2.05s2.05.92 2.05 2.05a2.05 2.05 0 0 1-1.15 1.84v8.127l3.146-3.146A2.051 2.051 0 0 1 18 12.239c1.13 0 2.05.92 2.05 2.05s-.92 2.05-2.05 2.05c-.25 0-.488-.047-.709-.13L12.9 20.602v3.088h9.6c.825 0 1.5-.675 1.5-1.5v-9c0-.825-.477-1.977-1.061-2.561z" fill="#18BCF2"/></g><g transform="translate(800 160) scale(2.3333)"><path d="M12 0C8.249 0 3.725.861 0 2.755 0 6.845-.051 17.037 12 24 24.051 17.037 24 6.845 24 2.755 20.275.861 15.751 0 12 0zm-.106 15.429L6.857 9.612c.331-.239 1.75-1.143 2.794.042l2.187 2.588c.009-.001 5.801-5.948 5.815-5.938.246-.22.694-.503 1.204-.101l-6.963 9.226z" fill="#68BC71"/></g><g transform="translate(880 190) scale(0.6000)" fill="none" stroke="#9aa3b2" stroke-width="6.67" stroke-linejoin="round" stroke-linecap="round"><path d="M50 6 L86 20 V48 C86 70 70 86 50 94 C30 86 14 70 14 48 V20 Z"/><rect x="34" y="46" width="32" height="24" rx="4" stroke="#4ec27a"/><path d="M40 46 V38 a10 10 0 0 1 20 0 V46" stroke="#4ec27a"/></g><path d="M752 185 L790 185" stroke="#9aa3b2" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/>
 </svg>

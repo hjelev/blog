@@ -10,7 +10,7 @@ redirect_from:
   - /security/linux/selfhosting/php2shell-php-vulnerabilities-october-2026/
 ---
 
-![PHP2Shell: a request that runs out of memory leaves a broken hash bucket that PHP later calls as a destructor. Fixed in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35](/static/img/php2shell-header.svg){: width="1000" height="360"}
+![PHP2Shell: an oversized POST field runs PHP out of memory and ends in system() running a command](/static/img/php2shell-header.svg){: width="1000" height="360"}
 
 October has been a bad month for web runtimes. A week after [Brotli2Shell]({% post_url 2026-10-31-brotli2shell-cve-2026-111497 %}) hit Node.js and Python, PHP shipped emergency releases for **two critical bugs in the interpreter itself**. They're collectively called **PHP2Shell**: **CVE-2026-109618** and **CVE-2026-109619**, both rated **9.2 (CVSS v4.0)**.
 
@@ -51,6 +51,8 @@ What the attacker needs:
 
 That's it. It works on **mod_php, PHP-FPM, php-cgi, FrankenPHP and LiteSpeed**. PHP rates the risk highest for **Apache with mod_php**, where workers live long and the memory layout is predictable.
 
+![CVE-2026-109618: a huge POST field name bumps the hash table counters, the key copy exceeds memory_limit, and at shutdown PHP frees an uninitialized bucket, leading to system() as www-data](/static/img/php2shell-bug.svg){: width="1000" height="287"}
+
 ### CVE-2026-109619: stale per-worker state, use-after-free
 
 The second bug is about state that outlives a request. PHP workers handle many requests in a row. Some worker-wide fields kept pointers into the **previous request's memory** after it was freed, so the next request on the same worker followed a dangling pointer.
@@ -61,6 +63,8 @@ Two confirmed paths:
 - **Fatal error backtraces (PHP 8.5 only).** Backtrace state survives shutdown and gets read by a config diagnostic in a later request.
 
 The attacker has to land consecutive requests on the same worker. A bigger worker pool makes that harder, but it doesn't remove the bug.
+
+![Timeline: AWS saw attempts October 17, patched PHP released October 21, CISA added CVE-2026-109618 to KEV October 26](/static/img/php2shell-timeline.svg){: width="1000" height="248"}
 
 ## Am I affected?
 
@@ -148,6 +152,8 @@ client_body_timeout 15s;
 ```
 
 Turning off upload progress breaks upload progress bars that use `$_SESSION`. Very few sites rely on it.
+
+![Upgrading PHP covers 109618 and 109619; disabling session upload progress covers 109619 and 115560 but not 109618; updating WordPress covers none](/static/img/php2shell-stopgap.svg){: width="1000" height="382"}
 
 ## Did someone already get in?
 

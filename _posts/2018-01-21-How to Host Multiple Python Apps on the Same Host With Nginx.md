@@ -5,15 +5,19 @@ description: "Use nginx as a reverse proxy to serve several Python apps from one
 date:   2018-01-21
 categories: linux
 seo_title: "Host Multiple Python Apps on One Server with Nginx"
-thumbnail: /static/img/nginx-logo.svg
+thumbnail: /static/img/nginx-multi-apps-header.svg
 redirect_from:
   - /linux/How-to-Host-Multiple-Python-Apps-on-the-Same-Host-With-Nginx/
+image: /static/img/og/nginx-multi-apps-header.png
 ---
+
+![nginx reverse proxy forwarding two domains to Python apps on ports 8000 and 8001](/static/img/nginx-multi-apps-header.svg){: width="1000" height="360"}
+
 ## Configure NGINX as a reverse proxy
 
-![NGINX logo](/static/img/nginx-logo.svg){: width="185" height="40"}
-
 In this tutorial we assume that there are two python applications / sites running on ports 8000 and 8001 and we need to point example1.com to the application on port 8000 and example2.com to the application on port 8001.
+
+![example1.com and example2.com both point at the server; nginx on port 80 forwards each to its own Python app on 127.0.0.1:8000 or 8001](/static/img/nginx-multi-apps-flow.svg){: width="1000" height="410"}
 
 First we need to make sure that the domains DNS is pointing to the external IP of our server.
 
@@ -59,9 +63,7 @@ server {
 }
 </pre>
 
-
 To enable these sites for nginx, create a symlink from the files we just created to `/etc/nginx/sites-enabled/`.
-
 
 	$ sudo ln -s /etc/nginx/sites-available/example1.com /etc/nginx/sites-enabled/example1.com
 	$ sudo ln -s /etc/nginx/sites-available/example2.com /etc/nginx/sites-enabled/example2.com

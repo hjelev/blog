@@ -1,34 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  <rect width="1000" height="360" rx="14" fill="#14161b"/>
-
-  <text x="60" y="80" fill="#ffffff" font-size="34" font-weight="700">HACS → Marketplace</text>
-  <text x="60" y="114" fill="#9aa3b2" font-size="17">Home Assistant 2026.11 builds the community store into core</text>
-
-  <!-- migration -->
-  <g font-size="15">
-    <rect x="60" y="150" width="200" height="44" rx="6" fill="none" stroke="#9aa3b2" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="160" y="177" fill="#9aa3b2" text-anchor="middle" font-weight="700">HACS (removed)</text>
-
-    <text x="300" y="178" fill="#9aa3b2" text-anchor="middle" font-size="20">→</text>
-    <text x="300" y="214" fill="#9aa3b2" text-anchor="middle" font-size="13">auto-migrated</text>
-
-    <rect x="340" y="150" width="290" height="44" rx="6" fill="#18bcf2"/>
-    <text x="485" y="177" fill="#14161b" text-anchor="middle" font-weight="700">Settings → Marketplace</text>
-
-    <text x="660" y="168" fill="#4ec27a">integrations · cards</text>
-    <text x="660" y="190" fill="#4ec27a">themes · templates</text>
-  </g>
-
-  <g font-size="16">
-    <text x="60" y="270" fill="#9aa3b2">check</text>
-    <text x="180" y="270" fill="#ffffff">backup first · hacs.json in custom repos</text>
-    <text x="60" y="304" fill="#9aa3b2">no updates</text>
-    <text x="180" y="304" fill="#febc2e">repos without hacs.json · AppDaemon · python_scripts</text>
-  </g>
-
-  <!-- house icon -->
-  <g transform="translate(866 44)" fill="none" stroke="#18bcf2" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M6 30 L34 6 L62 30 V62 H6 Z"/>
-    <circle cx="34" cy="40" r="6"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><radialGradient id="glow" cx="76%" cy="50%" r="44%"><stop offset="0" stop-color="#5b9cf5" stop-opacity="0.2"/><stop offset="1" stop-color="#5b9cf5" stop-opacity="0"/></radialGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#343946"/></pattern></defs>
+<rect width="1000" height="360" rx="14" fill="#14161b"/>
+<rect x="540" y="0" width="460" height="360" fill="url(#grid)" opacity="0.6"/><rect width="1000" height="360" rx="14" fill="url(#glow)"/><text x="60" y="92" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#5b9cf5" letter-spacing="2">HOME ASSISTANT · 2026.11</text><text x="60" y="148" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >HACS becomes</text><text x="60" y="200" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" font-weight="700" >the Marketplace</text><text x="60" y="252" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >What the automatic migration keeps, and what</text><text x="60" y="279" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9aa3b2" >stops updating</text><rect x="60" y="310" width="242" height="40" rx="20.0" fill="#262a33" stroke="#343946" stroke-width="1.5"/><text x="82" y="335.4" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#febc2e" >Settings › Marketplace</text><g transform="translate(590 100) scale(4.1667)"><path d="M22.939 10.627 13.061.749a1.505 1.505 0 0 0-2.121 0l-9.879 9.878C.478 11.21 0 12.363 0 13.187v9c0 .826.675 1.5 1.5 1.5h9.227l-4.063-4.062a2.034 2.034 0 0 1-.664.113c-1.13 0-2.05-.92-2.05-2.05s.92-2.05 2.05-2.05 2.05.92 2.05 2.05c0 .233-.041.456-.113.665l3.163 3.163V9.928a2.05 2.05 0 0 1-1.15-1.84c0-1.13.92-2.05 2.05-2.05s2.05.92 2.05 2.05a2.05 2.05 0 0 1-1.15 1.84v8.127l3.146-3.146A2.051 2.051 0 0 1 18 12.239c1.13 0 2.05.92 2.05 2.05s-.92 2.05-2.05 2.05c-.25 0-.488-.047-.709-.13L12.9 20.602v3.088h9.6c.825 0 1.5-.675 1.5-1.5v-9c0-.825-.477-1.977-1.061-2.561z" fill="#18BCF2"/></g><text x="640" y="240" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#9aa3b2" text-anchor="middle" >2026.11</text><path d="M706 150 L760 150" stroke="#9aa3b2" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/><rect x="770" y="86" width="190" height="52" rx="10" fill="#1d2027" stroke="#343946" stroke-width="1.5"/><text x="865" y="119" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" fill="#6b7180" font-weight="700" text-anchor="middle" >HACS</text><line x1="828" y1="112" x2="902" y2="112" stroke="#6b7180" stroke-width="3"/><rect x="770" y="166" width="190" height="52" rx="10" fill="#172235" stroke="#5b9cf5" stroke-width="2"/><g transform="translate(786 178) scale(0.2800)" fill="none" stroke="#5b9cf5" stroke-width="14.29" stroke-linejoin="round" stroke-linecap="round"><path d="M10 36 L18 12 H82 L90 36"/><path d="M10 36 H90 a12 12 0 0 1 -26 0 a12 12 0 0 1 -26 0 a12 12 0 0 1 -26 0"/><path d="M16 44 V90 H84 V44"/><rect x="40" y="62" width="20" height="28"/></g><text x="824" y="199" font-family="Atkinson Hyperlegible Next, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#5b9cf5" font-weight="700" >Marketplace</text>
 </svg>

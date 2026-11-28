@@ -10,9 +10,11 @@ redirect_from:
   - /windows/free-windows-software/
 ---
 
-![Free Windows tools: WinSCP, KiTTY, 7-Zip, Everything, Rufus, Notepad++, NSSM and more](/static/img/free-windows-software-header.svg){: width="1000" height="360"}
+![Free Windows software: file transfer, SSH, archives, search, USB imaging and service tools](/static/img/free-windows-software-header.svg){: width="1000" height="360"}
 
 - [Yawcam](http://www.yawcam.com/){:target="_blank"} - is a webcam software for Windows written in Java.
+
+![The free Windows tools grouped by job: files and SSH, disks and USB, media and cameras, editors, system, and Android](/static/img/free-windows-software-groups.svg){: width="1000" height="416"}
 
 - [iSpy](http://www.ispyconnect.com/){:target="_blank"} -  is our free, open source video surveillance platform. 
 

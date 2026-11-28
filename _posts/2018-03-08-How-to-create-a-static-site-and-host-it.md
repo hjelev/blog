@@ -5,15 +5,18 @@ description: "Create a static website with Pelican, the Python static site gener
 seo_title: "Pelican Static Site Hosted Free on GitHub Pages"
 date:   2018-03-08
 categories: python
-thumbnail: /static/img/python_pelican.png
+thumbnail: /static/img/pelican-static-site-header.svg
 redirect_from:
   - /python/How-to-create-a-static-site-and-host-it/
+image: /static/img/og/pelican-static-site-header.png
 ---
+
+![Build a static site with Pelican: Markdown files become HTML, hosted on GitHub Pages](/static/img/pelican-static-site-header.svg){: width="1000" height="360"}
+
 In this articel I'll show you how to create a static html site with Pelican and host it for free at [GitHub Pages](https://pages.github.com/){:target="_blank"}.
 -------------------------
 
 [Pelican](https://github.com/getpelican/pelican){:target="_blank"} is a static site generator, written in Python, that requires no database or server-side logic.
-![Pelican](/static/img/python_pelican.png){: .invert-dark width="298" height="300"}
 
 ### Installing Pelican
 
@@ -48,7 +51,6 @@ yourproject/
 ```
 
 Your site content should be placed in the content folder. If you plan to create a blog, you'll need to create a folder named ```posts``` in the ```content``` folder, if you need just static pages that are not chronological create a folder named ```pages```.
-
 
 The images for your site or blog should be located in the `content/images` folder.
 
@@ -134,7 +136,7 @@ Once you start the web server you can preview your site at `http://localhost:800
 
 One of the best free places to host your static site for free is [Github Pages](https://pages.github.com/){:target="_blank"}
 
-![Github Pages](/static/img/github_logo.png){: .light-bg width="573" height="248"}
+![Pelican workflow: write Markdown in content, run pelican content, get HTML in output, preview locally, push to GitHub Pages](/static/img/pelican-static-site-flow.svg){: width="1000" height="273"}
 
 On github pages you'll find detailed instructions how to upload your site with git.
 If you don't have git installed you can install it with:
@@ -144,7 +146,6 @@ $ sudo apt-get install git
 ```
 
 Once your site is uploaded to github pages its url will look like this `https://username.github.io`.
-
 
 You can change this by adding a custom domain to your github repository.
 If you don't have a domain name you can get one for free from http://www.dot.tk - they offer five domain extension for free (.tk, .ga, .ml, .cf and .gq).

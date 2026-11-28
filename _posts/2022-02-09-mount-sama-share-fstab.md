@@ -12,7 +12,7 @@ redirect_from:
   - /linux/mount-sama-share-fstab/
 ---
 
-![An /etc/fstab line mounting //server/share on /mnt/share using a credentials file](/static/img/samba-fstab-header.svg){: width="1000" height="360"}
+![Samba share //nas/share mounted at /mnt/share on boot through /etc/fstab](/static/img/samba-fstab-header.svg){: width="1000" height="360"}
 
 To mount a Samba share every time Ubuntu boots, you add a line to `/etc/fstab`. Here's the quick version and a slightly safer one that keeps your password out of fstab.
 
@@ -31,6 +31,8 @@ Update the path to your samba share, the local mount folder and your samba crede
 ```
 
 This works, but `/etc/fstab` is readable by every user on the machine, so anyone can read the password.
+
+![Quick version puts the password in world-readable /etc/fstab; safer version keeps it in /root/.smbcredentials with chmod 600](/static/img/samba-fstab-compare.svg){: width="1000" height="370"}
 
 ## Safer version: a credentials file
 

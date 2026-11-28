@@ -5,11 +5,13 @@ date: 2019-01-15
 categories: linux
 description: How I installed a Let's Encrypt certificate with certbot for a Home Assistant instance behind an nginx reverse proxy.
 seo_title: "Let's Encrypt Certificates with Certbot and Nginx"
-thumbnail: /static/img/letsencrypt.png
+thumbnail: /static/img/letsencrypt-certbot-header.svg
 redirect_from:
   - /linux/LetsEncrypt-Certificates/
+image: /static/img/og/letsencrypt-certbot-header.png
 ---
-![LetsEncrypt](/static/img/letsencrypt.png){: width="334" height="79"}
+
+![Let's Encrypt certificate issued with certbot for Home Assistant behind nginx](/static/img/letsencrypt-certbot-header.svg){: width="1000" height="360"}
 
 In this article I'll show you how I installed LetsEncrypt certificate for my home-assistant instance that is behind a nginx reverse proxy.
 
@@ -29,7 +31,7 @@ In this article I'll show you how I installed LetsEncrypt certificate for my hom
     and enable it once the generation is completed 
     <pre>$sudo /etc/init.d/nginx start</pre> 
     
-    ![CertBot](/static/img/certbot-logo.png){: width="612" height="210"}
+    ![Monthly renewal: stop nginx to free port 80, run certbot renew in standalone mode, the new certificate lands in /etc/letsencrypt/live, start nginx again](/static/img/letsencrypt-certbot-renew.svg){: width="1000" height="295"}
     
 3. Once the certificate is generated we need to modify the nginx configuration file for that domain.
     The configuration file that we need to modify is located in `/etc/nginx/sites-available` .
